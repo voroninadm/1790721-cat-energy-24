@@ -1,12 +1,64 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Сайт, созданный учеником 2 курса HTML Academy. Cat-energy">
+  <meta name="keywords" content="интернет-магазин кошачьей еды, питание для котов, кошачий корм, кошачья еда СПб , Питер, Санкт-Петербург">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="">
+  <link rel="icon" type="image/png" sizes="32x32" href="">
+  <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="">
+</head>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<body class="page__body">
+<header class="page__header">
+  <div class="header container">
+    <a class="logo" href="#">
+      <img class="logo__image" src="img/svg/logo-mobile.svg" width="191" height="38" alt="Логотип кэт-энерджи.">
+    </a>
+    <button class="menu-toggle" type="button">
+      <span class="visually-hidden">Меню.</span>
+    </button>
+    <nav class="header-nav">
+      <ul class="header-nav__list">
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="#">Главная</a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="">Каталог продукции</a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-  </body>
+<main class="page__main">
+  <h1 class="visually-hidden">Магазин здорового питания для котиков "Cat Energy"</h1>
+
+  <article class="promo container">
+    <h2 class="promo__title">Функциональное питание для котов</h2>
+    <p class="promo__text">Занялся собой? Займись котом!</p>
+    <img class="promo__image" src="" alt="упаковка питания Cat Energy.">
+    <a class="promo__link" href="">Подобрать программу</a>
+  </article>
+
+  <article class="programs">
+    <section class="program program--slim">
+      <h2 class="program__title">Похудение</h2>
+      <p class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+      <a class="program__link" href="">Каталог slim</a>
+    </section>
+    <section class="program program--fat">
+      <h2 class="program__title">Набор массы</h2>
+      <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+      <a class="program__link" href="">Каталог pro</a>
+    </section>
+  </article>
+
+</main>
+</body>
 </html>
