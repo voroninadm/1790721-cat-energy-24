@@ -16,7 +16,8 @@
 <header class="page__header">
   <div class="header container">
     <a class="logo" href="index.html">
-      <img class="logo__image" src="img/svg/header-logo@x1.svg" width="191" height="38" alt="Логотип кэт-энерджи.">
+      <img class="logo__image" src="img/svg/logo-cat@1x.svg" width="34" height="38" alt="Логотип кэт-энерджи.">
+      <img class="logo__image" src="img/svg/logo-cat-text@1x.svg" width="101" height="18" alt="Текст логотипа кэт-энерджи.">
     </a>
     <button class="menu-toggle" type="button">
       <span class="visually-hidden">Меню.</span>
@@ -30,7 +31,7 @@
           <a class="header-nav__link" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="header-nav__item">
-          <a class="header-nav__link header-nav__link--active" href="#">Подбор программы</a>
+          <a class="header-nav__link header-nav__link--active">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -38,10 +39,10 @@
 </header>
 
 <main class="page__main">
+
   <section class="main-form">
-    <h1 class="visually-hidden">Индивидуальная программа, рассчитанная только для Вашего котика</h1>
-    <h2 class="main-form__title">Подбор программы</h2>
-    <p class="main-form-description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <h1 class="main-form__title">Подбор программы</h1>
+    <p class="main-form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
 
     <form class="form" action="https://echo.htmlacademy.ru/" method="post">
       <fieldset class="form-group cat-info">
@@ -49,15 +50,15 @@
         <ul class="form-group__list">
           <li class="form-group__item">
             <label class="form-group__label" for="cat-name">Имя:<sup>*</sup></label>
-            <input class="form-group__input" type="text" name="cat-name" id="cat-name" value="Барсик" required>
+            <input class="form-group__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
           </li>
           <li class="form-group__item">
             <label class="form-group__label" for="cat-weight">Вес (кг):<sup>*</sup></label>
-            <input class="form-group__input" type="number" name="cat-weight" id="cat-weight" min="1" max="25" value="7" required>
+            <input class="form-group__input" type="number" name="cat-weight" id="cat-weight" min="1" max="25" placeholder="7" required>
           </li>
           <li class="form-group__item">
             <label class="form-group__label" for="cat-age">Возраст (лет):<sup>*</sup></label>
-            <input class="form-group__input" type="number" name="cat-age" id="cat-age" min="1" max="25" step="0.5" value="7" required>
+            <input class="form-group__input" type="number" name="cat-age" id="cat-age" min="1" max="25" step="0.5" placeholder="7" required>
           </li>
         </ul>
       </fieldset>
@@ -85,11 +86,11 @@
         <ul class="form-group__list">
           <li class="form-group__item">
             <label class="form-group__label" for="person__email">E-mail:<sup>*</sup></label>
-            <input class="form-group__input" type="email" name="person__email" id="person__email" value="kuklachev@gmail.com" required>
+            <input class="form-group__input" type="email" name="person__email" id="person__email" placeholder="kuklachev@gmail.com" required>
           </li>
           <li class="form-group__item">
             <label class="form-group__label" for="person__phone">Телефон:<sup>*</sup></label>
-            <input class="form-group__input" type="tel" name="person__phone" id="person__phone" value="8 (960) 900-60-90" required>
+            <input class="form-group__input" type="tel" name="person__phone" id="person__phone" placeholder="8 (960) 900-60-90" required>
           </li>
         </ul>
       </fieldset>
@@ -97,7 +98,7 @@
       <fieldset class="form-group">
         <legend class="form-group__legend">Комментарий</legend>
         <label class="visually-hidden" for="person-comment">Расскажите обо всех повАдках кота</label>
-        <textarea class="form-group__comment" rows="10" cols="45" name="person-comment" id="person-comment" placeholder="Расскажите обо всех повАдках кота"></textarea>
+        <textarea class="form-group__comment" name="person-comment" id="person-comment" placeholder="Расскажите обо всех повАдках кота"></textarea>
       </fieldset>
 
       <fieldset class="form-group">
@@ -146,7 +147,7 @@
     <nav class="footer-nav container">
       <div class="local-logo">
         <a class="local-logo__link" href="index.html">
-          <img class="local-logo__image" src="img/svg/logo-cat.svg" width="128" height="24" alt="Логотип Кэт-энерджи.">
+          <img class="local-logo__image" src="img/svg/logo-cat-text@1x.svg" width="128" height="24" alt="Логотип Кэт-энерджи.">
         </a>
       </div>
 
