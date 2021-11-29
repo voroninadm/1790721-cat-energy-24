@@ -1,12 +1,173 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
-  </head>
-  <body>
+<html class="page" lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Сайт, созданный учеником 2 курса HTML Academy. Cat-energy">
+  <meta name="keywords" content="интернет-магазин кошачьей еды, питание для котов, кошачий корм, кошачья еда СПб , Питер, Санкт-Петербург">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="#">
+</head>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<body class="page__body">
 
-  </body>
+<header class="page__header">
+  <div class="header container">
+    <a class="logo" href="#">
+      <img class="logo__image" src="img/svg/logo-cat@1x.svg" width="34" height="38" alt="Логотип кэт-энерджи.">
+      <img class="logo__image" src="img/svg/logo-cat-text@1x.svg" width="101" height="18" alt="Текст логотипа кэт-энерджи.">
+    </a>
+    <button class="menu-toggle" type="button">
+      <span class="visually-hidden">Меню.</span>
+    </button>
+    <nav class="header-nav ">
+      <ul class="header-nav__list">
+        <li class="header-nav__item">
+          <a class="header-nav__link header-nav__link--active">Главная</a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="form.html">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="page__main">
+  <h1 class="promo__title">Функциональное питание для котов</h1>
+  <article class="promo container">
+    <h2 class="visually-hidden">Здоровый образ жизни для человека и кота!</h2>
+    <p class="promo__text">Занялся собой? Займись котом!</p>
+    <img class="promo__image" src="img/index_can.png" width="280" height="270" alt="упаковка питания Cat Energy.">
+    <a class="main-link" href="form.html">Подобрать программу</a>
+  </article>
+
+  <article class="health-programs">
+    <h2 class="visually-hidden">Программы здорового питания для Вашего котика</h2>
+    <section class="program program--slim">
+      <h3 class="program__title">Похудение</h3>
+      <p class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу
+        сбросить лишний вес.</p>
+      <a class="program__link" href="#">Каталог slim</a>
+    </section>
+    <section class="program program--fat">
+      <h3 class="program__title">Набор массы</h3>
+      <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+      <a class="program__link" href="#">Каталог pro</a>
+    </section>
+  </article>
+
+  <section class="workflow container">
+    <h2 class="workflow__title">Как это работает</h2>
+    <ul class="workflow__list">
+      <li class="workflow__item workflow__item--health">Функциональное питание содержит только полезные питательные вещества.</li>
+      <li class="workflow__item workflow__item--brew">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
+      <li class="workflow__item workflow__item--change">Замените один-два приема обычной еды на наше функциональное питание.</li>
+      <li class="workflow__item workflow__item--profit">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
+    </ul>
+  </section>
+
+  <article class="demo">
+    <section class="demo-inner container">
+      <div class="demo-cat">
+        <h2 class="demo-cat__title">Живой пример</h2>
+        <p class="demo-cat__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих
+          тренировок!
+          При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+        <ul class="demo-cat__list">
+          <li class="demo-cat__item">
+            <b class="demo-cat__importance">5 кг</b>
+            <p class="demo-cat__description">снижение веса</p>
+          </li>
+          <li class="demo-cat__item">
+            <b class="demo-cat__importance">60 дней</b>
+            <p class="demo-cat__description">затрачено времени</p>
+          </li>
+        </ul>
+        <p class="demo-cat__expenses">Затраты на питание:
+          <span class="demo-cat__cost">15000 руб.</span>
+        </p>
+      </div>
+
+      <div class="demo-slider">
+        <div class="demo-slider__images slider-images">
+          <div class="slider-cat slider-cat--before">
+            <img class="slider-cat__image slider-cat__image--before" src="img/slider_cat-fat.png" width="280" height="232" alt="кот до курса cat-energy.">
+          </div>
+          <div class="slider-cat slider-cat--after visually-hidden">
+            <img class="slider-cat__image slider-cat__image--before" src="img/slider_cat-skinny.png" width="243" height="232" alt="кот после курса cat-energy.">
+          </div>
+        </div>
+
+        <div class="demo-slider__controls control">
+          <button class="control__button control__button--before" type="button">Было</button>
+          <div class="control__scale">
+            <div class="control__bar">
+              <button class="control__range">
+                <span class="visually-hidden">Кнопка слайдера</span>
+              </button>
+            </div>
+          </div>
+          <button class="control__button control__button--after" type="button">Стало</button>
+        </div>
+      </div>
+    </section>
+  </article>
+</main>
+
+<footer class="page__footer footer">
+  <section class="footer__contacts">
+    <h2 class="visually-hidden">Контакты</h2>
+    <div class="contacts container">
+      <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
+      <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    </div>
+
+    <div class="footer__map map">
+      <img class="map__image" src="img/footer_location.png" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+    </div>
+
+    <nav class="footer-nav container">
+      <div class="local-logo">
+        <a class="local-logo__link" href="#">
+          <img class="local-logo__image" src="img/svg/logo-cat-text@1x.svg" width="128" height="24" alt="Логотип Кэт-энерджи.">
+        </a>
+      </div>
+
+      <div class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="https://vk.com/htmlacademy/">
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
+          <li class="social__item">
+            <a class="social__link" href="https://www.instagram.com/htmlacademy/">
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          <li class="social__item">
+            <a class="social__link" href="https://www.facebook.com/htmlacademy/">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-logo">
+        <a class="footer-logo__academy" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">Html Academy
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="27" height="34">
+            <path fill="#666666"
+                  d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+          </svg>
+        </a>
+      </div>
+    </nav>
+  </section>
+
+</footer>
+</body>
 </html>
