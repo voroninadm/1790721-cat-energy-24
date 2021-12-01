@@ -1,0 +1,51 @@
+.program {
+  background-color: $color__grey;
+}
+
+.program__title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+
+  &::before {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    content: "";
+    background-color: $color__green;
+  }
+}
+
+.program__title--slim::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 36px;
+  height: 50px;
+  background-image: url("../../img/svg/icon_cat-slim.svg");
+  content: "";
+}
+
+.program__title--fat::after {
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  display: block;
+  width: 67px;
+  height: 28px;
+  background-image: url("../../img/svg/icon_cat-pro.svg");
+  content: "";
+}
+
+.program__description {
+  color: $color__dark-grey;
+}
+
+.program__link {
+  text-transform: uppercase;
+
+  @include link($color__black);
+}

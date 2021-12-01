@@ -1,0 +1,52 @@
+
+.demo-slider__controls {
+  position: relative;
+  display: flex;
+  width: 210px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.control__button {
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  line-height: 40px;
+  cursor: pointer;
+  width: 49px;
+}
+
+.range-scale{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.control__bar {
+  width: 86px;
+  height: 14px;
+  background-color: white;
+  border: 1px solid #CDCDCD;
+  border-radius: 6px;
+}
+
+.control__range {
+  position: relative;
+  top: -7px;
+  left: 4px;
+  width: 36px;
+  height: 6px;
+  border: none;
+  border-radius: 6px;
+  background-color: #68B738;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.control__range--active {
+  left: 5%;
+  transform: translateX(38px);
+
+}

@@ -1,0 +1,100 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__section {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__group {
+  border: none;
+
+  @include reset-list();
+}
+
+.form-group__list {
+  @include reset-list();
+}
+
+.form-group__item {
+  display: flex;
+}
+
+.form-group__label {
+  text-transform: uppercase;
+}
+
+.form-group__label--radio {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: -40px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    content: "";
+    border: 1px solid $color__light-grey;
+    border-radius: 50%;
+    background-color: $color__white;
+  }
+
+  &::after {
+    position: absolute;
+    top: 10px;
+    left: -30px;
+    display: none;
+    width: 13px;
+    height: 13px;
+    content: "";
+    border-radius: 50%;
+    background-color: $color__green;
+  }
+}
+
+.form-group__checkbox:checked + label::after {
+  display: block;
+}
+
+.form-group__label--checkbox {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: -40px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    content: "";
+    border: 1px solid $color__light-grey;
+    background-color: $color__white;
+  }
+
+  &::after {
+    position: absolute;
+    top: 10px;
+    left: -32px;
+    display: none;
+    width: 18px;
+    height: 14px;
+    content: "";
+    background-image: url("../../img/svg/form_ok.svg");
+  }
+}
+
+.form-group__radio:checked + label::after {
+  display: block;
+}
+
+.form-group__input {
+  width: 100%;
+}
+
+.form input,
+.form textarea {
+  text-transform: uppercase;
+}

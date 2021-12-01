@@ -1,0 +1,28 @@
+.demo-cat__title {
+  color: $color__black;
+}
+
+.demo-cat__description {
+  color: $color__dark-grey;
+}
+
+.demo-cat__list {
+  display: flex;
+  justify-content: space-between;
+
+  @include reset-list();
+}
+
+.demo-cat__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.demo-cat__importance {
+  position: relative;
+}
+
+.demo-cat__expenses {
+  text-align: center;
+}
