@@ -18,7 +18,7 @@
   width: 49px;
 }
 
-.range-scale{
+.range-scale {
   display: flex;
   align-items: center;
   position: relative;
@@ -27,8 +27,8 @@
 .control__bar {
   width: 86px;
   height: 14px;
-  background-color: white;
-  border: 1px solid #CDCDCD;
+  background-color: $color__white;
+  border: 1px solid $color__light-grey;
   border-radius: 6px;
 }
 
@@ -40,7 +40,7 @@
   height: 6px;
   border: none;
   border-radius: 6px;
-  background-color: #68B738;
+  background-color: $color__green;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
 }
@@ -48,5 +48,4 @@
 .control__range--active {
   left: 5%;
   transform: translateX(38px);
-
 }
