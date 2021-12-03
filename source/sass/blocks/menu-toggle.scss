@@ -31,6 +31,12 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
 .menu-toggle--active {
   border-color: transparent;
 

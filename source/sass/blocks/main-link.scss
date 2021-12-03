@@ -3,14 +3,14 @@
   justify-content: center;
   align-items: center;
   background-color: $color__green;
-  width: 100%;
   text-transform: uppercase;
   border: none;
 
   @include link(white);
-
-  &--discreet {
-    background-color: $color__grey;
-    color: $color__dark-grey;
-  }
 }
+
+.main-link--discreet {
+  background-color: $color__grey;
+  color: $color__dark-grey;
+}
+

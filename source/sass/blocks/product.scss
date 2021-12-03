@@ -1,7 +1,3 @@
-.product-block {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
 
 .product__button {
   grid-column: 1 / -1;
@@ -24,14 +20,3 @@
   @include reset-list();
 }
 
-.product-block--more {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.product-block__title {
-  text-transform: uppercase;
-}

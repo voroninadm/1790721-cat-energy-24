@@ -1,5 +1,4 @@
-
-.demo-slider__controls {
+.control {
   position: relative;
   display: flex;
   width: 210px;
@@ -16,12 +15,6 @@
   line-height: 40px;
   cursor: pointer;
   width: 49px;
-}
-
-.range-scale {
-  display: flex;
-  align-items: center;
-  position: relative;
 }
 
 .control__bar {
