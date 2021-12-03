@@ -52,13 +52,14 @@
 
 @media (min-width: $tablet_width) and (max-width: $desktop-width) {
   .program__title::before {
-/*    width: 200px;
+    /*width: 200px;
     height: 200px;*/
     top: 50px;
     left: 120%;
   }
 }
-@media (min-width: $tablet_width) and (max-width: $desktop-width){
+
+@media (min-width: $tablet_width) and (max-width: $desktop-width) {
   .program__title--slim::after,
   .program__title--fat::after {
     top: 50px;
