@@ -1,0 +1,11 @@
+
+@mixin reset-list() {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@mixin link($link-color) {
+  text-decoration: none;
+  color: $link-color;
+}

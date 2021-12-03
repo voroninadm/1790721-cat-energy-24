@@ -1,0 +1,63 @@
+.workflow__list {
+  display: grid;
+  counter-reset: li;
+
+  @include reset-list();
+}
+
+@media (min-width: $tablet_width) and (max-width: $desktop-width) {
+  .workflow__list {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 37px;
+    column-gap: 23%;
+  }
+}
+
+@media (min-width: $tablet_width) and (max-width: $desktop-width) {
+  .workflow__list {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 37px;
+    column-gap: 23%;
+  }
+}
+
+.workflow__item {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  &::before {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    content: "";
+    background-color: $color__green;
+  }
+
+  &::after {
+    position: absolute;
+    left: 30px;
+    top: 0;
+    counter-increment: li;
+    content: counter(li);
+    font-weight: inherit;
+
+    color: #f2f2f2;
+    z-index: -1;
+    font-size: 16px;
+
+    display: flex;
+    width: 150px;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (min-width: $tablet_width) and (max-width: $desktop-width) {
+  .workflow__item {
+    flex-direction: column;
+    height: 280px;
+  }
+}

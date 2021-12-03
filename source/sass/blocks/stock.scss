@@ -1,0 +1,19 @@
+.stock {
+  position: relative;
+  color: $color__white;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/decoration/catalog_cat-on-bag.jpg");
+  background-repeat: no-repeat;
+  background-color: #29530f;
+  background-position: 50% 0;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 78px;
+    height: 80px;
+    content: "";
+    background: url("../img/svg/icon_gift.svg") 50% 50% no-repeat;
+  }
+}

@@ -1,0 +1,21 @@
+
+.product__button {
+  grid-column: 1 / -1;
+}
+
+.product__title {
+  text-transform: uppercase;
+}
+
+.product__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product__list {
+  display: flex;
+  flex-direction: column;
+
+  @include reset-list();
+}
