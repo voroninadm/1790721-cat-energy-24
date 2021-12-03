@@ -15,13 +15,6 @@
   }
 }
 
-.promo-outer {
-  background-image: linear-gradient(to top, #ffffff 150px, transparent 150px), linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/header_happy-cat.jpg");
-  background-repeat: no-repeat;
-  background-color: #29530f;
-  background-position: 50% 0;
-}
-
 @media (min-width: $tablet_width) and (max-width: $desktop_width) {
   .promo-outer {
     background-image: none;
