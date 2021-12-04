@@ -17,18 +17,19 @@
 @media (min-width: $tablet_width) {
   .header-nav__list {
     position: static;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 35px;
-    margin-left: auto;
-    width: 57.3%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    row-gap: 10px;
+    width: 100%;
     opacity: 1;
   }
 }
 
 .header-nav__link {
   display: block;
-  width: min-content;
+  width: max-content;
   color: $color__black;
   text-transform: uppercase;
   text-decoration: none;
