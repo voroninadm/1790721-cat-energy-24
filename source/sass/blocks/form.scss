@@ -1,6 +1,7 @@
 .form {
   display: flex;
   flex-direction: column;
+  padding-bottom: 20px;
 }
 
 .form__section {
@@ -10,12 +11,48 @@
 
 .form__group {
   border: none;
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+
+.form__group--purpose {
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__group--purpose {
+    border: 1px solid #d9d9d9;
+  }
+}
+
+.form-group__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
 
   @include reset-list();
 }
 
-.form-group__list {
-  @include reset-list();
+.form-group__list--cat-info {
+  row-gap: 20px;
+}
+
+.form-group__list--add {
+  display: grid;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .form-group__list--add {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-group__list--add {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .form-group__item {
@@ -97,4 +134,23 @@
 .form input,
 .form textarea {
   text-transform: uppercase;
+}
+
+.form__submit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: $tablet-width) {
+  .form__submit {
+    flex-direction: row;
+  }
+
+  .form__span {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
 }

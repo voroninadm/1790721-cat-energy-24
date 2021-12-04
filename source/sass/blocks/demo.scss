@@ -2,3 +2,15 @@
   background-color: $color__grey;
   width: 100%;
 }
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .demo {
+    background-image: linear-gradient(to bottom, #ffffff 150px, transparent 150px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .demo {
+    background-image: linear-gradient(to bottom, #ffffff 70px, transparent 70px);
+  }
+}

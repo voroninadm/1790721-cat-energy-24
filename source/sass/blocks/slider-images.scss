@@ -6,6 +6,7 @@
   display: flex;
   justify-content: center;
 }
+
 @media (min-width: $tablet-width) {
   .slider-images__image--fat {
     display: none;
@@ -17,4 +18,3 @@
     display: none;
   }
 }
-

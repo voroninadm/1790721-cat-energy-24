@@ -1,21 +1,22 @@
 .social {
   display: flex;
   justify-content: center;
+
 }
 
 .social__list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  row-gap: 10px;
   width: 130px;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: center;
 
   @include reset-list();
 }
 
 .social__item {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }

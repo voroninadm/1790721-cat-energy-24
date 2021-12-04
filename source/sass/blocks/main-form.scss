@@ -3,6 +3,18 @@
   flex-direction: column;
 }
 
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .main-form {
+    width: 82%;
+    margin: 0 auto;
+  }
+}
+
+.main-form__title {
+  margin-bottom: 37px;
+}
+
 .main-form__description {
+  margin-bottom: 37px;
   text-transform: uppercase;
 }

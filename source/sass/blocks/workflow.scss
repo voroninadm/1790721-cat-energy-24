@@ -1,11 +1,12 @@
 .workflow__list {
   display: grid;
   counter-reset: li;
+  row-gap: 20px;
 
   @include reset-list();
 }
 
-@media (min-width: $tablet_width) and (max-width: $desktop-width) {
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .workflow__list {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 37px;
@@ -13,7 +14,15 @@
   }
 }
 
-@media (min-width: $tablet_width) and (max-width: $desktop-width) {
+@media (min-width: $desktop-width) {
+  .workflow__list {
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 15px;
+    column-gap: 20px;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .workflow__list {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 37px;
@@ -55,7 +64,7 @@
   }
 }
 
-@media (min-width: $tablet_width) and (max-width: $desktop-width) {
+@media (min-width: $tablet-width) {
   .workflow__item {
     flex-direction: column;
     height: 280px;
