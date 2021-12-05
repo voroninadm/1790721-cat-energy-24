@@ -1,0 +1,17 @@
+.additives__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $desktop-width) {
+  .additives__inner {
+   width: 70%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additives__outer {
+    display: flex;
+    column-gap: 4%;
+  }
+}

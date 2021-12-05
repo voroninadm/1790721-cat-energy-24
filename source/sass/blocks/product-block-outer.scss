@@ -1,4 +1,6 @@
-.product-block-outer {
-  border-bottom: 1px solid #EBEBEB;
-  border-top: 1px solid #EBEBEB;
+@media (max-width: $tablet-width) {
+  .product-block-outer {
+    border-bottom: 1px solid #ebebeb;
+    border-top: 1px solid #ebebeb;
+  }
 }

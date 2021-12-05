@@ -1,7 +1,14 @@
 .product-block {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  padding-bottom: 20px;
+}
 
+@media (max-width: $tablet-width) {
+  .product-block {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -9,6 +16,7 @@
     grid-template-columns: 1fr;
     height: 430px;
     background-color: $color__grey;
+    padding: 0 36px 20px 36px;
   }
 }
 
@@ -23,8 +31,18 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: $color__white;
+  border: 2px solid #F2F2F2;
 }
 
+@media (min-width: $tablet-width) {
+  .product-block--more {
+    border: 2px solid $color__grey;
+  }
+}
+
+
+.product-block--more
 .product-block__title {
   text-transform: uppercase;
 }
