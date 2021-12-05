@@ -1,0 +1,28 @@
+.additive {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.additive__list {
+  @include reset-list();
+}
+
+@media (min-width: $tablet-width) {
+  .additive__list {
+    width: 29.3%;
+    justify-content: space-between;
+  }
+}
+
+.additive__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .additive__item {
+
+  }
+}
+
