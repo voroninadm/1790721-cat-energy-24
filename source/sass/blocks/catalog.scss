@@ -1,0 +1,9 @@
+.catalog__title {
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .catalog__title {
+    padding: 0 30px;
+  }
+}

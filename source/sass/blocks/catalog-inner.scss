@@ -1,4 +1,11 @@
 .catalog-inner {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .catalog-inner {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 7.8%;
+    row-gap: 141px;
+  }
 }

@@ -1,3 +1,8 @@
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .product {
+    padding: 34px 36px 39px 36px;
+  }
+}
 
 .product__button {
   grid-column: 1 / -1;
@@ -7,10 +12,22 @@
   text-transform: uppercase;
 }
 
+@media (min-width: $tablet-width) {
+  .product__title {
+    text-align: center;
+  }
+}
+
 .product__item {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .product__item {
+    border-bottom: 1px solid $color__light-grey;
+  }
 }
 
 .product__list {

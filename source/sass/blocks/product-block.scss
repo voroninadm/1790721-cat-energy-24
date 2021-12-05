@@ -1,6 +1,15 @@
 .product-block {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+
+}
+
+@media (min-width: $tablet-width) {
+  .product-block {
+    grid-template-columns: 1fr;
+    height: 430px;
+    background-color: $color__grey;
+  }
 }
 
 .product-block__image {
@@ -19,3 +28,4 @@
 .product-block__title {
   text-transform: uppercase;
 }
+
