@@ -9,10 +9,17 @@
   flex-direction: column;
 }
 
+@media (min-width: $desktop-width) {
+  .form__section {
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 20%;
+  }
+}
+
 .form__group {
   border: none;
-  padding-bottom: 25px;
-  padding-top: 25px;
+  padding: 25px 0;
 }
 
 .form__group--purpose {
@@ -27,6 +34,7 @@
   }
 }
 
+/*---form-group--list---*/
 .form-group__list {
   display: flex;
   flex-direction: column;
@@ -34,6 +42,7 @@
 
   @include reset-list();
 }
+
 
 .form-group__list--cat-info {
   row-gap: 20px;
@@ -55,8 +64,24 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .form-group__list--master {
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 20%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__group--purpose,
+  .form__group--cat-info {
+    width: 100%;
+  }
+}
+
 .form-group__item {
   display: flex;
+  flex-grow: 1;
 }
 
 .form-group__label {
@@ -128,6 +153,12 @@
 }
 
 .form-group__input {
+  justify-content: flex-end;
+  flex: 1 1 auto;
+}
+
+.form-group__input--comment {
+  padding: 25px 0;
   width: 100%;
 }
 
@@ -147,10 +178,27 @@
   .form__submit {
     flex-direction: row;
   }
+}
 
+/*---form__span---*/
+@media (min-width: $tablet-width) {
   .form__span {
     width: 90%;
     display: flex;
     justify-content: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form__span {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__span {
+    justify-content: flex-start;
   }
 }

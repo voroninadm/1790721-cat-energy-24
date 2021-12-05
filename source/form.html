@@ -85,7 +85,7 @@
 
       <fieldset class="form__group form__group--master">
         <legend class="form-group__legend">Контактные данные (владельца кота)</legend>
-        <ul class="form-group__list">
+        <ul class="form-group__list form-group__list--master">
           <li class="form-group__item">
             <label class="form-group__label" for="person__email">E-mail:<sup>*</sup></label>
             <input class="form-group__input" type="email" name="person__email" id="person__email" placeholder="kuklachev@gmail.com" required>
@@ -100,7 +100,7 @@
       <fieldset class="form__group form__group--comment">
         <legend class="form-group__legend">Комментарий</legend>
         <label class="visually-hidden" for="person-comment">Расскажите обо всех повАдках кота</label>
-        <textarea class="form-group__input" name="person-comment" id="person-comment" placeholder="Расскажите обо всех повАдках кота"></textarea>
+        <textarea class="form-group__input form-group__input--comment" name="person-comment" id="person-comment" placeholder="Расскажите обо всех повАдках кота"></textarea>
       </fieldset>
 
       <fieldset class="form__group form__group--add">
@@ -126,7 +126,7 @@
       </fieldset>
 
       <div class="form__submit">
-        <button class="main-link" type="submit">Отправить заявку</button>
+        <button class="main-link prc" type="submit">Отправить заявку</button>
         <span class="form__span"><sup>*</sup> &mdash; Обязательные поля</span>
       </div>
 
