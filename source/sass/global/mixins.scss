@@ -9,3 +9,22 @@
   text-decoration: none;
   color: $link-color;
 }
+
+/*adaptive font on px*/
+@mixin adaptive-font($mobile, $pc) {
+  $desktop-width: 1300;
+  $addSize: $pc - $mobile;
+  $maxWidth: $desktop-width - 320;
+
+  font-size: calc(#{$mobile + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
+@mixin line-height($mobileFont, $mobileLh, $pcFont, $pcLh) {
+  @media (max-width: $tablet-width) {
+    line-height: calc(#{$mobileLh} / #{$mobileFont});
+  }
+
+  @media (min-width: $tablet-width) {
+    line-height: calc(#{$pcLh} / #{$pcFont});
+  }
+}

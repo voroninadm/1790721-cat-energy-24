@@ -28,7 +28,7 @@
     background-image: url("../img/decoration/catalog_cat-on-bag@2x.jpg");
     background-position: 50% 50%;
     background-size: contain;
-    text-align:right;
+    text-align: right;
 
     &::before {
       top: 50%;
@@ -41,6 +41,12 @@
 @media (min-width: $desktop-width) {
   .stock {
     width: 20%;
+    justify-self: center;
+    align-self: center;
+    background-position: 50% 50%;
+    background-size: auto;
+    text-align: right;
+
   }
 }
 

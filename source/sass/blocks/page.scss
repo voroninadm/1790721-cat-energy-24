@@ -6,11 +6,18 @@
   margin: 0;
   padding: 0;
   font-family: "Oswald", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
+/*  font-size: 14px;*/
   font-weight: 400;
 }
 
 .page__main {
   flex: 1;
 }
+
+/*
+@media (min-width: $tablet-width) {
+  .page__body {
+    font-size: 16px;
+  }
+}
+*/
