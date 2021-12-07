@@ -25,6 +25,10 @@
 
 .contacts__title {
   width: 50%;
+  font-weight: 400;
+
+  @include line-height(16,20,20,26);
+  @include font-size(16,20);
 }
 
 @media (min-width: $tablet-width) {
@@ -33,6 +37,10 @@
 
 .contacts__address {
   width: 50%;
+  font-family: $font__standard;
+
+  @include line-height(14,20,16,20);
+  @include font-size(14,16);
 }
 
 

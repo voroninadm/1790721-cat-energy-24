@@ -46,7 +46,12 @@
     background-position: 50% 50%;
     background-size: auto;
     text-align: right;
-
   }
+}
+
+.stock__description {
+  font-family: $font__standard;
+  line-height: 1.25;
+  font-size: 1rem;
 }
 

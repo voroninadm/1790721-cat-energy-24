@@ -30,5 +30,13 @@
   color: $color__black;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: fsize(20);
+  font-size: calc(18 / 16) + rem;
+  line-height: calc(24 / 18);
+}
+
+@media (min-width: $desktop-width) {
+  .header-nav__link {
+    font-size: calc(20 / 16) + rem;
+    line-height: calc(29.64 / 20);
+  }
 }

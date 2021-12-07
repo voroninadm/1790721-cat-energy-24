@@ -25,8 +25,9 @@
   margin: 0;
   align-items: center;
   text-transform: uppercase;
+  font-weight: 400;
 
-  @include adaptive-font(24,36);
+  @include font-size(24,36);
   @include line-height(24,37,36,36);
 
 
@@ -104,13 +105,15 @@
 .program__description {
   color: $color__dark-grey;
   font-family: $font__standard;
-  @include adaptive-font(14,16);
+
+  @include font-size(14,16);
   @include line-height(14,18,16,24);
 }
 
 .program__link {
   text-transform: uppercase;
-  @include adaptive-font(14,16);
+
+  @include font-size(14,16);
   @include line-height(16,16,20,29.6);
   @include link($color__black);
 }

@@ -1,20 +1,20 @@
-.slider-images {
+.demo-slider {
   position: relative;
 }
 
-.slider-images__cat {
+.demo-slider__cat {
   display: flex;
   justify-content: center;
 }
 
 @media (min-width: $tablet-width) {
-  .slider-images__image--fat {
+  .cat-fat {
     display: none;
   }
 }
 
 @media (max-width: $tablet-width) {
-  .slider-images__image--static {
+  .cats-static {
     display: none;
   }
 }

@@ -15,3 +15,10 @@
     column-gap: 4%;
   }
 }
+
+.additives__title {
+  font-weight: 400;
+
+  @include line-height(24,24,36,36);
+  @include font-size(24,36);
+}

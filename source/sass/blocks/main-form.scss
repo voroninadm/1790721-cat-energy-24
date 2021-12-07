@@ -12,9 +12,16 @@
 
 .main-form__title {
   margin-bottom: 37px;
+  font-weight: 400;
+
+  @include line-height(36,36,60,60);
+  @include font-size(36,60);
 }
 
 .main-form__description {
   margin-bottom: 37px;
   text-transform: uppercase;
+
+  @include line-height(14,18,20,30);
+  @include font-size(14,20);
 }

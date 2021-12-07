@@ -32,5 +32,19 @@
 .additive__item {
   display: flex;
   justify-content: space-between;
+  font-weight: 400;
+
+  @include line-height(14,14,16,20);
+  @include font-size(14,16);
 }
 
+.additive__title {
+  font-weight: 400;
+
+  @include line-height(16,16,20,20);
+  @include font-size(16,20);
+}
+
+.additive_count {
+  font-weight: 400;
+}
