@@ -1,8 +1,7 @@
-@media (min-width: $tablet-width) {
+@media (max-width: $tablet-width) {
   .footer-inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding-top: 39px;
+    padding-bottom: 22px;
   }
 }
 

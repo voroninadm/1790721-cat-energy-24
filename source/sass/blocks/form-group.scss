@@ -31,17 +31,20 @@
 
 .form-group__list--add {
   display: grid;
+
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .form-group__list--add {
     grid-template-columns: repeat(2, 1fr);
+    column-gap: 16%;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form-group__list--add {
     grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
   }
 }
 
@@ -97,6 +100,11 @@
     background-color: $color__green;
   }
 }
+
+.form-group__item--checkbox {
+  padding-left: 37px;
+}
+
 
 .form-group__checkbox:checked + label::after {
   display: block;

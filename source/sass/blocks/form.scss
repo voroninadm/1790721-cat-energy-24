@@ -41,6 +41,13 @@
   }
 }
 
+.form__span {
+  font-family: $font__standard;
+
+  @include line-height(14,16,16,16);
+  @include font-size(14,16);
+}
+
 @media (min-width: $tablet-width) {
   .form__span {
     width: 110%;
@@ -53,5 +60,6 @@
   .form__span {
     justify-content: flex-start;
     padding-left: 50px;
+
   }
 }

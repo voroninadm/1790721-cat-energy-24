@@ -9,11 +9,15 @@
   padding-top: 13px;
   padding-bottom: 13px;
 
-  @include font-size(14,20);
-  @include line-height(14,18,20,20);
+  @include font-size(16,20);
+  @include line-height(16,20,20,20);
   @include link(white);
 }
 
+.main-link--smaller-text {
+  @include font-size(14,20);
+  @include line-height(14,18,20,20);
+}
 
 .main-link--discreet {
   background-color: $color__grey;
