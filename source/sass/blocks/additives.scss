@@ -1,3 +1,28 @@
+.additives {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    z-index: -1;
+    display: block;
+    padding: 0;
+    width: 90%;
+    height: 2px;
+    content: "";
+    background-color: $color__green;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .additives::after {
+    top: 23px;
+    right: 0;
+    width: 100vw;
+  }
+}
+
 .additives__inner {
   display: flex;
   flex-direction: column;
@@ -17,8 +42,17 @@
 }
 
 .additives__title {
+  width: max-content;
+  padding-right: 20px;
   font-weight: 400;
+  background-color: $color__white;
 
   @include line-height(24,24,36,36);
   @include font-size(24,36);
+}
+
+@media (min-width: $tablet-width) and(max-width: $desktop-width) {
+  .additives__title {
+    padding-left: 20px;
+  }
 }
