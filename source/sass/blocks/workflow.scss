@@ -50,7 +50,6 @@
   &::before {
     position: absolute;
     display: block;
-    width: 60px;
     height: 60px;
     content: "";
     background-color: $color__green;
@@ -79,13 +78,14 @@
   .workflow__item {
     display: block;
     box-sizing: border-box;
-    padding-left: 25%;
+    padding-left: 80px;
     padding-bottom: 20px;
     min-height: 60px;
 
     &::before {
       top: 0;
       left: 0;
+      width: 60px;
     }
   }
 }
