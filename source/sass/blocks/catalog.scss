@@ -3,7 +3,7 @@
   font-weight: 400;
 
   @include line-height(36,36,60,60);
-  @include  font-size(36,60);
+  @include font-size(36,60);
 }
 
 @media (max-width: $tablet-width) {

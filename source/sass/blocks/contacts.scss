@@ -31,10 +31,6 @@
   @include font-size(16,20);
 }
 
-@media (min-width: $tablet-width) {
-
-}
-
 .contacts__address {
   width: 50%;
   font-family: $font__standard;

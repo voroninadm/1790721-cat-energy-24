@@ -12,7 +12,6 @@
 
 /*adaptive for mobile and other width*/
 @mixin font-size($mobile, $pc) {
-
   @media (max-width: $tablet-width) {
     font-size: ($mobile / $font-default-size) +rem;
   }
