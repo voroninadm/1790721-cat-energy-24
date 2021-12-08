@@ -32,7 +32,7 @@
   align-items: center;
   text-align: center;
   background-color: $color__white;
-  border: 2px solid #F2F2F2;
+  border: 2px solid $color__grey;
 }
 
 @media (min-width: $tablet-width) {
@@ -42,7 +42,7 @@
 }
 
 
-.product-block--more
+.product-block--more,
 .product-block__title {
   text-transform: uppercase;
 }
