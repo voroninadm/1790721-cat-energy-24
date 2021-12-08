@@ -65,11 +65,9 @@
     counter-increment: li;
     content: counter(li);
     font-weight: inherit;
-
     color: #f2f2f2;
     z-index: -1;
     font-size: 16px;
-
     display: flex;
     width: 150px;
     padding: 0;
@@ -105,7 +103,6 @@
 }
 
 //block background-images
-
 .workflow__item--health::before {
   background-image: url("../img/svg/icon_leaf.svg");
 }
@@ -121,4 +118,3 @@
 .workflow__item--profit::before {
   background-image: url("../img/svg/icon_alarm.svg");
 }
-
