@@ -1,6 +1,6 @@
 .stock {
   position: relative;
-  padding-top: 130px;
+  padding-top: 110px;
   padding-bottom: 140px;
   color: $color__white;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/decoration/catalog_cat-on-bag.jpg");
@@ -27,7 +27,7 @@
     background-color: transparent;
     background-image: url("../img/decoration/catalog_cat-on-bag@2x.jpg");
     background-position: 50% 50%;
-    background-size: contain;
+    background-size: cover;
     text-align: right;
 
     &::before {
@@ -40,11 +40,12 @@
 
 @media (min-width: $desktop-width) {
   .stock {
-    width: 20%;
+    grid-column: 4 / 5;
+    width: 100%;
     justify-self: center;
-    align-self: center;
+    padding-top: 40px;
     background-position: 50% 50%;
-    background-size: auto;
+    background-size: contain;
     text-align: right;
   }
 }

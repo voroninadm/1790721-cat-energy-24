@@ -5,17 +5,10 @@
   column-gap: 10%;
 }
 
-/*Разобраться при стилизации
-  @media (min-width: $tablet-width) {
-  .contacts {
-    gap: 38.5%;
-  }
-}*/
-
 @media (min-width: $desktop-width) {
   .contacts {
     position: absolute;
-    left: 13.2%;
+    top: 50px;
     width: 565px;
     box-sizing: border-box;
     padding: 80px 56px;

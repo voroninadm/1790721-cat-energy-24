@@ -8,15 +8,13 @@
 }
 
 .form__section {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  column-gap: 80px;
 }
 
 @media (min-width: $desktop-width) {
   .form__section {
-    flex-direction: row;
-    justify-content: space-between;
-    column-gap: 20%;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 

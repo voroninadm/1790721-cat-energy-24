@@ -1,20 +1,21 @@
 .additive {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
+  display: grid;
+  border-bottom: 1px solid #ebebeb;
+  border-top: 1px solid #ebebeb;
+  padding-bottom: 20px;
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
   .additive {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid $color__light-grey;
   }
 }
 
 @media (min-width: $desktop-width) {
   .additive {
-    width: 270%;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -24,8 +25,8 @@
 
 @media (min-width: $tablet-width) {
   .additive__list {
-    width: 29.3%;
-    justify-content: space-between;
+    display: flex;
+    justify-content: flex-end;
   }
 }
 
@@ -33,6 +34,7 @@
   display: flex;
   justify-content: space-between;
   font-weight: 400;
+  font-family: $font__standard;
 
   @include line-height(14,14,16,20);
   @include font-size(14,16);
@@ -47,4 +49,11 @@
 
 .additive_count {
   font-weight: 400;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .additive__link {
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+  }
 }

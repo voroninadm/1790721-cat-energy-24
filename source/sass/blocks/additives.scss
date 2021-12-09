@@ -1,43 +1,6 @@
-.additives {
-  position: relative;
-
-  &::after {
-    position: absolute;
-    top: 15px;
-    right: 0;
-    z-index: -1;
-    display: block;
-    padding: 0;
-    width: 100vw;
-    height: 2px;
-    content: "";
-    background-color: $color__green;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .additives::after {
-    top: 23px;
-    right: 0;
-    width: 100vw;
-  }
-}
-
-.additives__inner {
-  display: flex;
-  flex-direction: column;
-}
-
 @media (min-width: $desktop-width) {
-  .additives__inner {
-    width: 70%;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .additives__outer {
-    display: flex;
-    column-gap: 4%;
+  .additives {
+    grid-column: 1 / 4;
   }
 }
 
@@ -61,7 +24,6 @@
   .additives__title {
     position: relative;
     left: -30px;
-
     padding-left: 30px;
   }
 }

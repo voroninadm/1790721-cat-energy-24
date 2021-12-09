@@ -49,9 +49,9 @@
 
 @media (min-width: $desktop-width) {
   .form-group__list--master {
-    flex-direction: row;
-    justify-content: space-between;
-    column-gap: 20%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 80px;
   }
 }
 
