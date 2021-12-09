@@ -2,7 +2,6 @@
   position: relative;
 }
 
-.footer__map {
-  width: 320px;
-  margin: 0 auto;
+.footer__map iframe {
+  display: block;
 }

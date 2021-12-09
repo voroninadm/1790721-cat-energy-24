@@ -1,8 +1,9 @@
 .health-programs {
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  row-gap: 25px;
   flex-wrap: wrap;
+  padding-bottom: 13px;
 }
 
 @media (min-width: $desktop-width) {

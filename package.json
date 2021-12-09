@@ -10,6 +10,7 @@
     "gulp-dart-sass": "^1.0.2",
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "9.0.1",
+    "pixel-glass": "^1.0.13",
     "postcss": "8.3.11",
     "stylelint": "13.13.1",
     "stylelint-config-htmlacademy": "0.1.11"
