@@ -1,0 +1,15 @@
+@media (max-width: $tablet-width) {
+  .footer-inner {
+    padding-top: 39px;
+    padding-bottom: 22px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .footer-inner {
+    display: flex;
+    height: 148px;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

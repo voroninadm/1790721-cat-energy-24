@@ -1,3 +1,16 @@
+//Переделаю на css-переменные
+/*:root {
+  --color__green: #68b738;
+  --color__deep-green: #5eaa2f;
+  --color__white: #ffffff;
+  --color__black: #000000;
+  --color__light-black: #111111;
+  --color__grey: #f2f2f2;
+  --color__deep-grey: #eaeaea;
+  --color__dark-grey: #444444;
+  --color__light-grey: #cdcdcd;
+}*/
+
 //colors
 $color__green: #68b738;
 $color__deep-green: #5eaa2f;
@@ -11,8 +24,12 @@ $color__light-grey: #cdcdcd;
 
 //viewport width
 $tablet-width: 768px;
-$desktop-width: 1440px;
+$desktop-width: 1300px;
 
 //fonts
 $font__main: "Oswald", sans-serif;
 $font__standard: "Arial", sans-serif;
+
+//font-size default, copy on mixins.scss
+$font-mobi-size: 14;
+$font-default-size: 16;

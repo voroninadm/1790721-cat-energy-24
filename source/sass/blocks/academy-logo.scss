@@ -1,7 +1,11 @@
 .academy-logo {
   display: flex;
+  padding-top: 22px;
   align-items: center;
   justify-content: space-between;
   text-decoration: none;
   color: $color__dark-grey;
+  font-family: $font__standard;
+  font-size: 16px;
+  line-height: 18.4px;
 }

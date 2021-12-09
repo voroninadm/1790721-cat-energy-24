@@ -1,10 +1,14 @@
 .stock {
   position: relative;
+  padding-top: 110px;
+  padding-bottom: 140px;
   color: $color__white;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/decoration/catalog_cat-on-bag.jpg");
   background-repeat: no-repeat;
   background-color: #29530f;
-  background-position: 50% 0;
+  background-position: 50% 50%;
+  background-size: contain;
+  text-align: center;
 
   &::before {
     position: absolute;
@@ -16,4 +20,38 @@
     content: "";
     background: url("../img/svg/icon_gift.svg") 50% 50% no-repeat;
   }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .stock {
+    background-color: transparent;
+    background-image: url("../img/decoration/catalog_cat-on-bag@2x.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    text-align: right;
+
+    &::before {
+      top: 50%;
+      transform: translateY(-50%);
+      left: 10%;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .stock {
+    grid-column: 4 / 5;
+    width: 100%;
+    justify-self: center;
+    padding-top: 40px;
+    background-position: 50% 50%;
+    background-size: contain;
+    text-align: right;
+  }
+}
+
+.stock__description {
+  font-family: $font__standard;
+  line-height: 1.25;
+  font-size: 1rem;
 }

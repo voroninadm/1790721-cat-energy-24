@@ -1,12 +1,22 @@
 .main-link {
   display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
   background-color: $color__green;
   text-transform: uppercase;
   border: none;
+  padding-top: 13px;
+  padding-bottom: 13px;
 
+  @include font-size(16,20);
+  @include line-height(16,20,20,20);
   @include link(white);
+}
+
+.main-link--smaller-text {
+  @include font-size(14,20);
+  @include line-height(14,18,20,20);
 }
 
 .main-link--discreet {

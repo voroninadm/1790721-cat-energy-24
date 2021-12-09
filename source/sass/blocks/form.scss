@@ -1,100 +1,62 @@
 .form {
   display: flex;
   flex-direction: column;
+  padding-bottom: 20px;
+
+  @include line-height(16,18,20,29.64);
+  @include font-size(16,20);
 }
 
 .form__section {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  column-gap: 80px;
 }
 
-.form__group {
-  border: none;
-
-  @include reset-list();
-}
-
-.form-group__list {
-  @include reset-list();
-}
-
-.form-group__item {
-  display: flex;
-}
-
-.form-group__label {
-  text-transform: uppercase;
-}
-
-.form-group__label--radio {
-  position: relative;
-
-  &::before {
-    position: absolute;
-    top: 0;
-    left: -40px;
-    display: block;
-    width: 30px;
-    height: 30px;
-    content: "";
-    border: 1px solid $color__light-grey;
-    border-radius: 50%;
-    background-color: $color__white;
+@media (min-width: $desktop-width) {
+  .form__section {
+    grid-template-columns: repeat(2, 1fr);
   }
-
-  &::after {
-    position: absolute;
-    top: 10px;
-    left: -30px;
-    display: none;
-    width: 13px;
-    height: 13px;
-    content: "";
-    border-radius: 50%;
-    background-color: $color__green;
-  }
-}
-
-.form-group__checkbox:checked + label::after {
-  display: block;
-}
-
-.form-group__label--checkbox {
-  position: relative;
-
-  &::before {
-    position: absolute;
-    top: 0;
-    left: -40px;
-    display: block;
-    width: 30px;
-    height: 30px;
-    content: "";
-    border: 1px solid $color__light-grey;
-    background-color: $color__white;
-  }
-
-  &::after {
-    position: absolute;
-    top: 10px;
-    left: -32px;
-    display: none;
-    width: 18px;
-    height: 14px;
-    content: "";
-    background-image: url("../img/svg/form_ok.svg");
-  }
-}
-
-.form-group__radio:checked + label::after {
-  display: block;
-}
-
-.form-group__input {
-  width: 100%;
 }
 
 .form input,
 .form textarea {
   text-transform: uppercase;
+  font-family: $font__main;
+  font-size: 1rem;
+  line-height: 18px;
+}
+
+.form__submit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: $tablet-width) {
+  .form__submit {
+    flex-direction: row;
+  }
+}
+
+.form__span {
+  font-family: $font__standard;
+
+  @include line-height(14,16,16,16);
+  @include font-size(14,16);
+}
+
+@media (min-width: $tablet-width) {
+  .form__span {
+    width: 110%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__span {
+    justify-content: flex-start;
+    padding-left: 50px;
+  }
 }

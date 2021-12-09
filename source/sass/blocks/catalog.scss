@@ -1,0 +1,29 @@
+.catalog__title {
+  grid-column: 1 / -1;
+  padding: 0 20px;
+  font-weight: 400;
+
+  @include line-height(36,36,60,60);
+  @include font-size(36,60);
+}
+
+@media (max-width: $tablet-width) {
+  .catalog__title {
+    padding-top: 10px;
+    border-top: 1px solid #ebebeb;
+  }
+}
+
+/*
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .catalog__title {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__title {
+    padding: 0 40px;
+  }
+}
+*/

@@ -1,10 +1,18 @@
 
 .demo-cat__title {
   color: $color__black;
+  font-weight: 400;
+
+  @include line-height(36,40,60,60);
+  @include font-size(36,60);
 }
 
-.demo-cat__description {
+.demo-cat__subtitle {
   color: $color__dark-grey;
+  font-family: $font__standard;
+
+  @include line-height(14,18,16,24);
+  @include font-size(14,16);
 }
 
 .demo-cat__list {
@@ -28,6 +36,10 @@
 
 .demo-cat__item--wide {
   grid-column: 1 / -1;
+  text-transform: uppercase;
+
+  @include line-height(14,20,20,20);
+  @include font-size(14,20);
 }
 
 @media (min-width: $tablet_width) and (max-width: $desktop-width) {
@@ -38,7 +50,19 @@
 
 .demo-cat__importance {
   position: relative;
+  font-weight: 400;
+
+  @include line-height(24,24,30,37);
+  @include font-size(24,30);
 }
+
+.demo-cat__description {
+  font-family: $font__standard;
+
+  @include line-height(12,12,14,14);
+  @include font-size(12,14);
+}
+
 
 .demo-cat__expenses {
   text-align: center;

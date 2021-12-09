@@ -21,6 +21,9 @@
   line-height: 40px;
   cursor: pointer;
   width: 49px;
+
+  @include line-height(16,20,20,29.64);
+  @include font-size(16,20);
 }
 
 .control__bar {
@@ -43,7 +46,7 @@
 
 .control__range {
   position: relative;
-  top: -7px;
+  top: -12px;
   left: 4px;
   width: 36px;
   height: 6px;
@@ -66,17 +69,17 @@
     border: 1px solid $color__light-grey;
     border-radius: 50%;
     filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
-  }
 
-  &::after {
-    position: absolute;
-    top: 13px;
-    left: 13px;
-    content: "";
-    width: 6px;
-    height: 6px;
-    background-color: $color__green;
-    border-radius: 50%;
+    &::after {
+      position: absolute;
+      top: 13px;
+      left: 13px;
+      content: "";
+      width: 6px;
+      height: 6px;
+      background-color: $color__green;
+      border-radius: 50%;
+    }
   }
 }
 

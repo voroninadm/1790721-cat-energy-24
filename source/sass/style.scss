@@ -1,11 +1,11 @@
 //global values
 @import "./global/variables.scss";
-@import "./global/styles-global.scss";
+@import "./global/visually-hidden.scss";
 @import "./global/mixins.scss";
+@import "./global/block-container.scss";
 
 //fonts
 @import "./global/fonts.scss";
-@import "./global/block-container.scss";
 
 //blocks
 @import "./blocks/page.scss";
@@ -16,21 +16,32 @@
 @import "./blocks/promo-outer.scss";
 @import "./blocks/promo.scss";
 @import "./blocks/main-link.scss";
+@import "./blocks/health-programs.scss";
 @import "./blocks/program.scss";
 @import "./blocks/workflow.scss";
 @import "./blocks/demo.scss";
+@import "./blocks/demo-inner.scss";
 @import "./blocks/demo-cat.scss";
-@import "./blocks/slider-images.scss";
-@import "./blocks/control";
+@import "./blocks/demo-slider.scss";
+@import "blocks/demo-slider";
+@import "./blocks/control.scss";
 @import "./blocks/footer.scss";
+@import "./blocks/contacts-outer.scss";
 @import "./blocks/contacts.scss";
 @import "./blocks/footer-nav.scss";
 @import "./blocks/footer-logo.scss";
+@import "./blocks/footer-inner.scss";
 @import "./blocks/social.scss";
-@import "blocks/academy-logo";
+@import "./blocks/academy-logo.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/catalog-inner.scss";
 @import "./blocks/product.scss";
+@import "./blocks/product-block-outer.scss";
 @import "./blocks/product-block.scss";
 @import "./blocks/additives.scss";
+@import "./blocks/addons.scss";
+@import "./blocks/additive.scss";
 @import "./blocks/stock.scss";
 @import "./blocks/main-form.scss";
 @import "./blocks/form.scss";
+@import "./blocks/form-group.scss";

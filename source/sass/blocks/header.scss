@@ -1,5 +1,8 @@
 .header {
+  position: relative;
   display: flex;
+  padding-top: 10px;
+  padding-bottom: 17px;
   justify-content: space-between;
   align-items: center;
   background-color: $color__white;

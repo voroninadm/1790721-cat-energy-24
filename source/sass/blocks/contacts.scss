@@ -2,4 +2,39 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  column-gap: 10%;
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    position: absolute;
+    top: 50px;
+    width: 565px;
+    box-sizing: border-box;
+    padding: 80px 56px;
+    background: $color__white;
+  }
+}
+
+.contacts__title {
+  width: 50%;
+  font-weight: 400;
+
+  @include line-height(16,20,20,26);
+  @include font-size(16,20);
+}
+
+.contacts__address {
+  width: 50%;
+  font-family: $font__standard;
+
+  @include line-height(14,20,16,20);
+  @include font-size(14,16);
+}
+
+
+@media (min-width: $tablet-width) {
+  .contacts__address {
+    text-align: right;
+  }
 }

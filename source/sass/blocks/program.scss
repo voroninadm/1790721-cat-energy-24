@@ -1,24 +1,40 @@
 .program {
   background-color: $color__grey;
+  height: 260px;
+  row-gap: 20px;
 }
 
-@media (min-width: $tablet_width) and (max-width: $desktop-width) {
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .program {
     padding-right: 350px;
+    height: 372px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program {
+    width: 570px;
+    height: 374px;
   }
 }
 
 .program__title {
   position: relative;
   display: flex;
-  padding-left: 60px;
+  padding-left: 28.5%;
+  margin: 0;
   align-items: center;
   text-transform: uppercase;
+  font-weight: 400;
+
+  @include font-size(24,36);
+  @include line-height(24,37,36,36);
+
 
   &::before {
     position: absolute;
-    top: 20%;
-    left: 0;
+    top: 0;
+    left: 8%;
     display: block;
     width: 50px;
     height: 50px;
@@ -30,7 +46,7 @@
 
 .program__title--slim::after {
   position: absolute;
-  top: 20%;
+  top: 0;
   left: 0;
   display: block;
   width: 36px;
@@ -50,29 +66,54 @@
   content: "";
 }
 
-@media (min-width: $tablet_width) and (max-width: $desktop-width) {
+@media (min-width: $desktop-width) {
+  .program__title {
+    padding-left: 90px;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .program__title::before {
     /*width: 200px;
     height: 200px;*/
-    top: 50px;
+    top: 20px;
+    left: 120%;
+  }
+
+  .program__title--slim::after,
+  .program__title--fat::after {
+    top: 20px;
     left: 120%;
   }
 }
 
-@media (min-width: $tablet_width) and (max-width: $desktop-width) {
+@media (min-width: $desktop-width) {
+  .program__title::before {
+    /*width: 200px;
+    height: 200px;*/
+    top: -20px;
+    left: 10px;
+  }
+
   .program__title--slim::after,
   .program__title--fat::after {
-    top: 50px;
-    left: 120%;
+    top: -20px;
+    left: 10px;
   }
 }
 
 .program__description {
   color: $color__dark-grey;
+  font-family: $font__standard;
+
+  @include font-size(14,16);
+  @include line-height(14,18,16,24);
 }
 
 .program__link {
   text-transform: uppercase;
 
+  @include font-size(14,16);
+  @include line-height(16,16,20,29.6);
   @include link($color__black);
 }

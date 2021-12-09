@@ -1,24 +1,29 @@
-.additives {
-  display: flex;
-  flex-direction: column;
+@media (min-width: $desktop-width) {
+  .additives {
+    grid-column: 1 / 4;
+  }
 }
 
-.additive__list {
-  @include reset-list();
+.additives__title {
+  width: max-content;
+  padding-right: 20px;
+  font-weight: 400;
+  background-color: $color__white;
+
+  @include line-height(24,24,36,36);
+  @include font-size(24,36);
 }
 
-.additive__item {
-  display: flex;
-  justify-content: space-between;
+@media (min-width: $tablet-width) and(max-width: $desktop-width) {
+  .additives__title {
+    padding-left: 20px;
+  }
 }
 
-/*
-
-  .additive_amount {
-  width: min-content;
+@media (min-width: $desktop-width) {
+  .additives__title {
+    position: relative;
+    left: -30px;
+    padding-left: 30px;
+  }
 }
-
-.additive_count {
-  width: min-content;
-}
-*/

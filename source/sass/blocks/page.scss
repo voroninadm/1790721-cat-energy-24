@@ -6,9 +6,19 @@
   margin: 0;
   padding: 0;
   font-family: "Oswald", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
   font-weight: 400;
+}
+
+@media (max-width: $tablet-width) {
+  .page__body {
+    font-size: $font_mobi-size;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page__body {
+    font-size: $font_default-size;
+  }
 }
 
 .page__main {

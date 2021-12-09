@@ -1,0 +1,32 @@
+.addons {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    z-index: -1;
+    display: block;
+    padding: 0;
+    width: 100vw;
+    height: 2px;
+    content: "";
+    background-color: $color__green;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .addons::after {
+    top: 23px;
+    right: 0;
+    width: 100vw;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .addons__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+  }
+}

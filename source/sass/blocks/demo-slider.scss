@@ -1,0 +1,20 @@
+.demo-slider {
+  position: relative;
+}
+
+.demo-slider__cat {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: $tablet-width) {
+  .cat-fat {
+    display: none;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .cats-static {
+    display: none;
+  }
+}
