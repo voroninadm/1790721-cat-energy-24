@@ -44,6 +44,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .program--slim {
+    padding: 77px 33px 12px 19px;
+  }
+}
+
 .program--fat {
   padding: 25px 33px 12px 19px;
 }
@@ -115,7 +121,7 @@
 
 @media (min-width: $desktop-width) {
   .program__title {
-    padding-left: 90px;
+    padding-left: 195px;
   }
 }
 
@@ -136,10 +142,10 @@
 
 @media (min-width: $desktop-width) {
   .program__title::before {
-    /*width: 200px;
-    height: 200px;*/
-    top: -20px;
-    left: 10px;
+    width: 100px;
+    height: 100px;
+    top: -29px;
+    left: 33px;
   }
 
   .program__title--slim::after,
@@ -162,6 +168,12 @@
 @media (min-width: $tablet-width) {
   .program__description {
     padding: 27px 282px 40px 33px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program__description {
+    padding: 75px 20px 15px 33px;
   }
 }
 

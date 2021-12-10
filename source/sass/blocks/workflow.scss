@@ -11,6 +11,13 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .workflow {
+    padding-top: 60px;
+    padding-bottom: 25px;
+  }
+}
+
 .workflow__title {
   padding: 0;
   margin: 0 0 42px 0;
@@ -46,7 +53,7 @@
   .workflow__list {
     grid-template-columns: repeat(4, 1fr);
     row-gap: 15px;
-    column-gap: 20px;
+    column-gap: 80px;
   }
 }
 
@@ -81,7 +88,6 @@
     height: 150px;
     padding: 0;
     margin: 0;
-
     counter-increment: li;
     content: counter(li);
     font-weight: inherit;
@@ -89,7 +95,6 @@
     font-family: $font__main;
     font-size: 280px;
     line-height: 17.5rem;
-
   }
 }
 
@@ -117,10 +122,33 @@
 @media (min-width: $tablet-width) {
   .workflow__item {
     flex-direction: column;
-    height: 280px;
+    min-height: 156px;
     padding: 113px 65px 10px 0;
+    width: 80%;
 
     &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-bottom: 20px;
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .workflow__item {
+    flex-direction: column;
+    min-height: 156px;
+    padding: 113px 65px 10px 0;
+    width: 100%;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-bottom: 20px;
       width: 80px;
       height: 80px;
     }

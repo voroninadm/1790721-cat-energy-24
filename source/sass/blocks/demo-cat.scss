@@ -3,6 +3,18 @@
   padding: 25px 0 26px 0;
 }
 
+@media (min-width: $desktop-width) {
+  .demo-cat {
+    box-sizing: border-box;
+    padding: 25px 0 26px 0;
+  }
+}
+
+.demo-cat {
+  box-sizing: border-box;
+  padding: 5px 0 26px 0;
+}
+
 .demo-cat__title {
   box-sizing: border-box;
   color: $color__black;
@@ -17,7 +29,12 @@
   .demo-cat__title {
     margin: 0 0 66px 0;
   }
+}
 
+@media (min-width: $desktop-width) {
+  .demo-cat__title {
+    margin: 0 0 147px 0;
+  }
 }
 
 .demo-cat__subtitle {
@@ -36,18 +53,51 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .demo-cat__subtitle {
+    width: 69%;
+    padding: 0 30px 69px 0;
+  }
+}
+
+@media (min-width: $tablet_width) {
+  .demo-cat__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .demo-cat__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    row-gap: 52px;
+  }
+}
+
 .demo-cat__list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 32px;
-  row-gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 0 16px 0;
 
   @include reset-list();
 }
 
-@media (min-width: $tablet_width) and (max-width: $desktop-width) {
+@media (min-width: $tablet_width) {
   .demo-cat__list {
-    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    width: 52%;
+  }
+}
+
+@media (min-width: $tablet_width) {
+  .demo-cat__list {
+    justify-content: space-between;
+    width: 58%;
   }
 }
 
@@ -66,16 +116,6 @@
   .demo-cat__item {
     width: 162px;
   }
-}
-
-.demo-cat__item--wide {
-  grid-column: 1 / -1;
-  width: 100%;
-  border: none;
-  text-transform: uppercase;
-
-  @include line-height(14,20,20,20);
-  @include font-size(14,20);
 }
 
 @media (min-width: $tablet_width) and (max-width: $desktop-width) {
@@ -131,20 +171,54 @@
 }
 
 .demo-cat__expenses {
+  margin: 0;
   text-align: center;
-  margin: 12px 0 14px 0;
+
+
+  @include line-height(14,20,20,20);
+  @include font-size(14,20);
 }
 
 @media (min-width: $tablet-width) {
   .demo-cat__expenses {
-    margin: 12px 6px 9px 0;
-    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .demo-cat__cost {
     margin: 0 0 10px 0;
-    text-align: right;
+
+    @include line-height(14,20,20,20);
+    @include font-size(14,20);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .demo-cat__cost {
+    margin-left: 64px;
+  }
+}
+
+
+.demo-cat__total {
+  text-transform: uppercase;
+  text-align: right;
+}
+
+@media (max-width: $tablet-width - 1px) {
+  .demo-cat__total {
+    display: flex;
+    align-items: center;
+    padding: 28px 10px 15px 10px;
+    justify-content: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .demo-cat__total {
+    display: flex;
+    align-items: baseline;
   }
 }

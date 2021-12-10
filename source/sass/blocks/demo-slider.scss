@@ -4,6 +4,21 @@
   padding-bottom: 42px;
 }
 
+@media (min-width: $tablet-width) {
+  .demo-slider {
+    padding-top: 50px;
+    padding-bottom: 38px;
+    left: 14px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .demo-slider {
+    left: 0;
+    margin-top: -90px;
+  }
+}
+
 .demo-slider__cat {
   display: flex;
   justify-content: center;
@@ -16,8 +31,12 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+.cats-static {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
   .cats-static {
-    display: none;
+    display: block;
   }
 }

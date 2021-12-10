@@ -6,6 +6,12 @@
   height: 362px;
 }
 
+@media (min-width: $tablet-width) {
+  .footer__map {
+    height: 400px;
+  }
+}
+
 
 .footer__map iframe {
   display: block;

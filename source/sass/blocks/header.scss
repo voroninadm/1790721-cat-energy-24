@@ -13,3 +13,10 @@
     padding-top: 35px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .header {
+    padding-top: 63px;
+    background-color: transparent;
+  }
+}
