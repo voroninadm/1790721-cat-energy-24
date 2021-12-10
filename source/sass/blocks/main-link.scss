@@ -15,9 +15,17 @@
 }
 
 .main-link--smaller-text {
+
   @include font-size(14,20);
   @include line-height(14,18,20,20);
 }
+
+@media (min-width: $tablet-width) {
+  .main-link--smaller-text {
+    padding: 17px 5px;
+  }
+}
+
 
 .main-link--discreet {
   background-color: $color__grey;

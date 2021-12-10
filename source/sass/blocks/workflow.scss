@@ -1,11 +1,20 @@
 .workflow {
-  padding-top: 13px;
+  box-sizing: border-box;
+  padding-top: 6px;
+  padding-bottom: 50px;
+}
+
+@media (min-width: $tablet-width) {
+  .workflow {
+    padding-top: 35px;
+  }
 }
 
 .workflow__title {
   padding: 0;
-  margin: 0 0 41px 0;
+  margin: 0 0 42px 0;
   font-weight: 400;
+
 
   @include line-height(36, 40, 60, 60);
   @include font-size(36, 60);
@@ -84,8 +93,7 @@
   .workflow__item {
     display: block;
     box-sizing: border-box;
-    padding-left: 80px;
-    padding-top: 3px;
+    padding: 3px 5px 0 80px;
     min-height: 60px;
 
     &::before {

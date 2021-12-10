@@ -1,10 +1,13 @@
 .demo-slider {
   position: relative;
+  box-sizing: border-box;
+  padding-bottom: 42px;
 }
 
 .demo-slider__cat {
   display: flex;
   justify-content: center;
+  padding-bottom: 10px;
 }
 
 @media (min-width: $tablet-width) {

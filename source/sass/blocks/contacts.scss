@@ -3,6 +3,8 @@
   align-items: center;
   justify-content: space-between;
   column-gap: 10%;
+  box-sizing: border-box;
+  padding-bottom: 3px;
 }
 
 @media (min-width: $desktop-width) {
@@ -19,6 +21,7 @@
 .contacts__title {
   width: 50%;
   font-weight: 400;
+  text-transform: uppercase;
 
   @include line-height(16,20,20,26);
   @include font-size(16,20);

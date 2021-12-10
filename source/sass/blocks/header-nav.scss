@@ -1,3 +1,8 @@
+@media (min-width: $tablet_width) {
+  .header-nav {
+    width: 62%;
+  }
+}
 
 .header-nav__list {
   position: absolute;
@@ -11,12 +16,11 @@
   @include reset-list();
 }
 
-@media (max-width: $tablet_width) {
+@media (max-width: $tablet_width - 1px) {
   .header-nav__list {
     width: 100%;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 10px 10px rgba(2, 2, 2, 0.5);
   }
 }
 
@@ -24,8 +28,7 @@
   .header-nav__list {
     position: static;
     display: flex;
-    column-gap: 25px;
-    width: 57.3%;
+    column-gap: 7.7%;
     opacity: 1;
   }
 }
@@ -40,14 +43,15 @@
   line-height: calc(24 / 18);
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $tablet-width - 1px) {
   .header-nav__link {
+    box-sizing: border-box;
     padding: 22px 24px;
     font-weight: 500;
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $tablet-width - 1px) {
   .header-nav__item {
     width: 100%;
     display: flex;

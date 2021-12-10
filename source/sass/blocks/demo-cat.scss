@@ -1,7 +1,13 @@
+.demo-cat {
+  box-sizing: border-box;
+  padding: 25px 0 26px 0;
+}
 
 .demo-cat__title {
+  box-sizing: border-box;
   color: $color__black;
   font-weight: 400;
+  margin: 0 0 41px 0;
 
   @include line-height(36,40,60,60);
   @include font-size(36,60);
@@ -13,11 +19,15 @@
 
   @include line-height(14,18,16,24);
   @include font-size(14,16);
+  padding-bottom: 20px;
+  margin: 0;
 }
 
 .demo-cat__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  column-gap: 32px;
+  row-gap: 20px;
 
   @include reset-list();
 }
@@ -29,13 +39,20 @@
 }
 
 .demo-cat__item {
+  position: relative;
+  justify-self: center;
   display: flex;
+  border: 1px solid $color__light-grey;
+  border-radius: 3px;
   flex-direction: column;
   align-items: center;
+  width: 122px;
 }
 
 .demo-cat__item--wide {
   grid-column: 1 / -1;
+  width: 100%;
+  border: none;
   text-transform: uppercase;
 
   @include line-height(14,20,20,20);
@@ -50,13 +67,24 @@
 
 .demo-cat__importance {
   position: relative;
+  padding: 13px 0 16px 0;
+  box-sizing: border-box;
+  text-transform: uppercase;
   font-weight: 400;
+
 
   @include line-height(24,24,30,37);
   @include font-size(24,30);
 }
 
 .demo-cat__description {
+  position: absolute;
+  top: 44px;
+  z-index: 2;
+  padding: 0 10px;
+  background-color: $color__grey;
+  margin: 0;
+  text-align: center;
   font-family: $font__standard;
 
   @include line-height(12,12,14,14);
