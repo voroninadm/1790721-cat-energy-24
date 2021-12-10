@@ -7,6 +7,7 @@
 @media (min-width: $tablet-width) {
   .workflow {
     padding-top: 35px;
+    padding-bottom: 25px;
   }
 }
 
@@ -15,9 +16,14 @@
   margin: 0 0 42px 0;
   font-weight: 400;
 
-
   @include line-height(36, 40, 60, 60);
   @include font-size(36, 60);
+}
+
+@media (min-width: $tablet-width) {
+  .workflow__title {
+    margin: 0 0 71px 0;
+  }
 }
 
 .workflow__list {
@@ -32,7 +38,7 @@
   .workflow__list {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 37px;
-    column-gap: 23%;
+    column-gap: 8%;
   }
 }
 
@@ -41,14 +47,6 @@
     grid-template-columns: repeat(4, 1fr);
     row-gap: 15px;
     column-gap: 20px;
-  }
-}
-
-@media (min-width: $tablet-width) and (max-width: $desktop-width) {
-  .workflow__list {
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 37px;
-    column-gap: 23%;
   }
 }
 
@@ -70,22 +68,34 @@
     background-color: $color__green;
     background-repeat: no-repeat;
     background-position: center;
+    color: $color__dark-grey;
   }
 
   &::after {
     position: absolute;
-    left: 30px;
-    top: 0;
+    top: -40px;
+    left: 115px;
+    z-index: -1;
+    display: flex;
+    width: 150px;
+    height: 150px;
+    padding: 0;
+    margin: 0;
+
     counter-increment: li;
     content: counter(li);
     font-weight: inherit;
     color: #f2f2f2;
-    z-index: -1;
-    font-size: 16px;
-    display: flex;
-    width: 150px;
-    padding: 0;
-    margin: 0;
+    font-family: $font__main;
+    font-size: 280px;
+    line-height: 17.5rem;
+
+  }
+}
+
+@media (max-width: $tablet-width - 1px) {
+  .workflow__item br {
+    display: none;
   }
 }
 
@@ -108,6 +118,7 @@
   .workflow__item {
     flex-direction: column;
     height: 280px;
+    padding: 113px 65px 10px 0;
 
     &::before {
       width: 80px;
@@ -132,3 +143,10 @@
 .workflow__item--profit::before {
   background-image: url("../img/svg/icon_alarm.svg");
 }
+
+/*
+@media (min-width: $tablet-width) {
+  .workflow__item::after {
+  }
+}
+*/

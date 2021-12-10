@@ -95,12 +95,6 @@
   content: "";
 }
 
-@media (min-width: $tablet-width) {
-  .program__title--slim::after {
-    width: 140px;
-    height: 194px;
-  }
-}
 
 .program__title--fat::after {
   position: absolute;
@@ -135,8 +129,8 @@
 
   .program__title--slim::after,
   .program__title--fat::after {
-    top: 20px;
-    left: 120%;
+    top: 80px;
+    left: 75%;
   }
 }
 
