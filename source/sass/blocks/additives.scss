@@ -3,9 +3,16 @@
   padding-bottom: 37px;
 }
 
+@media (min-width: $tablet-width) {
+  .additives {
+    padding-bottom: 67px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .additives {
     grid-column: 1 / 4;
+    padding-bottom: 67px;
   }
 }
 

@@ -16,8 +16,6 @@
   }
 }
 
-
-
 @media (min-width: $tablet-width) {
   .additive__wrapper {
     display: grid;
@@ -54,6 +52,14 @@
 
   @include line-height(14,14,16,20);
   @include font-size(14,16);
+}
+
+@media (min-width: $tablet-width) {
+  .additive__item {
+    width: 75%;
+    justify-content: flex-end;
+    column-gap: 23%;
+  }
 }
 
 .additive__title {
