@@ -20,6 +20,15 @@
   .catalog__title {
     margin-top: 22px;
     margin-bottom: 123px;
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__title {
+    margin-top: 43px;
+    margin-bottom: 126px;
+    border: none;
   }
 }
 
@@ -32,9 +41,10 @@
   }
 }
 
-
-/*@media (min-width: $desktop-width) {
-  .catalog__title {
-    padding: 0 40px;
+@media (min-width: $tablet-width) {
+  .catalog__products {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 6%;
+    row-gap: 140px;
   }
-}*/
+}

@@ -9,9 +9,45 @@
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
+
+
+  <style>
+    html {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      /* Mobile layout by default */
+      background-image: url("./pp/mobile/form.png");
+    }
+
+    /* Tablet */
+    @media (min-width: 768px) {
+      html {
+        /* Tablet layout */
+        background-image: url("./pp/tablet/form.png");
+      }
+    }
+
+    /* Desktop */
+    @media (min-width: 1300px) {
+      html {
+        /* Desktop layout */
+        background-image: url("./pp/desktop/form.png");
+      }
+    }
+  </style>
+  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+  <script src="../node_modules/pixel-glass/script.js"></script>
+
+
 </head>
 
 <body class="page__body">
+
+<style>
+  body {
+    opacity: 0.6;
+  }
+</style>
 
 <header class="page__header">
   <div class="header container">
@@ -42,7 +78,7 @@
 
   <section class="main-form container">
     <h1 class="main-form__title">Подбор программы</h1>
-    <p class="main-form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <p class="main-form__description">Заполните анкету, и мы подберем <br> программу питания для вашего кота</p>
 
     <form class="form" action="https://echo.htmlacademy.ru/" method="post">
       <div class="form__section">

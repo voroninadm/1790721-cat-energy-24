@@ -102,6 +102,12 @@
   .header-nav__link {
     font-size: calc(20 / 16) + rem;
     line-height: calc(29.64 / 20);
+    color: $color__black;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header-nav__link--white {
     color: $color__white;
   }
 }

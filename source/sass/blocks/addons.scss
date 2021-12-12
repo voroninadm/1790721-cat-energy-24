@@ -31,11 +31,8 @@
   }
 }
 
-
 @media (min-width: $desktop-width) {
   .addons__inner {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 80px;
+    padding-top: 21px;
   }
 }
