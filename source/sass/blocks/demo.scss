@@ -3,14 +3,15 @@
   width: 100%;
 }
 
-@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+@media (min-width: $tablet-width) {
   .demo {
-    background-image: linear-gradient(to bottom, #ffffff 150px, transparent 150px);
+    background-image: linear-gradient(to bottom, #ffffff 600px, transparent 600px);
   }
 }
 
 @media (min-width: $desktop-width) {
   .demo {
-    background-image: linear-gradient(to bottom, #ffffff 70px, transparent 70px);
+    background-image: linear-gradient(to bottom, #ffffff 140px, transparent 140px);
+    background-color: $color__grey;
   }
 }

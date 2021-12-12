@@ -8,11 +8,11 @@
 
 @media (min-width: $tablet-width) {
   .promo {
-    align-items: flex-start;
     box-sizing: border-box;
     padding-top: 30px;
     margin-left: 90px;
     padding-bottom: 500px;
+    align-items: normal;
   }
 }
 
@@ -21,8 +21,9 @@
     align-items: flex-start;
     box-sizing: border-box;
     padding-top: 85px;
-    margin-left: 80px;
     padding-bottom: 240px;
+    margin: 0 auto;
+    padding-left: 120px;
   }
 }
 
@@ -70,6 +71,7 @@
 .promo__image {
   display: block;
   padding-bottom: 3px;
+  z-index: 2;
 }
 
 @media (min-width: $tablet_width) {
@@ -101,6 +103,6 @@
     box-sizing: border-box;
     padding-top: 10px;
     padding-bottom: 7px;
-    width: 19%;
+    width: 20.5%;
   }
 }

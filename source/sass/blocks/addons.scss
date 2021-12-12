@@ -1,5 +1,6 @@
 .addons {
   position: relative;
+  padding-bottom: 35px;
 
   &::after {
     position: absolute;
@@ -22,6 +23,13 @@
     width: 100vw;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .addons__inner {
+    padding-top: 13px;
+  }
+}
+
 
 @media (min-width: $desktop-width) {
   .addons__inner {

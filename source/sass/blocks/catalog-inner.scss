@@ -2,15 +2,15 @@
   display: grid;
 }
 
-@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+/*@media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .catalog-inner {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 7.8%;
-    row-gap: 141px;
+    row-gap: 160px;
     padding-left: 30px;
     padding-right: 30px;
   }
-}
+}*/
 
 @media (min-width: $desktop-width) {
   .catalog-inner {

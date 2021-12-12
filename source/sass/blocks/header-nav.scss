@@ -1,3 +1,24 @@
+@media (max-width: $tablet-width - 1px) {
+  .header-nav {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    opacity: 0;
+  }
+}
+
+@media (max-width: $tablet-width - 1px) {
+  .header-nav--noJS {
+    display: block;
+    position: static;
+    width: 100%;
+    opacity: 1;
+  }
+}
+
 @media (min-width: $tablet_width) {
   .header-nav {
     width: 62%;
@@ -6,27 +27,26 @@
 
 @media (min-width: $desktop-width) {
   .header-nav {
-    width: 40%;
+    width: 37%;
+    z-index: 2;
   }
 }
 
 .header-nav__list {
-  position: absolute;
-  top: 65px;
-  left: 0;
-  z-index: 2;
-  display: none;
-  opacity: 0;
-  background-color: $color__white;
-
   @include reset-list();
 }
 
-@media (max-width: $tablet_width - 1px) {
+@media (max-width: $tablet-width - 1px) {
   .header-nav__list {
+    display: flex;
+
+    background-color: $color__white;
+
     width: 100%;
     flex-direction: column;
     align-items: center;
+
+    @include reset-list();
   }
 }
 
@@ -34,6 +54,7 @@
   .header-nav__list {
     position: static;
     display: flex;
+    justify-content: flex-end;
     column-gap: 7.7%;
     opacity: 1;
   }
@@ -43,7 +64,7 @@
   .header-nav__list {
     position: static;
     display: flex;
-    column-gap: 3.5%;
+/*    column-gap: 3.5%;*/
     background-color: transparent;
     opacity: 1;
   }

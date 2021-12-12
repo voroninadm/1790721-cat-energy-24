@@ -1,3 +1,8 @@
+.additives {
+  padding-top: 23px;
+  padding-bottom: 37px;
+}
+
 @media (min-width: $desktop-width) {
   .additives {
     grid-column: 1 / 4;
@@ -7,6 +12,7 @@
 .additives__title {
   width: max-content;
   padding-right: 20px;
+  margin: 0 0 34px 0;
   font-weight: 400;
   background-color: $color__white;
 
@@ -14,9 +20,10 @@
   @include font-size(24,36);
 }
 
-@media (min-width: $tablet-width) and(max-width: $desktop-width) {
+@media (min-width: $tablet-width) {
   .additives__title {
     padding-left: 20px;
+    margin: 0 0 80px 0;
   }
 }
 

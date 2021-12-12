@@ -8,6 +8,14 @@
   background-color: $color__white;
 }
 
+@media (max-width: $tablet-width - 1px) {
+  .header--noJS {
+    display: block;
+  }
+}
+
+
+
 @media (min-width: $tablet-width) {
   .header {
     padding-top: 35px;

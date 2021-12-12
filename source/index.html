@@ -9,7 +9,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
-  <!--   Pixel Glass-->
+<!--
+
   <style>
     html {
       background-repeat: no-repeat;
@@ -36,15 +37,17 @@
   </style>
   <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
   <script src="../node_modules/pixel-glass/script.js"></script>
-  <!--   // Pixel Glass-->
+
+-->
+
 </head>
 
 <body class="page__body">
-<style>
+<!--<style>
   body {
-    opacity: 0.6;
+    opacity: 0.4;
   }
-</style>
+</style>-->
 
 
 <header class="page__header">
@@ -53,11 +56,11 @@
       <img class="logo__icon" src="img/svg/logo-cat@1x.svg" width="34" height="38" alt="Логотип кэт-энерджи.">
       <img class="logo__text" src="img/svg/logo-cat-text@1x.svg" width="101" height="18" alt="Текст логотипа кэт-энерджи.">
     </a>
-    <nav class="header-nav">
-      <button class="menu-toggle" type="button">
-        <span class="visually-hidden">Меню.</span>
-      </button>
-      <ul class="header-nav__list container">
+    <button class="menu-toggle <!--menu-toggle&#45;&#45;noJS-->" type="button">
+      <span class="visually-hidden">Меню.</span>
+    </button>
+    <nav class="header-nav <!--header-nav&#45;&#45;noJS-->">
+      <ul class="header-nav__list">
         <li class="header-nav__item">
           <a class="header-nav__link header-nav__link--active">Главная</a>
         </li>
