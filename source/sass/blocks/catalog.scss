@@ -32,6 +32,10 @@
   }
 }
 
+.catalog__products {
+  @include reset-list;
+}
+
 @media (min-width: $tablet-width) {
   .catalog__products {
     display: grid;
@@ -41,7 +45,7 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .catalog__products {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 6%;
