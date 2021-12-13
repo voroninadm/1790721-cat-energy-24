@@ -1,0 +1,111 @@
+.extra {
+  list-style-type: none;
+}
+
+@media (min-width: $tablet-width) {
+  .extra {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+}
+
+.extra__item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 13px;
+  padding-bottom: 15px;
+  align-items: baseline;
+  border-top: 1px solid $color__light-grey;
+  border-bottom: 1px solid $color__light-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .extra__item {
+    grid-template-columns: 60% 25% auto;
+    padding: 25px 37px;
+    border: 1px solid $color__light-grey;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra__item {}
+}
+
+.extra__title {
+  grid-row: 1 / -1;
+  margin: 0 0 10px 0;
+  padding: 0;
+  font-family: $font__main;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  @include line-height(16,16,20,20);
+  @include font-size(16,20);
+}
+
+@media (min-width: $tablet-width) {
+  .extra__title {
+    grid-column: 1 / 2;
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra__title {}
+}
+
+.extra__amount {
+  display: block;
+  margin-bottom: 12px;
+  grid-column: 1 / 2;
+  font-family: $font__standard;
+
+  @include line-height(14,20,16,20);
+  @include font-size(14,16);
+}
+
+@media (min-width: $tablet-width) {
+  .extra__amount {
+    grid-column: 2 / 3;
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra__amount {}
+}
+
+.extra__count {
+  grid-column: 2 / 3;
+  text-align: end;
+  font-family: $font__standard;
+  font-weight: 400;
+
+  @include line-height(14,20,16,20);
+  @include font-size(14,16);
+}
+
+@media (min-width: $tablet-width) {
+  .extra__count {
+    grid-column: 3 / 4;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra__count {}
+}
+
+.extra__link {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: $desktop-width) {
+  .extra__link {}
+}

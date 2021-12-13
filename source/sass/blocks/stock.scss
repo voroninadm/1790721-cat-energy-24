@@ -1,5 +1,5 @@
 .stock {
-  position: relative;
+  position: relative;/*
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -12,8 +12,8 @@
   background-repeat: no-repeat;
   background-color: #29530f;
   background-position: 50% 50%;
-  background-size: cover ;
-  text-align: center;
+  background-size: cover;
+  text-align: center;*/
 
   &::before {
     position: absolute;
@@ -29,7 +29,7 @@
 
 @media (min-width: $tablet-width) {
   .stock {
-    min-height: 200px;
+/*    min-height: 200px;
     padding-top: 72px;
     justify-content: flex-start;
     background-color: transparent;
@@ -37,7 +37,7 @@
     background-position: 50% 50%;
     background-size: cover;
     text-align: left;
-    padding-right: 115px;
+    padding-right: 115px;*/
 
     &::before {
       top: 50%;
@@ -49,27 +49,27 @@
 
 @media (min-width: $desktop-width) {
   .stock {
-    grid-column: 4 / 5;
+/*    grid-column: 4 / 5;
     width: 100%;
     justify-self: center;
     padding-top: 40px;
     background-position: 50% 50%;
     background-size: cover;
-    text-align: right;
+    text-align: right;*/
   }
 }
 
 .stock__description {
-  width: 70%;
+/*  width: 70%;
   margin: 0;
   font-family: $font__standard;
   line-height: 1.25;
-  font-size: 1rem;
+  font-size: 1rem;*/
 }
 
 @media (min-width: $tablet-width) {
-  .stock__description {
+/*  .stock__description {
     align-self: flex-end;
     width: 30%;
-  }
+  }*/
 }

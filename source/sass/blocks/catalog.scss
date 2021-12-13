@@ -1,6 +1,11 @@
+.catalog {
+  margin-bottom: 22px;
+}
+
 @media (min-width: $tablet-width) {
   .catalog {
     padding-bottom: 30px;
+    margin-bottom: 35px;
   }
 }
 
