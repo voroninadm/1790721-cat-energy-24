@@ -8,6 +8,8 @@
   border: none;
   padding-top: 11px;
   padding-bottom: 11px;
+  font-family: $font__main;
+  font-weight: 400;
 
   @include font-size(16,20);
   @include line-height(16,20,20,20);
