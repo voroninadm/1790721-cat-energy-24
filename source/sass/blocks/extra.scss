@@ -1,11 +1,13 @@
 .extra {
   list-style-type: none;
+  padding-bottom: 32px;
 }
 
 @media (min-width: $tablet-width) {
   .extra {
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 68px;
   }
 }
 

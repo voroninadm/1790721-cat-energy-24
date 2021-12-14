@@ -1,5 +1,5 @@
 .stock {
-  position: relative;/*
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -7,13 +7,13 @@
   padding-top: 130px;
   padding-bottom: 43px;
   min-height: 290px;
+  width: calc(100vw - 40px);
   color: $color__white;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/decoration/catalog_cat-on-bag.jpg");
+  background-image: url("../img/decoration/catalog_cat-on-bag.jpg");
   background-repeat: no-repeat;
-  background-color: #29530f;
-  background-position: 50% 50%;
+  background-position: center center;
   background-size: cover;
-  text-align: center;*/
+  text-align: center;
 
   &::before {
     position: absolute;
@@ -29,15 +29,15 @@
 
 @media (min-width: $tablet-width) {
   .stock {
-/*    min-height: 200px;
+    min-height: 200px;
     padding-top: 72px;
     justify-content: flex-start;
-    background-color: transparent;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/decoration/catalog_cat-on-bag@2x.jpg");
-    background-position: 50% 50%;
+    background-image: url("../img/decoration/catalog_cat-on-bag@2x.jpg");
+    background-position: center center;
+    width: calc(100vw - 60px);
     background-size: cover;
     text-align: left;
-    padding-right: 115px;*/
+    padding-right: 115px;
 
     &::before {
       top: 50%;
@@ -49,27 +49,27 @@
 
 @media (min-width: $desktop-width) {
   .stock {
-/*    grid-column: 4 / 5;
+   grid-column: 4 / 5;
     width: 100%;
     justify-self: center;
     padding-top: 40px;
     background-position: 50% 50%;
     background-size: cover;
-    text-align: right;*/
+    text-align: right;
   }
 }
 
 .stock__description {
-/*  width: 70%;
+  width: 165px;
   margin: 0;
   font-family: $font__standard;
   line-height: 1.25;
-  font-size: 1rem;*/
+  font-size: 1rem;
 }
 
 @media (min-width: $tablet-width) {
-/*  .stock__description {
+  .stock__description {
     align-self: flex-end;
     width: 30%;
-  }*/
+  }
 }

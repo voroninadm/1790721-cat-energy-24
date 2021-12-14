@@ -1,3 +1,4 @@
+/* ПОД СНОС!!
 .additive {
   display: grid;
   padding-top: 13px;
@@ -52,13 +53,13 @@
   @include font-size(16,20);
 }
 
-@media (min-width: $tablet-width){
+@media (min-width: $tablet-width) {
   .additive__title {
     grid-column: 1 / 2;
   }
 }
 
-@media (min-width: $desktop-width){
+@media (min-width: $desktop-width) {
   .additive__title {
     grid-column: 1 / 2;
     margin: 0;
@@ -66,14 +67,14 @@
   }
 }
 
-.additive__list {
+.additive_list {
   margin: 0 0 14px 0;
   padding: 0;
   list-style-type: none;
 }
 
 @media (min-width: $tablet-width) {
-  .additive__list {
+  .additive_list {
     display: flex;
     justify-content: flex-end;
   }
@@ -114,12 +115,11 @@
   }
 }
 
-.additive_count {
-  font-weight: 400;
+
 }
 
 @media (min-width: $desktop-width) {
-  .additive_count {
+  .additive__count {
     text-align: left;
     width: 45px;
   }
@@ -127,7 +127,8 @@
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .additive__link {
-/*    grid-row: 2 / 3;*/
+    !*    grid-row: 2 / 3;*!
     grid-column: 1 / -1;
   }
 }
+*/

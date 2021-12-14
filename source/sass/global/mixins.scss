@@ -13,11 +13,11 @@
 /*adaptive for mobile and other width*/
 @mixin font-size($mobile, $pc) {
   @media (max-width: $tablet-width) {
-    font-size: ($mobile / $font-default-size) +rem;
+    font-size: math.div($mobile, $font-default-size) +rem;
   }
 
   @media (min-width: $tablet-width) {
-    font-size: ($pc / $font-default-size) + rem;
+    font-size: math.div($pc, $font-default-size) + rem;
   }
 }
 
