@@ -10,6 +10,7 @@
 
 @media (min-width: $tablet-width) {
   .control {
+    padding: 20px 0;
     width: 592px;
   }
 }
@@ -18,6 +19,7 @@
   border: none;
   background-color: transparent;
   text-transform: uppercase;
+  font-family: $font__main;
   line-height: 40px;
   cursor: pointer;
   width: 49px;

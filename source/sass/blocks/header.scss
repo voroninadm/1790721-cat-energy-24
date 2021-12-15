@@ -7,3 +7,16 @@
   align-items: center;
   background-color: $color__white;
 }
+
+@media (min-width: $tablet-width) {
+  .header {
+    padding-top: 35px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    padding-top: 63px;
+    background-color: transparent;
+  }
+}

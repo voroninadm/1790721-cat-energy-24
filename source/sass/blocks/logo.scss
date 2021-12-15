@@ -4,10 +4,11 @@
   text-decoration: none;
 }
 
-.logo__image {
+.logo__icon {
   display: block;
+  margin-right: 41%;
+}
 
-  &:not(:last-of-type) {
-    margin-right: 41%;
-  }
+.logo__text {
+  transform: translateY(3px);
 }

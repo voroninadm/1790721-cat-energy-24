@@ -6,8 +6,8 @@
   background-color: $color__green;
   text-transform: uppercase;
   border: none;
-  padding-top: 13px;
-  padding-bottom: 13px;
+  padding-top: 11px;
+  padding-bottom: 11px;
 
   @include font-size(16,20);
   @include line-height(16,20,20,20);
@@ -15,9 +15,17 @@
 }
 
 .main-link--smaller-text {
+
   @include font-size(14,20);
   @include line-height(14,18,20,20);
 }
+
+@media (min-width: $tablet-width) {
+  .main-link--smaller-text {
+    padding: 17px 5px;
+  }
+}
+
 
 .main-link--discreet {
   background-color: $color__grey;
