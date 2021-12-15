@@ -1,6 +1,7 @@
 .form {
   display: flex;
   flex-direction: column;
+  padding-bottom: 20px;
 }
 
 .form__section {
@@ -8,18 +9,79 @@
   flex-direction: column;
 }
 
+@media (min-width: $desktop-width) {
+  .form__section {
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 20%;
+  }
+}
+
 .form__group {
   border: none;
+  padding: 25px 0;
+}
+
+.form__group--purpose {
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__group--purpose {
+    border: 1px solid #d9d9d9;
+  }
+}
+
+/*---form-group--list---*/
+.form-group__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
 
   @include reset-list();
 }
 
-.form-group__list {
-  @include reset-list();
+
+.form-group__list--cat-info {
+  row-gap: 20px;
+}
+
+.form-group__list--add {
+  display: grid;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .form-group__list--add {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-group__list--add {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-group__list--master {
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 20%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__group--purpose,
+  .form__group--cat-info {
+    width: 100%;
+  }
 }
 
 .form-group__item {
   display: flex;
+  flex-grow: 1;
 }
 
 .form-group__label {
@@ -91,10 +153,52 @@
 }
 
 .form-group__input {
+  justify-content: flex-end;
+  flex: 1 1 auto;
+}
+
+.form-group__input--comment {
+  padding: 25px 0;
   width: 100%;
 }
 
 .form input,
 .form textarea {
   text-transform: uppercase;
+}
+
+.form__submit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: $tablet-width) {
+  .form__submit {
+    flex-direction: row;
+  }
+}
+
+/*---form__span---*/
+@media (min-width: $tablet-width) {
+  .form__span {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form__span {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__span {
+    justify-content: flex-start;
+  }
 }

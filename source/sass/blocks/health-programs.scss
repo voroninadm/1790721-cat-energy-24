@@ -1,0 +1,13 @@
+.health-programs {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  flex-wrap: wrap;
+}
+
+@media (min-width: $desktop-width) {
+  .health-programs {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

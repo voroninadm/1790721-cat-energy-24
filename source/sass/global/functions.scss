@@ -1,0 +1,6 @@
+
+@function prc($pxOne, $pxTwo) {
+  $result: (100% * $pxOne / $pxTwo);
+
+  @return $result;
+}

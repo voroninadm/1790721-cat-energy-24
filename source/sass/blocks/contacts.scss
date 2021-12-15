@@ -1,13 +1,24 @@
 .contacts {
   display: flex;
-  column-gap: 10%;
   align-items: center;
   justify-content: space-between;
+  column-gap: 10%;
 }
 
-@media (min-width: $tablet-width) {
+/*@media (min-width: $tablet-width) {
   .contacts {
-    height: 200px;
+    gap: 38.5%;
+  }
+}*/
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    position: absolute;
+    left: 13.2%;
+    width: 565px;
+    box-sizing: border-box;
+    padding: 80px 56px;
+    background: $color__white;
   }
 }
 
@@ -16,20 +27,16 @@
 }
 
 @media (min-width: $tablet-width) {
-  .contacts__title {
-    width: 22%;
-    text-align: left;
-  }
+
 }
 
 .contacts__address {
   width: 50%;
 }
 
+
 @media (min-width: $tablet-width) {
   .contacts__address {
-    width: 21%;
     text-align: right;
   }
 }
-

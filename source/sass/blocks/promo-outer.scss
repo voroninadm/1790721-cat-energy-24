@@ -4,3 +4,17 @@
   background-color: #29530f;
   background-position: 50% 0;
 }
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .promo-outer {
+    background-image: none;
+    background-color: $color__white;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo-outer {
+    background-image: linear-gradient(to right, $color__white 50%, transparent 50%), linear-gradient(to top, #ffffff 130px, transparent 130px), linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/header_happy-cat.jpg");
+    background-position: top right;
+  }
+}

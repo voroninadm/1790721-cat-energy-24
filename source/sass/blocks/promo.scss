@@ -5,20 +5,13 @@
   align-items: center;
 }
 
-@media (min-width: $tablet_width) and (max-width: $desktop_width) {
+@media (min-width: $tablet-width)/* and (max-width: $desktop-width)*/ {
   .promo {
     align-items: flex-start;
     width: 53.9%;
-    height: 800px;
+    height: 400px;
     padding-top: 30px;
     margin: 0 auto 0 0;
-  }
-}
-
-@media (min-width: $tablet_width) and (max-width: $desktop_width) {
-  .promo-outer {
-    background-image: none;
-    background-color: $color__white;
   }
 }
 
@@ -27,7 +20,7 @@
   text-align: center;
 }
 
-@media (min-width: $tablet_width) {
+@media (min-width: $tablet-width) {
   .promo__title {
     color: $color__black;
   }
@@ -37,7 +30,7 @@
   color: $color__white;
 }
 
-@media (min-width: $tablet_width) {
+@media (min-width: $tablet-width) {
   .promo__text {
     color: $color__black;
   }
@@ -50,9 +43,8 @@
 @media (min-width: $tablet_width) {
   .promo__image {
     position: absolute;
-    top: 20%;
-    left: 50%;
-    z-index: 1;
+    bottom: 0;
+    left: 40%;
   }
 }
 
