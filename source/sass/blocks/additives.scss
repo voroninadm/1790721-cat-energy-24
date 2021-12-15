@@ -1,24 +1,17 @@
-.additives {
+.additives__inner {
   display: flex;
   flex-direction: column;
 }
 
-.additive__list {
-  @include reset-list();
+@media (min-width: $desktop-width) {
+  .additives__inner {
+   width: 70%;
+  }
 }
 
-.additive__item {
-  display: flex;
-  justify-content: space-between;
+@media (min-width: $desktop-width) {
+  .additives__outer {
+    display: flex;
+    column-gap: 4%;
+  }
 }
-
-/*
-
-  .additive_amount {
-  width: min-content;
-}
-
-.additive_count {
-  width: min-content;
-}
-*/

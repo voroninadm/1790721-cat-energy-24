@@ -1,0 +1,16 @@
+.catalog__title {
+  padding: 0 20px;
+}
+
+@media (max-width: $tablet-width) {
+  .catalog__title {
+    padding-top: 10px;
+    border-top: 1px solid #ebebeb;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .catalog__title {
+    padding: 0 30px;
+  }
+}
