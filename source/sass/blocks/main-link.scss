@@ -17,7 +17,6 @@
 }
 
 .main-link--smaller-text {
-
   @include font-size(14,20);
   @include line-height(14,18,20,20);
 }

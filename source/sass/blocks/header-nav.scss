@@ -39,9 +39,7 @@
 @media (max-width: $tablet-width - 1px) {
   .header-nav__list {
     display: flex;
-
     background-color: $color__white;
-
     width: 100%;
     flex-direction: column;
     align-items: center;
@@ -64,7 +62,6 @@
   .header-nav__list {
     position: static;
     display: flex;
-/*    column-gap: 3.5%;*/
     background-color: transparent;
     opacity: 1;
   }
