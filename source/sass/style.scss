@@ -1,5 +1,4 @@
-//sass includes
-@use "sass:math";
+
 
 //global values
 @import "./global/variables.scss";
@@ -49,3 +48,6 @@
 @import "./blocks/form.scss";
 @import "./blocks/form-group.scss";
 @import "./blocks/extra.scss";
+
+//sass includes
+@use "./sass:math";
