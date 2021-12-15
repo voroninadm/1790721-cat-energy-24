@@ -4,8 +4,18 @@
 }
 
 .social__list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 130px;
   align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
   @include reset-list();
+}
+
+.social__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -5,6 +5,13 @@
 @media (min-width: $tablet_width) and (max-width: $desktop-width) {
   .program {
     padding-right: 350px;
+    height: 370px;
+  }
+}
+
+@media (min-width: $tablet_width) and (max-width: $desktop-width) {
+  .program {
+    padding-right: 350px;
   }
 }
 
@@ -35,7 +42,7 @@
   display: block;
   width: 36px;
   height: 50px;
-  background-image: url("../../img/svg/icon_cat-slim.svg");
+  background-image: url("../img/svg/icon_cat-slim.svg");
   content: "";
 }
 
@@ -46,7 +53,7 @@
   display: block;
   width: 67px;
   height: 28px;
-  background-image: url("../../img/svg/icon_cat-pro.svg");
+  background-image: url("../img/svg/icon_cat-pro.svg");
   content: "";
 }
 
