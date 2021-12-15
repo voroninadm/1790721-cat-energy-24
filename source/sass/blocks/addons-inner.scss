@@ -1,0 +1,7 @@
+@media (min-width: $desktop-width) {
+  .addons-inner {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 80px;
+  }
+}

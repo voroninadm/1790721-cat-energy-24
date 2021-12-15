@@ -20,10 +20,12 @@
 
 .form input,
 .form textarea {
+  padding-left: 14px;
   text-transform: uppercase;
   font-family: $font__main;
-  font-size: 1rem;
-  line-height: 18px;
+
+  @include line-height(16,18,20,29.64);
+  @include font-size(16,18);
 }
 
 .form__submit {

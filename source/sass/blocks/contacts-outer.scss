@@ -5,3 +5,13 @@
 .contacts-outer--dark {
   background-color: $color__grey;
 }
+
+@media (min-width: $desktop-width) {
+  .contacts-outer {
+    width: 1300px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+}

@@ -10,9 +10,11 @@
   }
 }
 
-.demo-cat {
-  box-sizing: border-box;
-  padding: 5px 0 26px 0;
+@media (min-width: $desktop-width) {
+  .demo-cat {
+    box-sizing: border-box;
+    padding: 5px 0 26px 0;
+  }
 }
 
 .demo-cat__title {
@@ -81,7 +83,8 @@
 .demo-cat__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  column-gap: 10%;
   padding: 0 0 16px 0;
 
   @include reset-list();
@@ -89,12 +92,13 @@
 
 @media (min-width: $tablet_width) {
   .demo-cat__list {
-    justify-content: space-between;
+    justify-content: center;
+    column-gap: 9%;
     width: 52%;
   }
 }
 
-@media (min-width: $tablet_width) {
+@media (min-width: $desktop-width) {
   .demo-cat__list {
     justify-content: space-between;
     width: 58%;

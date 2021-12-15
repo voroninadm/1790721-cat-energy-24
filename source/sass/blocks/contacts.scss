@@ -10,16 +10,15 @@
   .contacts {
     padding: 62px 70px 63px 70px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
     position: absolute;
-    top: 50px;
+    top: 100px;
     width: 565px;
     box-sizing: border-box;
-    padding: 80px 56px;
+    padding: 57px 76px 60px 80px;
     background: $color__white;
   }
 }
@@ -41,6 +40,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .contacts__title {
+    width: 38%;
+  }
+}
+
 .contacts__address {
   width: 50%;
   font-family: $font__standard;
@@ -58,11 +63,16 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .contacts__address {
+    text-align: left;
+    width: 39%;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .contacts__city {
     display: block;
     margin-top: 18px;
   }
 }
-
-

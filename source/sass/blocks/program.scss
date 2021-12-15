@@ -1,7 +1,10 @@
 .program {
   position: relative;
+  display: flex;
+  flex-direction: column;
   box-sizing: border-box;
   background-color: $color__grey;
+  min-height: 266px;
 
   &::after {
     position: absolute;
@@ -167,7 +170,7 @@
 
 @media (min-width: $tablet-width) {
   .program__description {
-    padding: 27px 282px 40px 33px;
+    padding: 27px 43% 40px 33px;
   }
 }
 
@@ -180,6 +183,7 @@
 .program__link {
   padding: 10px 5px 10px 0;
   display: block;
+  margin-top: auto;
   box-sizing: border-box;
   width: 45%;
   text-transform: uppercase;

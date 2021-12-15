@@ -9,42 +9,45 @@
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
-  <!--   Pixel Glass-->
-  <style>
-    html {
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-      /* Mobile layout by default */
-      background-image: url("./pp/mobile/main.png");
-    }
+  <!--
 
-    /* Tablet */
-    @media (min-width: 768px) {
+    <style>
       html {
-        /* Tablet layout */
-        background-image: url("./pp/tablet/main.png");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        /* Mobile layout by default */
+        background-image: url("./pp/mobile/main.png");
       }
-    }
 
-    /* Desktop */
-    @media (min-width: 1300px) {
-      html {
-        /* Desktop layout */
-        background-image: url("./pp/desktop/main.png");
+      /* Tablet */
+      @media (min-width: 768px) {
+        html {
+          /* Tablet layout */
+          background-image: url("./pp/tablet/main.png");
+        }
       }
-    }
-  </style>
-  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-  <script src="../node_modules/pixel-glass/script.js"></script>
-  <!--   // Pixel Glass-->
+
+      /* Desktop */
+      @media (min-width: 1300px) {
+        html {
+          /* Desktop layout */
+          background-image: url("./pp/desktop/main.png");
+        }
+      }
+    </style>
+    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+    <script src="../node_modules/pixel-glass/script.js"></script>
+
+  -->
+
 </head>
 
 <body class="page__body">
-<style>
+<!--<style>
   body {
-    opacity: 0.6;
+    opacity: 0.4;
   }
-</style>
+</style>-->
 
 
 <header class="page__header">
@@ -53,19 +56,19 @@
       <img class="logo__icon" src="img/svg/logo-cat@1x.svg" width="34" height="38" alt="Логотип кэт-энерджи.">
       <img class="logo__text" src="img/svg/logo-cat-text@1x.svg" width="101" height="18" alt="Текст логотипа кэт-энерджи.">
     </a>
-    <nav class="header-nav">
-      <button class="menu-toggle" type="button">
-        <span class="visually-hidden">Меню.</span>
-      </button>
-      <ul class="header-nav__list container">
+    <button class="menu-toggle <!--menu-toggle&#45;&#45;noJS-->" type="button">
+      <span class="visually-hidden">Меню.</span>
+    </button>
+    <nav class="header-nav <!--header-nav&#45;&#45;noJS-->">
+      <ul class="header-nav__list">
         <li class="header-nav__item">
-          <a class="header-nav__link header-nav__link--active">Главная</a>
+          <a class="header-nav__link header-nav__link--white header-nav__link--active">Главная</a>
         </li>
         <li class="header-nav__item">
-          <a class="header-nav__link" href="catalog.html">Каталог продукции</a>
+          <a class="header-nav__link header-nav__link--white" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="header-nav__item">
-          <a class="header-nav__link" href="form.html">Подбор программы</a>
+          <a class="header-nav__link header-nav__link--white" href="form.html">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -170,7 +173,7 @@
       <div class="contacts container">
         <b class="contacts__title">Приглашаем <br> к сотрудничеству дилеров!</b>
         <p class="contacts__address">ул. Большая Конюшенная, д. 19/8
-          <span class="contacts__city" >Санкт-Петербург</span>
+          <span class="contacts__city">Санкт-Петербург</span>
         </p>
       </div>
     </div>

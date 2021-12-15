@@ -1,13 +1,18 @@
 .stock {
   position: relative;
-  padding-top: 110px;
-  padding-bottom: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 130px;
+  padding-bottom: 43px;
+  min-height: 290px;
+  width: calc(100vw - 40px);
   color: $color__white;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/decoration/catalog_cat-on-bag.jpg");
+  background-image: url("../img/decoration/catalog_cat-on-bag.jpg");
   background-repeat: no-repeat;
-  background-color: #29530f;
-  background-position: 50% 50%;
-  background-size: contain;
+  background-position: center center;
+  background-size: cover;
   text-align: center;
 
   &::before {
@@ -22,13 +27,17 @@
   }
 }
 
-@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+@media (min-width: $tablet-width) {
   .stock {
-    background-color: transparent;
+    min-height: 200px;
+    padding-top: 72px;
+    justify-content: flex-start;
     background-image: url("../img/decoration/catalog_cat-on-bag@2x.jpg");
-    background-position: 50% 50%;
+    background-position: center center;
+    width: calc(100vw - 60px);
     background-size: cover;
-    text-align: right;
+    text-align: left;
+    padding-right: 115px;
 
     &::before {
       top: 50%;
@@ -40,18 +49,37 @@
 
 @media (min-width: $desktop-width) {
   .stock {
-    grid-column: 4 / 5;
-    width: 100%;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    width: 22%;
+    height: 289px;
+    padding-right: 40px;
     justify-self: center;
-    padding-top: 40px;
+    padding-top: 185px;
+    background-image: url("../img/decoration/catalog_cat-on-bag.jpg");
     background-position: 50% 50%;
-    background-size: contain;
+    background-size: cover;
     text-align: right;
   }
 }
 
 .stock__description {
+  width: 165px;
+  margin: 0;
   font-family: $font__standard;
   line-height: 1.25;
   font-size: 1rem;
+}
+
+@media (min-width: $tablet-width) {
+  .stock__description {
+    align-self: flex-end;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .stock__description {
+    align-self: center;
+    text-align: center;
+  }
 }

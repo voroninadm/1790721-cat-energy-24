@@ -3,25 +3,50 @@
   flex-direction: column;
 }
 
-@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+@media (min-width: $tablet-width) {
   .main-form {
-    width: 82%;
-    margin: 0 auto;
+    width: 90%;
+    margin: 0 auto 42px auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-form {
+    width: 1300px;
+    margin: 0 auto 42px auto;
   }
 }
 
 .main-form__title {
-  margin-bottom: 37px;
+  margin: 28px 0 37px 0;
   font-weight: 400;
 
   @include line-height(36,36,60,60);
   @include font-size(36,60);
 }
 
+@media (min-width: $tablet-width) {
+  .main-form__title {
+    margin: 51px 0 55px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-form__title {
+    margin: 70px 0 55px 0;
+  }
+}
+
 .main-form__description {
-  margin-bottom: 37px;
+  margin: 0 0 13px 0;
   text-transform: uppercase;
 
   @include line-height(14,18,20,30);
   @include font-size(14,20);
+}
+
+@media (min-width: $tablet-width) {
+  .main-form__description {
+    margin: 0 0 40px 0;
+  }
 }

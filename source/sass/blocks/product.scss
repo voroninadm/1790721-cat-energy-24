@@ -1,11 +1,14 @@
 
 .product__button {
   grid-column: 1 / -1;
+  margin-top: auto;
 }
 
 .product__title {
+  margin: 0 0 13px 0;
   text-transform: uppercase;
   font-weight: 400;
+  width: 53%;
 
   @include line-height(16,20,20,24);
   @include font-size(16,20);
@@ -13,6 +16,8 @@
 
 @media (min-width: $tablet-width) {
   .product__title {
+    width: 60%;
+    padding: 40px 35px 0 50px;
     text-align: center;
   }
 }
@@ -30,6 +35,8 @@
 
 @media (min-width: $tablet-width) {
   .product__item {
+    padding-bottom: 8px;
+    margin-bottom: 7px;
     border-bottom: 1px solid $color__light-grey;
   }
 }
@@ -41,15 +48,15 @@
   @include reset-list();
 }
 
-.product__value {
-  font-weight: 400;
+@media (min-width: $tablet-width) {
+  .product__list {
+    margin-top: 20px;
+    margin-bottom: 16px;
+  }
 }
 
-.product-block__title {
+.product__value {
   font-weight: 400;
-
-  @include line-height(16,20,20,22);
-  @include font-size(16,20);
 }
 
 .product__description {

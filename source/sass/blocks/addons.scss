@@ -1,5 +1,6 @@
 .addons {
   position: relative;
+  padding-bottom: 35px;
 
   &::after {
     position: absolute;
@@ -15,18 +16,34 @@
   }
 }
 
+.addons__title {
+  padding-left: 20px;
+  margin-bottom: 35px;
+  font-weight: 400;
+
+  @include line-height(24,24,36,36);
+  @include font-size(24,36);
+}
+
+@media (min-width: $tablet-width) {
+  .addons__title {
+    padding-left: 70px;
+    margin-bottom: 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .addons__title {
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .addons::after {
     top: 23px;
     right: 0;
     width: 100vw;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .addons__inner {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 80px;
   }
 }

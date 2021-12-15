@@ -9,20 +9,58 @@
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
+
+<!--
+
+  <style>
+    html {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      /* Mobile layout by default */
+      background-image: url("./pp/mobile/form.png");
+    }
+
+    /* Tablet */
+    @media (min-width: 768px) {
+      html {
+        /* Tablet layout */
+        background-image: url("./pp/tablet/form.png");
+      }
+    }
+
+    /* Desktop */
+    @media (min-width: 1300px) {
+      html {
+        /* Desktop layout */
+        background-image: url("./pp/desktop/form.png");
+      }
+    }
+  </style>
+  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+  <script src="../node_modules/pixel-glass/script.js"></script>
+
+-->
+
 </head>
 
 <body class="page__body">
+<!--
+<style>
+  body {
+    opacity: 0.6;
+  }
+</style>-->
 
 <header class="page__header">
   <div class="header container">
     <a class="logo" href="index.html">
-      <img class="logo__image" src="img/svg/logo-cat@1x.svg" width="34" height="38" alt="Логотип кэт-энерджи.">
-      <img class="logo__image" src="img/svg/logo-cat-text@1x.svg" width="101" height="18" alt="Текст логотипа кэт-энерджи.">
+      <img class="logo__icon" src="img/svg/logo-cat@1x.svg" width="34" height="38" alt="Логотип кэт-энерджи.">
+      <img class="logo__text" src="img/svg/logo-cat-text@1x.svg" width="101" height="18" alt="Текст логотипа кэт-энерджи.">
     </a>
+    <button class="menu-toggle" type="button">
+      <span class="visually-hidden">Меню.</span>
+    </button>
     <nav class="header-nav">
-      <button class="menu-toggle" type="button">
-        <span class="visually-hidden">Меню.</span>
-      </button>
       <ul class="header-nav__list">
         <li class="header-nav__item">
           <a class="header-nav__link" href="index.html">Главная</a>
@@ -42,7 +80,7 @@
 
   <section class="main-form container">
     <h1 class="main-form__title">Подбор программы</h1>
-    <p class="main-form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <p class="main-form__description">Заполните анкету, и мы подберем <br> программу питания для вашего кота</p>
 
     <form class="form" action="https://echo.htmlacademy.ru/" method="post">
       <div class="form__section">
@@ -50,7 +88,7 @@
           <legend class="visually-hidden">Информация о Вашем котике</legend>
           <ul class="form-group__list form-group__list--cat-info">
             <li class="form-group__item">
-              <label class="form-group__label" for="cat-name">Имя:<sup>*</sup></label>
+              <label class="form-group__label" for="cat-name">Имя:*</label>
               <input class="form-group__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
             </li>
             <li class="form-group__item">
@@ -73,7 +111,7 @@
             </li>
             <li class="form-group__item">
               <input class="form-group__radio visually-hidden" id="radio-2" type="radio" name="purpose-radio" value="fatting">
-              <label class="form-group__label form-group__label--radio" for="radio-2">Набор веса</label>
+              <label class="form-group__label form-group__label--radio" for="radio-2">Набор массы</label>
             </li>
             <li class="form-group__item">
               <input class="form-group__radio visually-hidden" id="radio-3" type="radio" name="purpose-radio" value="need-help">
@@ -84,7 +122,7 @@
       </div>
 
       <fieldset class="form-group form-group--master">
-        <legend class="form-group__legend">Контактные данные (владельца кота)</legend>
+        <legend class="form-group__legend form-group__legend--master">Контактные данные (владельца кота)</legend>
         <ul class="form-group__list form-group__list--master">
           <li class="form-group__item">
             <label class="form-group__label" for="person__email">E-mail:<sup>*</sup></label>
@@ -98,13 +136,13 @@
       </fieldset>
 
       <fieldset class="form-group form-group--comment">
-        <legend class="form-group__legend">Комментарий</legend>
+        <legend class="form-group__legend form-group__legend--comment">Комментарий</legend>
         <label class="visually-hidden" for="person-comment">Расскажите обо всех повАдках кота</label>
         <textarea class="form-group__input form-group__input--comment" name="person-comment" id="person-comment" placeholder="Расскажите обо всех повАдках кота"></textarea>
       </fieldset>
 
       <fieldset class="form-group form-group--add">
-        <legend class="form-group__legend">Дополнительно</legend>
+        <legend class="form-group__legend form-group__legend--add ">Дополнительно</legend>
         <ul class="form-group__list form-group__list--add">
           <li class="form-group__item form-group__item--checkbox">
             <input class="form-group__checkbox visually-hidden" type="checkbox" name="sweetener" id="checkbox-1" checked>
@@ -126,7 +164,7 @@
       </fieldset>
 
       <div class="form__submit">
-        <button class="main-link prc" type="submit">Отправить заявку</button>
+        <button class="form__button main-link" type="submit">Отправить заявку</button>
         <span class="form__span"><sup>*</sup> &mdash; Обязательные поля</span>
       </div>
 
@@ -145,7 +183,7 @@
     </div>
 
     <div class="footer__map map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253322!2d30.320858716146866!3d59.938716481876234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1639073287409!5m2!1sru!2sru" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>    </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253322!2d30.320858716146866!3d59.938716481876234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1639073287409!5m2!1sru!2sru" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>    </div>
 
     <nav class="footer-nav">
       <div class="footer-inner container">
