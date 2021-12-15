@@ -1,7 +1,16 @@
 .social {
   display: flex;
   justify-content: center;
+}
 
+@media (max-width: $tablet-width) {
+  .social {
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+  }
 }
 
 .social__list {
@@ -9,7 +18,7 @@
   row-gap: 10px;
   width: 130px;
   grid-template-columns: repeat(3, 1fr);
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
 
   @include reset-list();

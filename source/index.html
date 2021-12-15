@@ -44,7 +44,9 @@
       <h1 class="promo__title">Функциональное питание для котов</h1>
       <p class="promo__text">Занялся собой? Займись котом!</p>
       <img class="promo__image" src="img/index_can.png" width="280" height="270" alt="упаковка питания Cat Energy.">
-      <a class="promo__button main-link" href="form.html">Подобрать программу</a>
+      <div class="promo__link">
+        <a class="main-link main-link--smaller-text" href="form.html">Подобрать программу</a>
+      </div>
     </div>
   </article>
 
@@ -77,7 +79,7 @@
     <section class="demo-inner container">
       <div class="demo-cat">
         <h2 class="demo-cat__title">Живой пример</h2>
-        <p class="demo-cat__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих
+        <p class="demo-cat__subtitle">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих
           тренировок!
           При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
         <ul class="demo-cat__list">
@@ -98,15 +100,15 @@
       </div>
 
       <div class="demo-slider">
-        <div class="slider-images">
-          <div class="slider-images__cat slider-images__cat--before">
-            <img class="slider-images__image slider-images__image--fat" src="img/slider_cat-fat.png" width="280" height="232" alt="кот до курса cat-energy.">
+        <div class="demo-slider__inner">
+          <div class="demo-slider__cat demo-slider__cat--before">
+            <img class="cat-fat" src="img/slider_cat-fat.png" width="280" height="232" alt="кот до курса cat-energy.">
           </div>
-          <div class="slider-images__cat slider-images__cat--static">
-            <img class="slider-images__image slider-images__image--static" src="img/index_cat-slider@1x.png" width="592" height="511" alt="слайдер в половинном состоянии.">
+          <div class="demo-slider__cat demo-slider__cat--static">
+            <img class="cats-static" src="img/index_cat-slider@1x.png" width="592" height="511" alt="слайдер в половинном состоянии.">
           </div>
-          <div class="slider-images__cat slider-images__cat--after visually-hidden">
-            <img class="slider-images__image slider-images__image--skinny" src="img/slider_cat-skinny.png" width="243" height="232" alt="кот после курса cat-energy.">
+          <div class="demo-slider__cat demo-slider__cat--after visually-hidden">
+            <img class="cat-skinny" src="img/slider_cat-skinny.png" width="243" height="232" alt="кот после курса cat-energy.">
           </div>
         </div>
 
@@ -129,9 +131,11 @@
 <footer class="page__footer footer">
   <section class="footer__contacts">
     <h2 class="visually-hidden">Контакты</h2>
-    <div class="contacts container">
-      <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
-      <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    <div class="contacts-outer contacts-outer--dark container">
+      <div class="contacts ">
+        <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
+        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
     </div>
 
     <div class="footer__map map">

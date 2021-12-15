@@ -1,6 +1,6 @@
 //global values
 @import "./global/variables.scss";
-@import "./global/styles-global.scss";
+@import "./global/visually-hidden.scss";
 @import "./global/mixins.scss";
 @import "./global/block-container.scss";
 
@@ -22,7 +22,8 @@
 @import "./blocks/demo.scss";
 @import "./blocks/demo-inner.scss";
 @import "./blocks/demo-cat.scss";
-@import "./blocks/slider-images.scss";
+@import "./blocks/demo-slider.scss";
+@import "blocks/demo-slider";
 @import "./blocks/control.scss";
 @import "./blocks/footer.scss";
 @import "./blocks/contacts-outer.scss";
@@ -37,9 +38,9 @@
 @import "./blocks/product.scss";
 @import "./blocks/product-block-outer.scss";
 @import "./blocks/product-block.scss";
-@import "blocks/additives.scss";
-@import "blocks/additive-wrapper";
-@import "blocks/additive.scss";
+@import "./blocks/additives.scss";
+@import "./blocks/addons.scss";
+@import "./blocks/additive.scss";
 @import "./blocks/stock.scss";
 @import "./blocks/main-form.scss";
 @import "./blocks/form.scss";

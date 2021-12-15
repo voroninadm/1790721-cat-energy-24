@@ -5,17 +5,10 @@
   column-gap: 10%;
 }
 
-/*Разобраться при стилизации
-  @media (min-width: $tablet-width) {
-  .contacts {
-    gap: 38.5%;
-  }
-}*/
-
 @media (min-width: $desktop-width) {
   .contacts {
     position: absolute;
-    left: 13.2%;
+    top: 50px;
     width: 565px;
     box-sizing: border-box;
     padding: 80px 56px;
@@ -25,14 +18,18 @@
 
 .contacts__title {
   width: 50%;
-}
+  font-weight: 400;
 
-@media (min-width: $tablet-width) {
-
+  @include line-height(16,20,20,26);
+  @include font-size(16,20);
 }
 
 .contacts__address {
   width: 50%;
+  font-family: $font__standard;
+
+  @include line-height(14,20,16,20);
+  @include font-size(14,16);
 }
 
 

@@ -9,3 +9,24 @@
   text-decoration: none;
   color: $link-color;
 }
+
+/*adaptive for mobile and other width*/
+@mixin font-size($mobile, $pc) {
+  @media (max-width: $tablet-width) {
+    font-size: ($mobile / $font-default-size) +rem;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: ($pc / $font-default-size) + rem;
+  }
+}
+
+@mixin line-height($mobileFont, $mobileLh, $pcFont, $pcLh) {
+  @media (max-width: $tablet-width) {
+    line-height: calc(#{$mobileLh} / #{$mobileFont});
+  }
+
+  @media (min-width: $tablet-width) {
+    line-height: calc(#{$pcLh} / #{$pcFont});
+  }
+}

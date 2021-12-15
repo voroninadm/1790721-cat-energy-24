@@ -1,17 +1,29 @@
-.additives__inner {
-  display: flex;
-  flex-direction: column;
+@media (min-width: $desktop-width) {
+  .additives {
+    grid-column: 1 / 4;
+  }
 }
 
-@media (min-width: $desktop-width) {
-  .additives__inner {
-   width: 70%;
+.additives__title {
+  width: max-content;
+  padding-right: 20px;
+  font-weight: 400;
+  background-color: $color__white;
+
+  @include line-height(24,24,36,36);
+  @include font-size(24,36);
+}
+
+@media (min-width: $tablet-width) and(max-width: $desktop-width) {
+  .additives__title {
+    padding-left: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .additives__outer {
-    display: flex;
-    column-gap: 4%;
+  .additives__title {
+    position: relative;
+    left: -30px;
+    padding-left: 30px;
   }
 }

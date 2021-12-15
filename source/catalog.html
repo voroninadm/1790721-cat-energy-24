@@ -25,7 +25,7 @@
       </button>
       <ul class="header-nav__list container">
         <li class="header-nav__item">
-          <a class="header-nav__link">Главная</a>
+          <a class="header-nav__link" href="index.html">Главная</a>
         </li>
         <li class="header-nav__item">
           <a class="header-nav__link header-nav__link--active">Каталог продукции</a>
@@ -42,9 +42,9 @@
   <h1 class="visually-hidden">Каталог здорового питания Кэт-энерджи</h1>
 
   <section class="catalog">
-    <h2 class="catalog__title">Каталог продукции</h2>
-    <div class="catalog-inner">
 
+    <div class="catalog-inner container">
+      <h2 class="catalog__title">Каталог продукции</h2>
       <div class="product-block-outer">
         <div class="product-block">
           <img class="product-block__image" src="img/catalog/chicken-500.png" width="140" height="112" alt="">
@@ -215,7 +215,7 @@
 
       <div class="product-block-outer">
         <div class="product-block product-block--more">
-          <h3 class="product-block__title">Показать еще 100500 товаров</h3>
+          <h3 class="product-block__title product-block__title--more">Показать еще 100500 товаров</h3>
           <p class="product__description">На самом деле вкусов гораздо больше!</p>
           <a class="product__button main-link main-link--discreet" href="#">Показать все</a>
         </div>
@@ -223,61 +223,53 @@
     </div>
   </section>
 
-  <section class="additives container">
-    <h2 class="additives__title">Дополнительные товары</h2>
+  <section class="addons">
+    <div class="addons__inner container">
+      <div class="additives">
+        <h2 class="additives__title">Дополнительные товары</h2>
 
-    <div class="additives__outer">
-      <div class="additives__inner">
-        <div class="additive-wrapper">
-          <div class="additive">
-            <h3 class="additive__title">Сахарозаменитель</h3>
-            <ul class="additive__list">
-              <li class="additive__item">
-                <span class="additive_amount">1 упаковка (100 г)</span>
-                <b class="additive_count">200 Р.</b>
-              </li>
-            </ul>
-          </div>
-          <a class="main-link" href="#">Заказать</a>
+        <div class="additive">
+          <h3 class="additive__title">Сахарозаменитель</h3>
+          <ul class="additive__list">
+            <li class="additive__item">
+              <span class="additive_amount">1 упаковка (100 г)</span>
+              <b class="additive_count">200 Р.</b>
+            </li>
+          </ul>
+          <a class="main-link additive__link" href="#">Заказать</a>
         </div>
 
-        <div class="additive-wrapper">
-          <div class="additive">
-            <h3 class="additive__title">Питьевая вода</h3>
-            <ul class="additive__list">
-              <li class="additive__item">
-                <span class="additive_amount">5 литров</span>
-                <b class="additive_count">50 Р.</b>
-              </li>
-            </ul>
-          </div>
-          <a class="main-link" href="#">Заказать</a>
+        <div class="additive">
+          <h3 class="additive__title">Питьевая вода</h3>
+          <ul class="additive__list">
+            <li class="additive__item">
+              <span class="additive_amount">5 литров</span>
+              <b class="additive_count">50 Р.</b>
+            </li>
+          </ul>
+          <a class="main-link additive__link" href="#">Заказать</a>
         </div>
 
-        <div class="additive-wrapper">
-          <div class="additive">
-            <h3 class="additive__title">Молоко</h3>
-            <ul class="additive__list">
-              <li class="additive__item">
-                <span class="additive_amount">1 литр</span>
-                <b class="additive_count">100 Р.</b>
-              </li>
-            </ul>
-          </div>
-          <a class="main-link" href="#">Заказать</a>
+        <div class="additive">
+          <h3 class="additive__title">Молоко</h3>
+          <ul class="additive__list">
+            <li class="additive__item">
+              <span class="additive_amount">1 литр</span>
+              <b class="additive_count">100 Р.</b>
+            </li>
+          </ul>
+          <a class="main-link additive__link" href="#">Заказать</a>
         </div>
 
-        <div class="additive-wrapper">
-          <div class="additive">
-            <h3 class="additive__title">Витамины</h3>
-            <ul class="additive__list">
-              <li class="additive__item">
-                <span class="additive_amount">1 упаковка (30 г)</span>
-                <b class="additive_count">300 Р.</b>
-              </li>
-            </ul>
-          </div>
-          <a class="main-link" href="#">Заказать</a>
+        <div class="additive">
+          <h3 class="additive__title">Витамины</h3>
+          <ul class="additive__list">
+            <li class="additive__item">
+              <span class="additive_amount">1 упаковка (30 г)</span>
+              <b class="additive_count">300 Р.</b>
+            </li>
+          </ul>
+          <a class="main-link additive__link" href="#">Заказать</a>
         </div>
       </div>
 
@@ -292,8 +284,8 @@
 <footer class="page__footer footer">
   <section class="footer__contacts">
     <h2 class="visually-hidden">Контакты</h2>
-    <div class="contacts-outer contacts-outer--dark">
-      <div class="contacts container">
+    <div class="contacts-outer contacts-outer--dark container">
+      <div class="contacts ">
         <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
         <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>

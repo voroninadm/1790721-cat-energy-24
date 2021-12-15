@@ -21,14 +21,20 @@
 .program__title {
   position: relative;
   display: flex;
-  padding-left: 60px;
+  padding-left: 28.5%;
+  margin: 0;
   align-items: center;
   text-transform: uppercase;
+  font-weight: 400;
+
+  @include font-size(24,36);
+  @include line-height(24,37,36,36);
+
 
   &::before {
     position: absolute;
-    top: 20%;
-    left: 0;
+    top: 0;
+    left: 8%;
     display: block;
     width: 50px;
     height: 50px;
@@ -40,7 +46,7 @@
 
 .program__title--slim::after {
   position: absolute;
-  top: 20%;
+  top: 0;
   left: 0;
   display: block;
   width: 36px;
@@ -98,10 +104,16 @@
 
 .program__description {
   color: $color__dark-grey;
+  font-family: $font__standard;
+
+  @include font-size(14,16);
+  @include line-height(14,18,16,24);
 }
 
 .program__link {
   text-transform: uppercase;
 
+  @include font-size(14,16);
+  @include line-height(16,16,20,29.6);
   @include link($color__black);
 }

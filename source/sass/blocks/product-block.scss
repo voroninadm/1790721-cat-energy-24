@@ -32,18 +32,15 @@
   align-items: center;
   text-align: center;
   background-color: $color__white;
-  border: 2px solid #F2F2F2;
+  border: 2px solid $color__grey;
 }
 
-@media (min-width: $tablet-width) {
+@media (max-width: $tablet-width) {
   .product-block--more {
     border: 2px solid $color__grey;
   }
 }
 
-
-.product-block--more
-.product-block__title {
+.product-block__title--more {
   text-transform: uppercase;
 }
-
