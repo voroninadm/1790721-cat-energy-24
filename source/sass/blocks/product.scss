@@ -1,6 +1,7 @@
 
 .product__button {
   grid-column: 1 / -1;
+  margin-top: auto;
 }
 
 .product__title {
@@ -58,16 +59,11 @@
   font-weight: 400;
 }
 
-.product-block__title {
-  font-weight: 400;
-
-  @include line-height(16,20,20,22);
-  @include font-size(16,20);
-}
-
 .product__description {
   font-family: $font__standard;
 
   @include line-height(12,16,16,18);
   @include font-size(12,16);
 }
+
+

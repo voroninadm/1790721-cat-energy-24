@@ -1,20 +1,24 @@
 .extra {
   list-style-type: none;
   padding-bottom: 32px;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 @media (min-width: $tablet-width) {
   .extra {
-    padding-left: 30px;
-    padding-right: 30px;
     padding-bottom: 68px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .extra {
+    width: 95%;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -37,12 +41,18 @@
 }
 
 @media (min-width: $desktop-width) {
-  .extra__item {}
+  .extra__item {
+    /*grid-template-columns: 290px 80px 245px 80px 245px;*/
+    grid-template-columns: 27% 9.5% 27% 9.5% 27%;
+    padding: 8px 0;
+    border-left: none;
+    border-right: none;
+  }
 }
 
 .extra__title {
   grid-row: 1 / -1;
-  margin: 0 0 10px 0;
+  margin-bottom: 10px;
   padding: 0;
   font-family: $font__main;
   font-weight: 400;
@@ -60,7 +70,9 @@
 }
 
 @media (min-width: $desktop-width) {
-  .extra__title {}
+  .extra__title {
+    margin-bottom: 0;
+  }
 }
 
 .extra__amount {
@@ -81,12 +93,15 @@
 }
 
 @media (min-width: $desktop-width) {
-  .extra__amount {}
+  .extra__amount {
+    grid-column: 3 / 4;
+    text-align: left;
+  }
 }
 
 .extra__count {
   grid-column: 2 / 3;
-  text-align: end;
+  text-align: right;
   font-family: $font__standard;
   font-weight: 400;
 
@@ -101,7 +116,10 @@
 }
 
 @media (min-width: $desktop-width) {
-  .extra__count {}
+  .extra__count {
+    grid-column: 4 / 5;
+    text-align: left;
+  }
 }
 
 .extra__link {
@@ -109,5 +127,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .extra__link {}
+  .extra__link {
+    grid-column: 5 / 6;
+  }
 }
