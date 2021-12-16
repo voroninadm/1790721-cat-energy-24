@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Сайт, созданный учеником 2 курса HTML Academy. Cat-energy">
+  <meta name="keywords"
+  content="интернет-магазин кошачьей еды, питание для котов, кошачий корм, кошачья еда СПб , Питер, Санкт-Петербург">
+  <title>{{ pages[pageId].name }} | Кэт энерджи | HTML Academy</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/32.png">
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body class="page__body">
+  {% include "./header.twig" %}
+
+  <main class="page__main">
+    {% block page__main %}{% endblock %}
+  </main>
+
+  {% include "./footer.twig" %}
+</body>
+
+</html>
