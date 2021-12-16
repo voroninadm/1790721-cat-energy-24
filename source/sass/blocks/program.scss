@@ -6,6 +6,36 @@
   background-color: $color__grey;
   min-height: 266px;
 
+  @media (--middle-vp) {
+    padding-right: 350px;
+    height: 372px;
+  }
+
+  @media (--wide-vp) {
+    width: 570px;
+    height: 374px;
+  }
+
+  &--slim {
+    padding: 30px 33px 12px 19px;
+
+    @media (--not-narrow-vp) {
+      padding: 74px 33px 12px 19px;
+    }
+
+    @media (--wide-vp) {
+      padding: 77px 33px 12px 19px;
+    }
+  }
+
+  &--fat {
+    padding: 25px 33px 12px 19px;
+
+    @media (--not-narrow-vp) {
+      padding: 78px 30px 12px 19px;
+    }
+  }
+
   &::after {
     position: absolute;
     top: 78%;
@@ -16,50 +46,10 @@
     height: 1px;
     background-color: #d9d9d9;
     content: "";
-  }
-}
 
-@media (min-width: $tablet-width) and (max-width: $desktop-width) {
-  .program {
-    padding-right: 350px;
-    height: 372px;
-
-    &::after {
+    @media (--middle-vp) {
       display: none;
     }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .program {
-    width: 570px;
-    height: 374px;
-  }
-}
-
-.program--slim {
-  padding: 30px 33px 12px 19px;
-}
-
-@media (min-width: $tablet-width) {
-  .program--slim {
-    padding: 74px 33px 12px 19px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .program--slim {
-    padding: 77px 33px 12px 19px;
-  }
-}
-
-.program--fat {
-  padding: 25px 33px 12px 19px;
-}
-
-@media (min-width: $tablet-width) {
-  .program--fat {
-    padding: 78px 30px 12px 19px;
   }
 }
 
@@ -78,8 +68,53 @@
   @include font-size(24,36);
   @include line-height(24,37,36,36);
 
+  @media (--not-narrow-vp) {
+    padding-left: 34px;
+  }
+
+  @media (--wide-vp) {
+    padding-left: 195px;
+  }
+
+  &--slim {
+    &::after {
+      top: -9px;
+      left: 10px;
+      width: 36px;
+      height: 50px;
+      background-image: url("../../icons/sprite.svg#cat-slim");
+    }
+  }
+
+
+  &--fat {
+    &::after {
+      top: 5px;
+      left: -6px;
+      width: 67px;
+      height: 28px;
+      background-image: url("../../icons/sprite.svg#cat-pro");
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+
+    @media (--middle-vp) {
+      top: 80px;
+      left: 75%;
+    }
+
+    @media (--wide-vp) {
+      top: -20px;
+      left: 10px;
+    }
+  }
 
   &::before {
+    content: "";
     position: absolute;
     top: -6px;
     left: 3px;
@@ -87,74 +122,21 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    content: "";
     background-color: $color__green;
-  }
-}
 
-.program__title--slim::after {
-  position: absolute;
-  top: -9px;
-  left: 10px;
-  display: block;
-  width: 36px;
-  height: 50px;
-  background-image: url("../img/svg/icon_cat-slim.svg");
-  background-repeat: no-repeat;
-  content: "";
-}
+    @media (--middle-vp) {
+      width: 200px;
+      height: 200px;
+      top: 15px;
+      left: 65%;
+    }
 
-
-.program__title--fat::after {
-  position: absolute;
-  top: 5px;
-  left: -6px;
-  display: block;
-  width: 67px;
-  height: 28px;
-  background-image: url("../img/svg/icon_cat-pro.svg");
-  content: "";
-}
-
-@media (min-width: $tablet-width) {
-  .program__title {
-    padding-left: 34px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .program__title {
-    padding-left: 195px;
-  }
-}
-
-@media (min-width: $tablet-width) and (max-width: $desktop-width) {
-  .program__title::before {
-    width: 200px;
-    height: 200px;
-    top: 15px;
-    left: 65%;
-  }
-
-  .program__title--slim::after,
-  .program__title--fat::after {
-    top: 80px;
-    left: 75%;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .program__title::before {
-    width: 100px;
-    height: 100px;
-    top: -29px;
-    left: 33px;
-  }
-
-  .program__title--slim::after,
-  .program__title--fat::after {
-    top: -20px;
-    left: 10px;
+    @media (--wide-vp) {
+      width: 100px;
+      height: 100px;
+      top: -29px;
+      left: 33px;
+    }
   }
 }
 
@@ -162,20 +144,16 @@
   padding: 29px 3px 32px 0;
   margin: 0;
   color: $color__dark-grey;
-  font-family: $font__standard;
+  font-family: var(--main-font);
 
   @include font-size(14,16);
   @include line-height(14,18,16,24);
-}
 
-@media (min-width: $tablet-width) {
-  .program__description {
+  @media (--not-narrow-vp) {
     padding: 27px 43% 40px 33px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .program__description {
+  @media (--wide-vp) {
     padding: 75px 20px 15px 33px;
   }
 }
@@ -191,10 +169,8 @@
   @include font-size(16,20);
   @include line-height(16,16,20,29.6);
   @include link($color__black);
-}
 
-@media (min-width: $tablet-width) {
-  .program__link {
+  @media (--not-narrow-vp) {
     padding: 10px 0 12px 33px;
   }
 }

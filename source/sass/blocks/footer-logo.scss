@@ -1,10 +1,8 @@
 .footer-logo {
   display: flex;
   justify-content: center;
-}
 
-@media (max-width: $tablet-width) {
-  .footer-logo {
+  @media (--narrow-vp) {
     padding-bottom: 26px;
   }
 }

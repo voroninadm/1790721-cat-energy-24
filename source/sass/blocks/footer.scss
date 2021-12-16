@@ -4,14 +4,11 @@
 
 .footer__map {
   height: 362px;
-}
 
-@media (min-width: $tablet-width) {
-  .footer__map {
+  @media (--not-narrow-vp) {
     height: 400px;
   }
 }
-
 
 .footer__map iframe {
   display: block;

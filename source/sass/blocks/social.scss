@@ -1,10 +1,8 @@
 .social {
   display: flex;
   justify-content: center;
-}
 
-@media (max-width: $tablet-width) {
-  .social {
+  @media (--narrow-vp) {
     box-sizing: border-box;
     padding-bottom: 20px;
     padding-top: 15px;

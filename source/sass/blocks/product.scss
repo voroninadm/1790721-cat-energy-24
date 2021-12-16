@@ -12,10 +12,8 @@
 
   @include line-height(16,20,20,24);
   @include font-size(16,20);
-}
 
-@media (min-width: $tablet-width) {
-  .product__title {
+  @media (--not-narrow-vp) {
     width: 60%;
     padding: 40px 35px 0 50px;
     text-align: center;
@@ -26,15 +24,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: $font__standard;
+  font-family: var(--main-font);
   font-weight: 400;
 
   @include line-height(12,16,16,16);
   @include font-size(12,16);
-}
 
-@media (min-width: $tablet-width) {
-  .product__item {
+  @media (--not-narrow-vp) {
     padding-bottom: 8px;
     margin-bottom: 7px;
     border-bottom: 1px solid $color__light-grey;
@@ -46,10 +42,8 @@
   flex-direction: column;
 
   @include reset-list();
-}
 
-@media (min-width: $tablet-width) {
-  .product__list {
+  @media (--not-narrow-vp) {
     margin-top: 20px;
     margin-bottom: 16px;
   }
@@ -60,7 +54,7 @@
 }
 
 .product__description {
-  font-family: $font__standard;
+  font-family: var(--main-font);
 
   @include line-height(12,16,16,18);
   @include font-size(12,16);

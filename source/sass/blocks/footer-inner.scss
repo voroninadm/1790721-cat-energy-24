@@ -1,12 +1,10 @@
-@media (max-width: $tablet-width) {
-  .footer-inner {
+.footer-inner {
+  @media (--narrow-vp) {
     padding-top: 39px;
     padding-bottom: 22px;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .footer-inner {
+  @media (--not-narrow-vp) {
     display: flex;
     height: 148px;
     align-items: center;

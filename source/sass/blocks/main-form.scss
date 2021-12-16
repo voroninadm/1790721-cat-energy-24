@@ -1,17 +1,13 @@
 .main-form {
   display: flex;
   flex-direction: column;
-}
 
-@media (min-width: $tablet-width) {
-  .main-form {
+  @media (--not-narrow-vp) {
     width: 90%;
     margin: 0 auto 42px auto;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .main-form {
+  @media (--wide-vp) {
     width: 1300px;
     margin: 0 auto 42px auto;
   }
@@ -23,16 +19,12 @@
 
   @include line-height(36,36,60,60);
   @include font-size(36,60);
-}
 
-@media (min-width: $tablet-width) {
-  .main-form__title {
+  @media (--not-narrow-vp) {
     margin: 51px 0 55px 0;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .main-form__title {
+  @media (--wide-vp) {
     margin: 70px 0 55px 0;
   }
 }
@@ -43,10 +35,8 @@
 
   @include line-height(14,18,20,30);
   @include font-size(14,20);
-}
 
-@media (min-width: $tablet-width) {
-  .main-form__description {
+  @media (--not-narrow-vp) {
     margin: 0 0 40px 0;
   }
 }

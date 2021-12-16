@@ -8,27 +8,24 @@
   border: none;
   padding-top: 11px;
   padding-bottom: 11px;
-  font-family: $font__main;
+  font-family: var(--accent-font);
   font-weight: 400;
 
   @include font-size(16,20);
   @include line-height(16,20,20,20);
   @include link(white);
-}
 
-.main-link--smaller-text {
-  @include font-size(14,20);
-  @include line-height(14,18,20,20);
-}
+  &--smaller-text {
+    @include font-size(14,20);
+    @include line-height(14,18,20,20);
 
-@media (min-width: $tablet-width) {
-  .main-link--smaller-text {
-    padding: 17px 5px;
+    @media (--not-narrow-vp) {
+      padding: 17px 5px;
+    }
   }
-}
 
-
-.main-link--discreet {
-  background-color: $color__grey;
-  color: $color__dark-grey;
+  &--discreet {
+    background-color: $color__grey;
+    color: $color__dark-grey;
+  }
 }

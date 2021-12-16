@@ -10,10 +10,8 @@
 .form__section {
   display: grid;
   column-gap: 80px;
-}
 
-@media (min-width: $desktop-width) {
-  .form__section {
+  @media (--wide-vp) {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -22,7 +20,7 @@
 .form textarea {
   padding-left: 14px;
   text-transform: uppercase;
-  font-family: $font__main;
+  font-family: var(--accent-font);
 
   @include line-height(16,18,20,29.64);
   @include font-size(16,18);
@@ -33,31 +31,25 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
 
-@media (min-width: $tablet-width) {
-  .form__submit {
+  @media (--not-narrow-vp) {
     flex-direction: row;
   }
 }
 
 .form__span {
-  font-family: $font__standard;
+  font-family: var(--main-font);
 
   @include line-height(14,16,16,16);
   @include font-size(14,16);
-}
 
-@media (min-width: $tablet-width) {
-  .form__span {
+  @media (--not-narrow-vp) {
     width: 110%;
     display: flex;
     justify-content: center;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .form__span {
+  @media (--wide-vp) {
     justify-content: flex-start;
     padding-left: 50px;
   }

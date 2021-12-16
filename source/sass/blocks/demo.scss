@@ -1,17 +1,20 @@
 .demo {
   background-color: $color__grey;
   width: 100%;
-}
 
-@media (min-width: $tablet-width) {
-  .demo {
-    background-image: linear-gradient(to bottom, #ffffff 600px, transparent 600px);
+  @media (--not-narrow-vp) {
+    background-image:
+      linear-gradient(
+        #ffffff 600px,
+        transparent 600px
+      );
   }
-}
 
-@media (min-width: $desktop-width) {
-  .demo {
-    background-image: linear-gradient(to bottom, #ffffff 140px, transparent 140px);
-    background-color: $color__grey;
+  @media (--wide-vp) {
+    background-image:
+      linear-gradient(
+        #ffffff 140px,
+        transparent 140px
+      );
   }
 }

@@ -4,10 +4,8 @@
   row-gap: 25px;
   flex-wrap: wrap;
   padding-bottom: 13px;
-}
 
-@media (min-width: $desktop-width) {
-  .health-programs {
+  @media (--wide-vp) {
     flex-direction: row;
     justify-content: space-between;
   }

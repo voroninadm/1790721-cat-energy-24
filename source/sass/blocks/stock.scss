@@ -9,11 +9,37 @@
   min-height: 290px;
   width: calc(100vw - 40px);
   color: $color__white;
-  background-image: url("../img/decoration/catalog_cat-on-bag.jpg");
+  background-image: url("../../img/decoration/catalog_cat-on-bag.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   text-align: center;
+
+  @media (--not-narrow-vp) {
+    min-height: 200px;
+    padding-top: 72px;
+    justify-content: flex-start;
+    background-image: url("../../img/decoration/catalog_cat-on-bag@2x.jpg");
+    background-position: center center;
+    width: calc(100vw - 60px);
+    background-size: cover;
+    text-align: left;
+    padding-right: 115px;
+  }
+
+  @media (--wide-vp) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    width: 22%;
+    height: 289px;
+    padding-right: 40px;
+    justify-self: center;
+    padding-top: 185px;
+    background-image: url("../../img/decoration/catalog_cat-on-bag.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    text-align: right;
+  }
 
   &::before {
     position: absolute;
@@ -23,23 +49,9 @@
     width: 78px;
     height: 80px;
     content: "";
-    background: url("../img/svg/icon_gift.svg") 50% 50% no-repeat;
-  }
-}
+    background: url("../../icons/sprite.svg#gift") 50% 50% no-repeat;
 
-@media (min-width: $tablet-width) {
-  .stock {
-    min-height: 200px;
-    padding-top: 72px;
-    justify-content: flex-start;
-    background-image: url("../img/decoration/catalog_cat-on-bag@2x.jpg");
-    background-position: center center;
-    width: calc(100vw - 60px);
-    background-size: cover;
-    text-align: left;
-    padding-right: 115px;
-
-    &::before {
+    @media (--not-narrow-vp) {
       top: 50%;
       transform: translateY(-50%);
       left: 10%;
@@ -47,38 +59,18 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .stock {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    width: 22%;
-    height: 289px;
-    padding-right: 40px;
-    justify-self: center;
-    padding-top: 185px;
-    background-image: url("../img/decoration/catalog_cat-on-bag.jpg");
-    background-position: 50% 50%;
-    background-size: cover;
-    text-align: right;
-  }
-}
-
 .stock__description {
   width: 165px;
   margin: 0;
-  font-family: $font__standard;
+  font-family: var(--main-font);
   line-height: 1.25;
   font-size: 1rem;
-}
 
-@media (min-width: $tablet-width) {
-  .stock__description {
+  @media (--not-narrow-vp) {
     align-self: flex-end;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .stock__description {
+  @media (--wide-vp) {
     align-self: center;
     text-align: center;
   }

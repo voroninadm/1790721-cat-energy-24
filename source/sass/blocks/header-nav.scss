@@ -1,5 +1,5 @@
-@media (max-width: $tablet-width - 1px) {
-  .header-nav {
+.header-nav {
+  @media (--narrow-vp) {
     display: none;
     position: absolute;
     top: 65px;
@@ -8,62 +8,60 @@
     width: 100%;
     opacity: 0;
   }
-}
 
-@media (max-width: $tablet-width - 1px) {
-  .header-nav--noJS {
-    display: block;
-    position: static;
-    width: 100%;
-    opacity: 1;
-  }
-}
-
-@media (min-width: $tablet_width) {
-  .header-nav {
+  @media (--not-narrow-vp) {
     width: 62%;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .header-nav {
+  @media (--wide-vp) {
     width: 37%;
     z-index: 2;
+  }
+
+  &--noJS {
+    @media (--narrow-vp) {
+      display: block;
+      position: static;
+      width: 100%;
+      opacity: 1;
+    }
   }
 }
 
 .header-nav__list {
   @include reset-list();
-}
 
-@media (max-width: $tablet-width - 1px) {
-  .header-nav__list {
+  @media (--narrow-vp) {
     display: flex;
     background-color: $color__white;
     width: 100%;
     flex-direction: column;
     align-items: center;
-
-    @include reset-list();
   }
-}
 
-@media (min-width: $tablet_width) {
-  .header-nav__list {
+  @media (--not-narrow-vp) {
     position: static;
     display: flex;
     justify-content: flex-end;
     column-gap: 7.7%;
     opacity: 1;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .header-nav__list {
+  @media (--wide-vp) {
     position: static;
     display: flex;
     background-color: transparent;
     opacity: 1;
+  }
+}
+
+.header-nav__item {
+  @media (--narrow-vp) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #eaeaea;
+    border-top: 1px solid #eaeaea;
   }
 }
 
@@ -75,36 +73,22 @@
   text-decoration: none;
   font-size: calc(18 / 16) + rem;
   line-height: calc(24 / 18);
-}
 
-@media (max-width: $tablet-width - 1px) {
-  .header-nav__link {
+  @media (--narrow-vp) {
     box-sizing: border-box;
     padding: 22px 24px;
     font-weight: 500;
   }
-}
 
-@media (max-width: $tablet-width - 1px) {
-  .header-nav__item {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    border-bottom: 1px solid #eaeaea;
-    border-top: 1px solid #eaeaea;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .header-nav__link {
+  @media (--wide-vp) {
     font-size: calc(20 / 16) + rem;
     line-height: calc(29.64 / 20);
     color: $color__black;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .header-nav__link--white {
-    color: $color__white;
+  &--white {
+    @media (--wide-vp) {
+      color: $color__white;
+    }
   }
 }

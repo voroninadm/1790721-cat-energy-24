@@ -1,4 +1,3 @@
-
 @mixin reset-list() {
   margin: 0;
   padding: 0;
@@ -12,21 +11,21 @@
 
 /*adaptive for mobile and other width*/
 @mixin font-size($mobile, $pc) {
-  @media (max-width: $tablet-width) {
-    font-size: math.div($mobile, $font-default-size) +rem;
+  @media (--narrow-vp) {
+    font-size: math.div($mobile, $font-default-size) + rem;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (--not-narrow-vp) {
     font-size: math.div($pc, $font-default-size) + rem;
   }
 }
 
 @mixin line-height($mobileFont, $mobileLh, $pcFont, $pcLh) {
-  @media (max-width: $tablet-width) {
+  @media (--narrow-vp) {
     line-height: calc(#{$mobileLh} / #{$mobileFont});
   }
 
-  @media (min-width: $tablet-width) {
+  @media (--not-narrow-vp) {
     line-height: calc(#{$pcLh} / #{$pcFont});
   }
 }

@@ -1,17 +1,13 @@
 .demo-cat {
   box-sizing: border-box;
   padding: 25px 0 26px 0;
-}
 
-@media (min-width: $desktop-width) {
-  .demo-cat {
+  @media (--wide-vp) {
     box-sizing: border-box;
     padding: 25px 0 26px 0;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .demo-cat {
+  @media (--wide-vp) {
     box-sizing: border-box;
     padding: 5px 0 26px 0;
   }
@@ -25,53 +21,43 @@
 
   @include line-height(36,40,60,60);
   @include font-size(36,60);
-}
 
-@media (min-width: $tablet-width) {
-  .demo-cat__title {
+  @media (--not-narrow-vp) {
     margin: 0 0 66px 0;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .demo-cat__title {
+  @media (--wide-vp) {
     margin: 0 0 147px 0;
   }
 }
 
 .demo-cat__subtitle {
   color: $color__dark-grey;
-  font-family: $font__standard;
+  font-family: var(--main-font);
+  padding-bottom: 20px;
+  margin: 0;
 
   @include line-height(14,18,16,24);
   @include font-size(14,16);
-  padding-bottom: 20px;
-  margin: 0;
-}
 
-@media (min-width: $tablet-width) {
-  .demo-cat__subtitle {
+  @media (--not-narrow-vp) {
     padding: 0 30px 52px 0;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .demo-cat__subtitle {
+  @media (--wide-vp) {
     width: 69%;
     padding: 0 30px 69px 0;
   }
 }
 
-@media (min-width: $tablet_width) {
-  .demo-cat__info {
+.demo-cat__info {
+  @media (--not-narrow-vp) {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .demo-cat__info {
+  @media (--wide-vp) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -88,18 +74,14 @@
   padding: 0 0 16px 0;
 
   @include reset-list();
-}
 
-@media (min-width: $tablet_width) {
-  .demo-cat__list {
+  @media (--not-narrow-vp) {
     justify-content: center;
     column-gap: 9%;
     width: 52%;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .demo-cat__list {
+  @media (--wide-vp) {
     justify-content: space-between;
     width: 58%;
   }
@@ -114,19 +96,17 @@
   flex-direction: column;
   align-items: center;
   width: 122px;
-}
 
-@media (min-width: $tablet-width) {
-  .demo-cat__item {
+  @media (--not-narrow-vp) {
     width: 162px;
   }
-}
 
-@media (min-width: $tablet_width) and (max-width: $desktop-width) {
-  .demo-cat__item--wide {
-    grid-column: 3;
-    margin-left: 10px;
-    align-items: flex-end;
+  &--wide {
+    @media (--middle-vp) {
+      grid-column: 3;
+      margin-left: 10px;
+      align-items: flex-end;
+    }
   }
 }
 
@@ -137,13 +117,10 @@
   text-transform: uppercase;
   font-weight: 400;
 
-
   @include line-height(24,24,30,37);
   @include font-size(24,30);
-}
 
-@media (min-width: $tablet-width) {
-  .demo-cat__importance {
+  @media (--not-narrow-vp) {
     padding: 15px 0 16px 0;
   }
 }
@@ -156,21 +133,19 @@
   background-color: $color__grey;
   margin: 0;
   text-align: center;
-  font-family: $font__standard;
+  font-family: var(--main-font);
 
   @include line-height(12,12,14,14);
   @include font-size(12,14);
-}
 
-@media (min-width: $tablet-width) {
-  .demo-cat__description br {
-    display: none;
+  @media (--not-narrow-vp) {
+    top: 64px;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .demo-cat__description {
-    top: 64px;
+.demo-cat__description br {
+  @media (--not-narrow-vp) {
+    display: none;
   }
 }
 
@@ -178,50 +153,36 @@
   margin: 0;
   text-align: center;
 
-
   @include line-height(14,20,20,20);
   @include font-size(14,20);
-}
 
-@media (min-width: $tablet-width) {
-  .demo-cat__expenses {
+  @media (--not-narrow-vp) {
     padding-top: 10px;
     padding-bottom: 10px;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .demo-cat__cost {
-    margin: 0 0 10px 0;
+.demo-cat__cost {
+  @media (--not-narrow-vp) {
+    margin: 0 0 10px 64px;
 
     @include line-height(14,20,20,20);
     @include font-size(14,20);
   }
 }
 
-@media (min-width: $tablet-width) {
-  .demo-cat__cost {
-    margin-left: 64px;
-  }
-}
-
-
 .demo-cat__total {
   text-transform: uppercase;
   text-align: right;
-}
 
-@media (max-width: $tablet-width - 1px) {
-  .demo-cat__total {
+  @media (--narrow-vp) {
     display: flex;
     align-items: center;
     padding: 28px 10px 15px 10px;
     justify-content: center;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .demo-cat__total {
+  @media (--wide-vp) {
     display: flex;
     align-items: baseline;
   }

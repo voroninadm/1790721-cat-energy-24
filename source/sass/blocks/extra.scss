@@ -4,16 +4,12 @@
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
-}
 
-@media (min-width: $tablet-width) {
-  .extra {
+  @media (--not-narrow-vp) {
     padding-bottom: 68px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .extra {
+  @media (--wide-vp) {
     width: 95%;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
@@ -30,18 +26,14 @@
   align-items: baseline;
   border-top: 1px solid $color__light-grey;
   border-bottom: 1px solid $color__light-grey;
-}
 
-@media (min-width: $tablet-width) {
-  .extra__item {
+  @media (--not-narrow-vp) {
     grid-template-columns: 60% 25% auto;
     padding: 25px 37px;
     border: 1px solid $color__light-grey;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .extra__item {
+  @media (--wide-vp) {
     /*grid-template-columns: 290px 80px 245px 80px 245px;*/
     grid-template-columns: 27% 9.5% 27% 9.5% 27%;
     padding: 8px 0;
@@ -54,23 +46,19 @@
   grid-row: 1 / -1;
   margin-bottom: 10px;
   padding: 0;
-  font-family: $font__main;
+  font-family: var(--accent-font);
   font-weight: 400;
   text-transform: uppercase;
 
   @include line-height(16,16,20,20);
   @include font-size(16,20);
-}
 
-@media (min-width: $tablet-width) {
-  .extra__title {
+  @media (--not-narrow-vp) {
     grid-column: 1 / 2;
     margin-bottom: 25px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .extra__title {
+  @media (--wide-vp) {
     margin-bottom: 0;
   }
 }
@@ -79,21 +67,17 @@
   display: block;
   margin-bottom: 12px;
   grid-column: 1 / 2;
-  font-family: $font__standard;
+  font-family: var(--main-font);
 
   @include line-height(14,20,16,20);
   @include font-size(14,16);
-}
 
-@media (min-width: $tablet-width) {
-  .extra__amount {
+  @media (--not-narrow-vp) {
     grid-column: 2 / 3;
     text-align: right;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .extra__amount {
+  @media (--wide-vp) {
     grid-column: 3 / 4;
     text-align: left;
   }
@@ -102,21 +86,17 @@
 .extra__count {
   grid-column: 2 / 3;
   text-align: right;
-  font-family: $font__standard;
+  font-family: var(--main-font);
   font-weight: 400;
 
   @include line-height(14,20,16,20);
   @include font-size(14,16);
-}
 
-@media (min-width: $tablet-width) {
-  .extra__count {
+  @media (--not-narrow-vp) {
     grid-column: 3 / 4;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .extra__count {
+  @media (--wide-vp) {
     grid-column: 4 / 5;
     text-align: left;
   }
@@ -124,10 +104,8 @@
 
 .extra__link {
   grid-column: 1 / -1;
-}
 
-@media (min-width: $desktop-width) {
-  .extra__link {
+  @media (--wide-vp) {
     grid-column: 5 / 6;
   }
 }

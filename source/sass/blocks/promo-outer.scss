@@ -1,39 +1,50 @@
 .promo-outer {
   padding-bottom: 20px;
-  background-image: linear-gradient(to top, #ffffff 198px, transparent 198px), linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/header_happy-cat.jpg");
+  background-image:
+    linear-gradient(
+      to top,
+      #ffffff 198px,
+      transparent 198px
+    ),
+    linear-gradient(
+      rgba(104, 183, 56, 0.85),
+      rgba(104, 183, 56, 0.85)
+    ),
+    url("../../img/header_happy-cat.jpg");
   background-repeat: no-repeat;
   background-color: #29530f;
   background-position: 50% 0;
-}
 
-@media (min-width: $tablet-width) and (max-width: $desktop-width) {
-  .promo-outer {
+  @media (--middle-vp) {
     background-image: none;
     background-color: $color__white;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .promo-outer {
+  @media (--wide-vp) {
     position: relative;
     background-image: none;
     background-color: $color__white;
+  }
 
-    &::after {
+  &::after {
+    @media (--wide-vp) {
+      content: "";
       position: absolute;
       top: -18%;
       right: 0;
       width: 50%;
       height: 695px;
-      content: "";
-      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/header_happy-cat.jpg");
+      background-image:
+        linear-gradient(
+          rgba(104, 183, 56, 0.85),
+          rgba(104, 183, 56, 0.85)
+        ),
+        url("../../img/header_happy-cat.jpg");
       background-position: right top;
       background-repeat: no-repeat;
     }
   }
 }
-/*
 
-background-image: linear-gradient(to top, #ffffff 80px, transparent 80px), linear-gradient(to right, $color__white 50%, transparent 50%), linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/header_happy-cat.jpg");
-background-position: top right;
-*/
+// background-image: linear-gradient(to top, #ffffff 80px, transparent 80px), linear-gradient(to right, $color__white 50%, transparent 50%), linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/header_happy-cat.jpg");
+// background-position: top right;

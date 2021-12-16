@@ -1,16 +1,12 @@
 .additives {
   padding-top: 23px;
   padding-bottom: 37px;
-}
 
-@media (min-width: $tablet-width) {
-  .additives {
+  @media (--not-narrow-vp) {
     padding-bottom: 67px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .additives {
+  @media (--wide-vp) {
     grid-column: 1 / 4;
     padding-bottom: 67px;
   }
@@ -25,17 +21,13 @@
 
   @include line-height(24,24,36,36);
   @include font-size(24,36);
-}
 
-@media (min-width: $tablet-width) {
-  .additives__title {
+  @media (--not-narrow-vp) {
     padding-left: 20px;
     margin: 0 0 80px 0;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .additives__title {
+  @media (--wide-vp) {
     position: relative;
     left: -30px;
     padding-left: 30px;

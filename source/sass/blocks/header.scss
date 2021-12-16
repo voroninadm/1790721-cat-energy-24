@@ -6,23 +6,19 @@
   justify-content: space-between;
   align-items: center;
   background-color: $color__white;
-}
 
-@media (max-width: $tablet-width - 1px) {
-  .header--noJS {
-    display: block;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .header {
+  @media (--not-narrow-vp) {
     padding-top: 35px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .header {
+  @media (--wide-vp) {
     padding-top: 63px;
     background-color: transparent;
+  }
+
+  &--noJS {
+    @media (--narrow-vp) {
+      display: block;
+    }
   }
 }

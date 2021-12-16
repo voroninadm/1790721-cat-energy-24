@@ -1,5 +1,5 @@
-@media (min-width: $desktop-width) {
-  .demo-inner {
+.demo-inner {
+  @media (--wide-vp) {
     display: flex;
     justify-content: space-between;
   }

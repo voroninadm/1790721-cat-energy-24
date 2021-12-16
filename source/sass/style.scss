@@ -1,16 +1,11 @@
-/*//sass includes
-@use "./sass:math";*/
-
 //global values
+@import "./global/math.scss";
+@import "./global/fonts.scss";
+@import "./global/mixins.scss";
+@import "./global/media.scss";
 @import "./global/variables.scss";
 @import "./global/visually-hidden.scss";
-@import "./global/block-container.scss";
-
-//mixins
-@import "./global/mixins.scss";
-
-//fonts
-@import "./global/fonts.scss";
+@import "./global/container.scss";
 
 //blocks
 @import "./blocks/page.scss";
@@ -28,7 +23,6 @@
 @import "./blocks/demo-inner.scss";
 @import "./blocks/demo-cat.scss";
 @import "./blocks/demo-slider.scss";
-@import "./blocks/demo-slider";
 @import "./blocks/control.scss";
 @import "./blocks/footer.scss";
 @import "./blocks/contacts-outer.scss";
