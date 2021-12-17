@@ -1,4 +1,4 @@
-.promo-outer {
+.promo-container {
   padding-bottom: 20px;
   background-image:
     linear-gradient(
@@ -45,6 +45,3 @@
     }
   }
 }
-
-// background-image: linear-gradient(to top, #ffffff 80px, transparent 80px), linear-gradient(to right, $color__white 50%, transparent 50%), linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/header_happy-cat.jpg");
-// background-position: top right;

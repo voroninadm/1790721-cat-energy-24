@@ -24,20 +24,19 @@
     width: calc(100vw - 60px);
     background-size: cover;
     text-align: left;
-    padding-right: 115px;
+    //padding-right: 115px;
   }
 
   @media (--wide-vp) {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
+    // grid-column: 2 / 3;
+    // grid-row: 2 / 3;
     width: 22%;
-    height: 289px;
+    // height: 289px;
     padding-right: 40px;
     justify-self: center;
-    padding-top: 185px;
     background-image: url("../../img/decoration/catalog_cat-on-bag.jpg");
     background-position: 50% 50%;
-    background-size: cover;
+    background-size: contain;
     text-align: right;
   }
 
@@ -71,7 +70,6 @@
   }
 
   @media (--wide-vp) {
-    align-self: center;
     text-align: center;
   }
 }

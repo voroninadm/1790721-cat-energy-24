@@ -1,6 +1,7 @@
-.demo-inner {
+.demo-container {
   @media (--wide-vp) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 }

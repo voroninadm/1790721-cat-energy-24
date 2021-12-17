@@ -1,9 +1,8 @@
 .catalog {
-  margin-bottom: 22px;
+  padding-bottom: 22px;
 
   @media (--not-narrow-vp) {
-    padding-bottom: 30px;
-    margin-bottom: 35px;
+    padding-bottom: 60px;
   }
 }
 

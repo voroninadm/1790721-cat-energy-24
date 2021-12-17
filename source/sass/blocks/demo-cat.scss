@@ -53,7 +53,6 @@
 .demo-cat__info {
   @media (--not-narrow-vp) {
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
 
@@ -79,6 +78,7 @@
     justify-content: center;
     column-gap: 9%;
     width: 52%;
+    margin-right: 22%;
   }
 
   @media (--wide-vp) {
