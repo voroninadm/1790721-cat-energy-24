@@ -11,6 +11,4 @@ export default {
     { "id": 1, "source": "https://www.instagram.com/htmlacademy", "name": "Instagram" },
     { "id": 2, "source": "https://www.facebook.com/htmlacademy", "name": "Facebook" }
   ]
-
 }
-

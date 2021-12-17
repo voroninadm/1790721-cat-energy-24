@@ -29,8 +29,10 @@
           <ul class="social__list">
             {% for link in links %}
               <li class="social__item">
-                <a class="social__link" href="{{ link.source }}" aria-current="{{ link.name }}">{{ link.name }}</a>
-             </li>
+                <a class="social__link" href="{{ link.source }}" target="_blank">{{ link.name }}
+                  <span class="visually-hidden">{{ link.name }}</span>
+                </a>
+              </li>
             {% else %}
               <li>Социальные сети пропали 😕</li>
             {% endfor %}
