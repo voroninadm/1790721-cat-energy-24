@@ -10,6 +10,21 @@
   @media (--not-narrow-vp) {
     height: 400px;
   }
+
+  @media (--wide-vp) {
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    min-height: 400px;
+    height: 100%;
+  }
+}
+
+@media (--wide-vp) {
+  .footer__contacts-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    box-sizing: border-box;
+  }
 }
 
 .footer__map iframe {
