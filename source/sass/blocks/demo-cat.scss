@@ -128,6 +128,7 @@
 .demo-cat__description {
   position: absolute;
   top: 44px;
+  width: 65%;
   z-index: 2;
   padding: 0 10px;
   background-color: var(--color__grey);
@@ -138,14 +139,16 @@
   @include line-height(12,12,14,14);
   @include font-size(12,14);
 
-  @media (--not-narrow-vp) {
+  @media (--middle-vp) {
     top: 64px;
+    width: 78%;
+    background-color: var(--color__white);
   }
-}
 
-.demo-cat__description br {
-  @media (--not-narrow-vp) {
-    display: none;
+  @media (--wide-vp) {
+    top: 60px;
+    width: 78%;
+    background-color: var(--color__grey);
   }
 }
 

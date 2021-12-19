@@ -7,15 +7,28 @@
 }
 
 .catalog__title {
+  position: relative;
   grid-column: 1 / -1;
   padding-top: 28px;
   padding-bottom: 39px;
-  border-top: 1px solid #ebebeb;
   font-weight: 400;
   margin: 0;
 
   @include line-height(36, 36, 60, 60);
   @include font-size(36, 60);
+
+  @media (--narrow-vp) {
+    &::before {
+      position: absolute;
+      top: 0;
+      right: -20px;
+      display: block;
+      width: 100vw;
+      height: 1px;
+      background-color: #d9d9d9;
+      content: "";
+    }
+  }
 
   @media (--not-narrow-vp) {
     margin-top: 22px;

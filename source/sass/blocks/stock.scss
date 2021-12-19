@@ -7,7 +7,7 @@
   padding-top: 130px;
   padding-bottom: 43px;
   min-height: 290px;
-  width: calc(100vw - 40px);
+  // width: calc(100vw - 40px);
   color: var(--color__white);
   background-image: url("../../img/decoration/catalog_cat-on-bag.jpg");
   background-repeat: no-repeat;
@@ -21,7 +21,7 @@
     justify-content: flex-start;
     background-image: url("../../img/decoration/catalog_cat-on-bag@2x.jpg");
     background-position: center center;
-    width: calc(100vw - 60px);
+    // width: calc(100vw - 60px);
     background-size: cover;
     text-align: left;
   }

@@ -22,7 +22,6 @@
 @media (--wide-vp) {
   .footer__contacts-wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     box-sizing: border-box;
   }
 }

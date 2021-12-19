@@ -9,10 +9,23 @@
   }
 
   &--purpose {
-    border-top: 1px solid #d9d9d9;
-    border-bottom: 1px solid #d9d9d9;
+    position: relative;
+    // border-top: 1px solid #d9d9d9;
+    // border-bottom: 1px solid #d9d9d9;
     padding-bottom: 28px;
     padding-left: 43px;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      content: "";
+      display: block;
+      width: 100vw;
+      height: 2px;
+      background-color: var(--color__green);
+    }
 
     @media (--not-narrow-vp) {
       border: 1px solid #d9d9d9;

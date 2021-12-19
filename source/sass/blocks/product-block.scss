@@ -20,8 +20,6 @@
     align-items: center;
     text-align: center;
     background-color: var(--color__white);
-    border-top: 2px solid var(--color__grey);
-    border-bottom: 2px solid var(--color__grey);
 
     @media (--not-narrow-vp) {
       padding-top: 85px;
@@ -34,8 +32,8 @@
       content: "";
       position: absolute;
       top: 0;
-      left: 0;
-      right: 0;
+      right: -20px;
+      width: 100vw;
       height: 1px;
       background-color: #ebebeb;
     }
@@ -46,8 +44,7 @@
       content: "";
       position: absolute;
       top: 0;
-      right: 0;
-      left: 0;
+      right: -20px;
       height: 1px;
       background-color: #ebebeb;
     }
