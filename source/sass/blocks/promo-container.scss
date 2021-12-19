@@ -17,13 +17,13 @@
 
   @media (--middle-vp) {
     background-image: none;
-    background-color: $color__white;
+    background-color: var(--color__white);
   }
 
   @media (--wide-vp) {
     position: relative;
     background-image: none;
-    background-color: $color__white;
+    background-color: var(--color__white);
   }
 
   &::after {

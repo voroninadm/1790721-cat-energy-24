@@ -12,7 +12,7 @@
     width: 100vw;
     height: 2px;
     content: "";
-    background-color: $color__green;
+    background-color: var(--color__green);
 
     @media (--not-narrow-vp) {
       top: 23px;

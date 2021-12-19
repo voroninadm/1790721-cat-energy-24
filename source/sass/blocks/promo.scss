@@ -24,7 +24,7 @@
 }
 
 .promo__title {
-  color: $color__white;
+  color: var(--color__white);
   text-align: center;
   font-weight: 400;
   margin: 27px 0 25px 0;
@@ -33,7 +33,7 @@
   @include line-height(36, 36, 60, 60);
 
   @media (--not-narrow-vp) {
-    color: $color__black;
+    color: var(--color__black);
     text-align: left;
     margin: 19px 0 42px 0;
     width: 430px;
@@ -41,7 +41,7 @@
 }
 
 .promo__text {
-  color: $color__white;
+  color: var(--color__white);
   margin-top: 0;
   margin-bottom: 29px;
   text-transform: uppercase;
@@ -50,7 +50,7 @@
   @include line-height(14, 14, 20, 20);
 
   @media (--not-narrow-vp) {
-    color: $color__black;
+    color: var(--color__black);
     margin-bottom: 40px;
   }
 }
@@ -69,8 +69,6 @@
 
 .promo__link {
   box-sizing: border-box;
-  // padding-top: 10px;
-  // padding-bottom: 7px;
   width: 100%;
 
   @media (--not-narrow-vp) {

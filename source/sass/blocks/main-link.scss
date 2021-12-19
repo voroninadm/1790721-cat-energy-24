@@ -3,7 +3,7 @@
   width: 100%;
   justify-content: center;
   align-items: center;
-  background-color: $color__green;
+  background-color: var(--color__green);
   text-transform: uppercase;
   border: none;
   padding-top: 11px;
@@ -25,7 +25,7 @@
   }
 
   &--discreet {
-    background-color: $color__grey;
-    color: $color__dark-grey;
+    background-color: var(--color__grey);
+    color: var(--color__dark-grey);
   }
 }

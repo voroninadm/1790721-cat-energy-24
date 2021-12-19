@@ -1,5 +1,5 @@
 .contacts-container {
-  background-color: $color__white;
+  background-color: var(--color__white);
 
   @media (--wide-vp) {
     align-self: center;
@@ -12,7 +12,10 @@
     background-color: transparent;
   }
 
-  &--dark {
-    background-color: $color__grey;
+  &--color_change {
+    @media (--not-wide-vp) {
+      --changed-color: var(--color__grey);
+      background-color: var(--changed-color, --color__white);
+    }
   }
 }

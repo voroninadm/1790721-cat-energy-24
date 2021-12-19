@@ -67,8 +67,6 @@
   @media (--not-narrow-vp) {
     flex-direction: column;
     min-height: 156px;
-    // padding: 113px 65px 10px 0;
-    // width: 80%;
     padding: 113px 0 10px 0;
     width: 100%;
   }
@@ -80,10 +78,10 @@
     left: 0;
     width: 60px;
     height: 60px;
-    background-color: $color__green;
+    background-color: var(--color__green);
     background-repeat: no-repeat;
     background-position: center;
-    color: $color__dark-grey;
+    color: var(--color__dark-grey);
 
     @media (--not-narrow-vp) {
       margin-bottom: 20px;

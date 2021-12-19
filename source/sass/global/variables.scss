@@ -1,5 +1,5 @@
-//Переделаю на css-переменные
-/*:root {
+
+:root {
   --color__green: #68b738;
   --color__deep-green: #5eaa2f;
   --color__white: #ffffff;
@@ -9,19 +9,11 @@
   --color__deep-grey: #eaeaea;
   --color__dark-grey: #444444;
   --color__light-grey: #cdcdcd;
-}*/
 
-//colors
-$color__green: #68b738;
-$color__deep-green: #5eaa2f;
-$color__white: #ffffff;
-$color__black: #000000;
-$color__light-black: #111111;
-$color__grey: #f2f2f2;
-$color__deep-grey: #eaeaea;
-$color__dark-grey: #444444;
-$color__light-grey: #cdcdcd;
-
-//font-size default
+  //font-size defaults
+  --font-mobi-size: 14;
+  --font-default-size: 16;
+}
+//font-size defaults !for mixins only!
 $font-mobi-size: 14;
 $font-default-size: 16;

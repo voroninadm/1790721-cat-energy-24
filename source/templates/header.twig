@@ -6,16 +6,16 @@
         alt="Текст логотипа кэт-энерджи.">
     </a>
     <button class="menu-toggle" type="button">
-      <span class="visually-hidden">Меню.</span>
+      <span class="page__hidden">Меню.</span>
     </button>
-    <nav class="header-nav ">
+    <nav class="header-nav {% if permalink == "index.html" %} header-nav--color_change {% endif %}">
       <ul class="header-nav__list">
         {% for page in pages %}
           <li class="header-nav__item">
             <a class="header-nav__link" href="{{ page.path }}" {% if permalink == page.path %} aria-current="page" {% endif %}>{{ page.name }}</a>
           </li>
         {% else %}
-          <li>Из навигации пропали все пункты 😕</li>
+          <li>Из навигации пропали все пункты 😕</li>
         {% endfor %}
       </ul>
     </nav>

@@ -1,5 +1,5 @@
 .demo {
-  background-color: $color__grey;
+  background-color: var(--color__grey);
   width: 100%;
 
   @media (--not-narrow-vp) {

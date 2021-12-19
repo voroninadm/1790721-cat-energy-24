@@ -5,7 +5,7 @@
   padding-bottom: 17px;
   justify-content: space-between;
   align-items: center;
-  background-color: $color__white;
+  background-color: var(--color__white);
 
   @media (--not-narrow-vp) {
     padding-top: 35px;
