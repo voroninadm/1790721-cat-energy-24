@@ -12,7 +12,7 @@
       <ul class="header-nav__list">
         {% for page in pages %}
           <li class="header-nav__item">
-            <a class="header-nav__link" href="{{ page.path }}" {% if permalink == page.path %} aria-current="page" {% endif %}>{{ page.name }}</a>
+            <a class="header-nav__link {% if permalink == page.path %} header-nav__link--active {% endif %}>{{ page.name }}" href="{{ page.path }}" {% if permalink == page.path %} aria-current="page" {% endif %}>{{ page.name }}</a>
           </li>
         {% else %}
           <li>Из навигации пропали все пункты 😕</li>

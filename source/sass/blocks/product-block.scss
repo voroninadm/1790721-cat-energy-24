@@ -33,6 +33,7 @@
       position: absolute;
       top: 0;
       right: -20px;
+      display: block;
       width: 100vw;
       height: 1px;
       background-color: #ebebeb;
@@ -43,7 +44,9 @@
     @media (--narrow-vp) {
       content: "";
       position: absolute;
-      top: 0;
+      top: 208px;
+      display: block;
+      width: 100vw;
       right: -20px;
       height: 1px;
       background-color: #ebebeb;

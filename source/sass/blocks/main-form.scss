@@ -18,6 +18,19 @@
   @include line-height(36,36,60,60);
   @include font-size(36,60);
 
+  @media (--narrow-vp) {
+    &::before {
+      position: absolute;
+      top: 65px;
+      right: 0;
+      display: block;
+      width: 100vw;
+      height: 1px;
+      background-color: #d9d9d9;
+      content: "";
+    }
+  }
+
   @media (--not-narrow-vp) {
     margin: 51px 0 55px 0;
   }

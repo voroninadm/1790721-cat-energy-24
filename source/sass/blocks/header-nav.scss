@@ -72,6 +72,7 @@
 }
 
 .header-nav__link {
+  position: relative;
   display: block;
   width: max-content;
   color: var(--changed-color, --color__black);
@@ -90,4 +91,16 @@
     font-size: calc(20 / 16) + rem;
     line-height: calc(29.64 / 20);
   }
+
+  &--active::before {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    content: "";
+    display: none;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color__green);
+  }
 }
+
