@@ -5,10 +5,10 @@ export default {
     { "id": 2, "path": "form.html", "name": "Подбор программы" }
   ],
 
-  //testing links
+  //for symbol sprite
   "links": [
-    { "id": 0, "source": "https://vk.com/htmlacademy/", "name": "ВКонтакте" },
-    { "id": 1, "source": "https://www.instagram.com/htmlacademy", "name": "Instagram" },
-    { "id": 2, "source": "https://www.facebook.com/htmlacademy", "name": "Facebook" }
+    {"source": "https://vk.com/htmlacademy/", "name": "ВКонтакте", "path":"./img/symbol-sprite.svg", "id": "#vk", "width": "28px", "height": "22px" },
+    {"source": "https://www.instagram.com/htmlacademy", "name": "Instagram", "path":"img/symbol-sprite.svg", "id": "#ig", "width": "20px", "height": "20px" },
+    {"source": "https://www.facebook.com/htmlacademy", "name": "Facebook", "path":"img/symbol-sprite.svg", "id": "#fb", "width": "22px", "height": "22px" }
   ]
 }

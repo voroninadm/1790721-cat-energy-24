@@ -1,21 +1,22 @@
-.contacts-container {
-  background-color: var(--color__white);
+// .footer__contacts-container {
+//   background-color: var(--color__white);
 
-  @media (--wide-vp) {
-    align-self: center;
-    justify-self: center;
-    grid-column: 1 / 2;
-    grid-row: 1 / -1;
-    padding: 20px 0;
-    box-sizing: border-box;
-    z-index: 2;
-    background-color: transparent;
-  }
+//   @media (--wide-vp) {
+//     width: 565px;
+//     margin-left: calc((100vw - 1280px) / 2);
+//     align-self: center;
+//     grid-column: 1 / 2;
+//     grid-row: 1 / -1;
+//     padding: 20px 0;
+//     box-sizing: border-box;
+//     z-index: 2;
+//     background-color: transparent;
+//   }
 
-  &--color_change {
-    @media (--not-wide-vp) {
-      --changed-color: var(--color__grey);
-      background-color: var(--changed-color, --color__white);
-    }
-  }
-}
+//   &--color_change {
+//     @media (--not-wide-vp) {
+//       --changed-color: var(--color__grey);
+//       background-color: var(--changed-color, --color__white);
+//     }
+//   }
+// }
