@@ -9,7 +9,9 @@
   content="интернет-магазин кошачьей еды, питание для котов, кошачий корм, кошачья еда СПб , Питер, Санкт-Петербург">
   <title>{{ pages[pageId].name }} | Кэт энерджи | HTML Academy</title>
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/32.png">
+  <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./img/favicons/favicon-180.png">
+  <link rel="manifest" href="./manifest.webmanifest">
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
@@ -17,7 +19,8 @@
   {% include "./header.twig" %}
 
   <main class="page__main">
-    {% block page__main %}{% endblock %}
+  {% import "./macros.twig" as macros %}
+  {% block page__main %}{% endblock %}
   </main>
 
   {% include "./footer.twig" %}

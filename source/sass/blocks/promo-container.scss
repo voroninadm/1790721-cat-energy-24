@@ -15,6 +15,20 @@
   background-color: #29530f;
   background-position: 50% 0;
 
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: linear-gradient(
+      to top,
+      #ffffff 198px,
+      transparent 198px
+    ),
+      linear-gradient(
+      rgba(104, 183, 56, 0.85),
+      rgba(104, 183, 56, 0.85)
+    ),
+      url("../../img/happy-cat-s@2x.jpg");
+    background-size: auto, auto, 320px auto;
+  }
+
   @media (--middle-vp) {
     background-image: none;
     background-color: var(--color__white);
@@ -43,6 +57,16 @@
       background-color: #2e5c12;
       background-position: right top;
       background-repeat: no-repeat;
+    }
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image:
+        linear-gradient(
+          rgba(104, 183, 56, 0.85),
+          rgba(104, 183, 56, 0.85)
+        ),
+        url("../../img/happy-cat-l@2x.jpg");
+      background-size: auto, 720px auto;
     }
   }
 }

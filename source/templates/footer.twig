@@ -16,7 +16,6 @@
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253322!2d30.320858716146866!3d59.938716481876234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1639073287409!5m2!1sru!2sru"
           width="320" height="362" allowfullscreen="" loading="lazy"></iframe>
       </div>
-    </div>
 
     <nav class="footer-nav">
       <div class="footer-container page__centerer">
@@ -32,7 +31,7 @@
             {% for link in links %}
               <li class="social__item">
                 <a class="social__link" href="{{ link.source }}" target="_blank">
-                  <svg width="{{ link.width }}" height="{{ link.height }}";>
+                  <svg width="{{ link.width }}" height="{{ link.height }}">
                     <use xlink:href="{{ link.path }}{{ link.id }}"></use>
                   </svg>
                   <span class="page__hidden">{{ link.name }}</span>

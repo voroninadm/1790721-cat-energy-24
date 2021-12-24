@@ -58,18 +58,29 @@
 .promo__image {
   display: block;
   padding-bottom: 3px;
-  z-index: 2;
 
-  @media (--not-narrow-vp) {
+  @media (--middle-vp) {
     position: absolute;
     bottom: 0;
-    left: 40%;
+    right: 0;
+    width: 709px;
+    height: auto;
+  }
+
+  @media (--wide-vp) {
+    position: absolute;
+    top: 25px;
+    left: 37%;
+    width: 552px;
+    height: auto;
+    z-index: 3;
   }
 }
 
 .promo__link {
   box-sizing: border-box;
   width: 100%;
+  z-index: 3;
 
   @media (--not-narrow-vp) {
     box-sizing: border-box;
