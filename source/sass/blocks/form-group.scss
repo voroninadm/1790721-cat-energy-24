@@ -92,7 +92,7 @@
       z-index: -1;
       content: "";
       display: block;
-      width: 100vw;
+      width: 95vw;
       height: 2px;
       background-color: var(--color__green);
     }
@@ -116,7 +116,7 @@
       z-index: -1;
       content: "";
       display: block;
-      width: 100vw;
+      width: calc((100vw/ 2) + 600px);
       height: 2px;
       background-color: var(--color__green);
     }
