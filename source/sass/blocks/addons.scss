@@ -20,10 +20,10 @@
       width: 100vw;
     }
 
-    @media (--not-narrow-vp) {
+    @media (--wide-vp) {
       top: 23px;
       right: 0;
-      width: 100vw;
+      width: calc((99.5vw / 2) + 600px);
     }
   }
 
