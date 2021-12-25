@@ -14,7 +14,9 @@
 .social__list {
   display: grid;
   row-gap: 10px;
-  width: 55%;
+  // width: 55%;
+  // max-width: 250px;
+  width: 130px;
   grid-template-columns: repeat(3, 1fr);
   align-items: baseline;
   justify-content: center;
@@ -26,4 +28,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.social__icon {
+  height: 20px;
+  width: 20px;
+
+  @media (--not-narrow-vp) {
+    height: 25px;
+    width: 37px;
+  }
 }

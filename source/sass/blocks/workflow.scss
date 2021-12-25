@@ -123,16 +123,20 @@
 //block background-images
 .workflow__item--health::before {
   background-image: url("../../icons/sprite.svg#leaf");
+  background-size: 30px auto;
 }
 
 .workflow__item--brew::before {
   background-image: url("../../icons/sprite.svg#tub");
+  background-size: 29px auto;
 }
 
 .workflow__item--change::before {
   background-image: url("../../icons/sprite.svg#eat");
+  background-size: 25px auto;
 }
 
 .workflow__item--profit::before {
   background-image: url("../../icons/sprite.svg#alarm");
+  background-size: 32px auto;
 }

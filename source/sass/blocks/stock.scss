@@ -14,7 +14,7 @@
   background-size: cover;
   text-align: center;
 
-  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  @media (--x2-resolution) {
     background-image: url("../../img/cat-bag@2x.jpg");
   }
 
@@ -28,7 +28,7 @@
     background-size: cover;
     text-align: left;
 
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    @media (--x2-resolution) {
       background-image: url("../../img/cat-bag_l@2x.jpg");
     }
   }
@@ -42,7 +42,7 @@
     background-size: contain;
     text-align: right;
 
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    @media (--x2-resolution) {
       background-image: url("../../img/cat-bag@2x.jpg");
     }
   }

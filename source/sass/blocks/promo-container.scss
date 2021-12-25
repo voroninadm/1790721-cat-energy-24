@@ -15,7 +15,7 @@
   background-color: #29530f;
   background-position: 50% 0;
 
-  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  @media (--x2-resolution) {
     background-image: linear-gradient(
       to top,
       #ffffff 198px,
@@ -59,7 +59,7 @@
       background-repeat: no-repeat;
     }
 
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    @media (--x2-resolution) {
       background-image:
         linear-gradient(
           rgba(104, 183, 56, 0.85),

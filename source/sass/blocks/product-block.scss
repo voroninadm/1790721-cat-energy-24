@@ -94,6 +94,7 @@
   @include font-size(16,20);
 
   &--more {
+    position: relative;
     margin: 0 0 0 0;
     text-transform: uppercase;
 
@@ -101,6 +102,40 @@
       width: 70%;
       margin-top: 77px;
       margin-bottom: 13px;
+    }
+
+    &::before {
+      position: absolute;
+      top: -40px;
+      left: 50%;
+      display: block;
+      width: 2px;
+      height: 30px;
+      content: "";
+      background-color: #d3d3d3;
+
+      @media (--not-narrow-vp) {
+        top: -125px;
+        left: 50%;
+        height: 60px;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      top: -25px;
+      left: 43%;
+      display: block;
+      width: 30px;
+      height: 2px;
+      content: "";
+      background-color: #d3d3d3;
+
+      @media (--not-narrow-vp) {
+        top: -95px;
+        left: 27%;
+        width: 60px;
+      }
     }
   }
 }

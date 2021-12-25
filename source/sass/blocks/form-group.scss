@@ -256,6 +256,11 @@
       border: 1px solid var(--color__light-grey);
       border-radius: 50%;
       background-color: var(--color__white);
+
+      @media (--not-narrow-vp) {
+        width: 40px;
+        height: 40px;
+      }
     }
 
     &::after {
@@ -268,6 +273,13 @@
       content: "";
       border-radius: 50%;
       background-color: var(--color__green);
+
+      @media (--not-narrow-vp) {
+        top: 12px;
+        left: -28px;
+        width: 18px;
+        height: 18px;
+      }
     }
   }
 
@@ -285,18 +297,33 @@
       content: "";
       border: 1px solid var(--color__light-grey);
       background-color: var(--color__white);
+
+      @media (--narrow-vp) {
+        width: 30px;
+        height: 30px;
+      }
+
+      @media (--not-narrow-vp) {
+        width: 40px;
+        height: 40px;
+      }
     }
 
     &::after {
       position: absolute;
-      top: 10px;
-      left: -32px;
+      top: 7px;
+      left: -33px;
       display: none;
-      width: 18px;
-      height: 14px;
+      width: 26px;
+      height: 20px;
       content: "";
       background-image: url("../../icons/sprite.svg#ok");
       background-repeat: no-repeat;
+
+      @media (--not-narrow-vp) {
+        width: 27px;
+        height: 27px;
+      }
     }
   }
 }
@@ -333,4 +360,33 @@
 
 .form__button {
   margin-bottom: 15px;
+}
+
+.form-group__icon {
+  position: relative;
+
+  &--email {
+    @media (--narrow-vp) {
+      top: 3px;
+      left: -30px;
+    }
+
+    @media (--not-narrow-vp) {
+      top: 3px;
+      left: -40px;
+    }
+  }
+
+
+  &--phone {
+    @media (--narrow-vp) {
+      top: 3px;
+      left: -25px;
+    }
+
+    @media (--not-narrow-vp) {
+      top: 3px;
+      left: -35px;
+    }
+  }
 }
