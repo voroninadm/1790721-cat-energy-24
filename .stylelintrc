@@ -19,7 +19,8 @@
       true,
       {
         "ignoreAtRules": [
-          "@custom-media",
+          "custom-media",
+          "use",
           "mixin",
           "define-mixin",
           "include",

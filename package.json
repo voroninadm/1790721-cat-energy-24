@@ -29,7 +29,7 @@
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"source/sass/**/*.scss\" --custom-syntax postcss-scss",
+    "stylelint": "stylelint \"source/sass/**/*.scss\"",
     "test": "npm run editorconfig && npm run stylelint && gulp validateMarkup",
     "build": "gulp build",
     "start": "gulp"
