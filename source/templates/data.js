@@ -5,17 +5,10 @@ export default {
     { "id": 2, "path": "form.html", "name": "Подбор программы" }
   ],
 
-  // //for symbol sprite
-  // "links": [
-  //   {"source": "https://vk.com/htmlacademy/", "name": "ВКонтакте", "path":"./img/symbol-sprite.svg", "id": "#vk", "width": "28px", "height": "22px" },
-  //   {"source": "https://www.instagram.com/htmlacademy", "name": "Instagram", "path":"img/symbol-sprite.svg", "id": "#ig", "width": "20px", "height": "20px" },
-  //   {"source": "https://www.facebook.com/htmlacademy", "name": "Facebook", "path":"img/symbol-sprite.svg", "id": "#fb", "width": "22px", "height": "22px" }
-  // ]
-
   //for stack sprite
   "links": [
-    {"source": "https://vk.com/htmlacademy/", "name": "ВКонтакте", "path":"./img/stack-sprite.svg", "id": "#vk" },
-    {"source": "https://www.instagram.com/htmlacademy", "name": "Instagram", "path":"./img/stack-sprite.svg", "id": "#ig" },
-    {"source": "https://www.facebook.com/htmlacademy", "name": "Facebook", "path":"./img/stack-sprite.svg", "id": "#fb" }
+    {"source": "https://vk.com/htmlacademy/", "name": "ВКонтакте", "id": "vk" },
+    {"source": "https://www.instagram.com/htmlacademy", "name": "Instagram", "id": "ig" },
+    {"source": "https://www.facebook.com/htmlacademy", "name": "Facebook", "id": "fb" }
   ]
 }

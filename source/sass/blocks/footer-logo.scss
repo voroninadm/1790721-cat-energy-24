@@ -1,8 +1,17 @@
 .footer-logo {
   display: flex;
   justify-content: center;
+  transition: 0.3s;
 
   @media (--narrow-vp) {
     padding-bottom: 26px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }

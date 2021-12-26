@@ -31,11 +31,39 @@
 }
 
 .social__icon {
-  height: 20px;
-  width: 20px;
+  position: relative;
+  left: 0;
+  display: block;
+  width: 22px;
+  height: 22px;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: cover;
+  background: #666666;
+  transition: 0.3s;
+
+  &:hover {
+    background: var(--color__green);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (--not-narrow-vp) {
-    height: 25px;
-    width: 37px;
+    width: 33px;
+    height: 33px;
+  }
+
+  &--vk {
+    mask-image: url("../../icons/sprite.svg#vkontakte");
+  }
+
+  &--ig {
+    mask-image: url("../../icons/sprite.svg#instagram");
+  }
+
+  &--fb {
+    mask-image: url("../../icons/sprite.svg#facebook");
   }
 }

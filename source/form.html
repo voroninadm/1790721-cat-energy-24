@@ -87,17 +87,15 @@
       <ul class="form-group__list form-group__list--master">
         <li class="form-group__item">
           <label class="form-group__label" for="person__email">E-mail:<sup>*</sup></label>
-          <input class="form-group__input" type="email" name="person__email" id="person__email"
-            placeholder="kuklachev@gmail.com" required>
-            <span class="form-group__icon form-group__icon--email">
-              <svg width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#222" stroke-width="1.3" d="M2.65 9.85v8M19.65 9.85v8M2 17.2h18M2 5.2h18M19.35 7.03 11 13.53l-8.35-6.5V5.5h16.7v1.53Z"/></svg>            </span>
+          <input class="form-group__input form-group__input--master" type="email" name="person__email"
+            id="person__email" placeholder="kuklachev@gmail.com" required>
+            <span class="form-group__icon form-group__icon--email"></span>
         </li>
         <li class="form-group__item">
           <label class="form-group__label" for="person__phone">Телефон:<sup>*</sup></label>
-          <input class="form-group__input" type="tel" name="person__phone" id="person__phone"
+          <input class="form-group__input form-group__input--master" type="tel" name="person__phone" id="person__phone"
             placeholder="8 (960) 900-60-90" required>
-            <span class="form-group__icon form-group__icon--phone">
-              <svg width="23" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.9 9.75h-8.5v1.2h8.5l-2.1 2.11.9.9 3.1-3.1a.75.75 0 0 0 0-.9l-3.1-3.12-.9.9 2.1 2.01ZM9.1 19.79v-6.22a.65.65 0 0 0-.6-.6H4.1a1.23 1.23 0 0 0 1.2 1.2h2.5v5.02H4.1a1.78 1.78 0 0 1-1.9-1.71V3.43a1.78 1.78 0 0 1 1.7-1.8h3.9v5.01H5.4a1.22 1.22 0 0 0-1.2 1.2h4.4a.65.65 0 0 0 .6-.6V.92a.86.86 0 0 0-.7-.6H4.1A3 3 0 0 0 1 3.23v13.95a2.9 2.9 0 0 0 2.9 3.1h4.6a.5.5 0 0 0 .6-.5Z" fill="#000"/></svg>            </span>
+          <span class="form-group__icon form-group__icon--phone"></span>
 
         </li>
       </ul>
@@ -111,7 +109,7 @@
           <textarea class="form-group__input form-group__input--comment" name="person-comment" id="person-comment"
             placeholder="Расскажите обо всех повАдках кота"></textarea>
         </li>
-        </ul>
+      </ul>
     </fieldset>
 
     <fieldset class="form-group form-group--add">

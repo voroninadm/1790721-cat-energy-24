@@ -11,11 +11,6 @@
     padding-top: 35px;
   }
 
-  @media (--wide-vp) {
-    padding-top: 63px;
-    background-color: transparent;
-  }
-
   &--noJS {
     @media (--narrow-vp) {
       display: block;
