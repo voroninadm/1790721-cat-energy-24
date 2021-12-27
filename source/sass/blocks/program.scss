@@ -187,6 +187,7 @@
   box-sizing: border-box;
   width: 45%;
   text-transform: uppercase;
+  transition: 0.3s;
 
   @include font-size(16,20);
   @include line-height(16,16,20,29.6);
@@ -213,5 +214,9 @@
     background: currentColor;
     content: "";
     transition: 0.3s;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
