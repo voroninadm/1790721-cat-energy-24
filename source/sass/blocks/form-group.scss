@@ -384,11 +384,11 @@
     }
   }
 
-  &--master:focus + .form-group__icon {
+  &:focus + .form-group__icon {
     background: var(--color__green);
   }
 
-  &--master_error + .form-group__icon {
+  &--error + .form-group__icon {
     background: var(--color__form-input-error);
   }
 }

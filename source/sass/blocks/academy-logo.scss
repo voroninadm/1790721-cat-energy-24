@@ -11,8 +11,24 @@
   fill: #666666;
   transition: 0.3s;
 
-  &:hover {
-    fill: var(--color__green);
+  &::after {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 30px;
+    height: 30px;
+    content: "";
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: cover;
+    background: currentColor;
+    mask-image: url("../../icons/sprite.svg#htmlacademy");
+    transition: 0.3s;
+  }
+
+  &:hover::after {
+    background: var(--color__green);
   }
 
   &:active {
