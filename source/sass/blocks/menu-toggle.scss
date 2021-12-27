@@ -1,3 +1,4 @@
+
 .menu-toggle {
   position: relative;
   top: 3px;
@@ -13,7 +14,7 @@
   font-size: 0;
   cursor: pointer;
   outline: none;
-  transition: 0.5s;
+  transition: 0.3s;
   transition-timing-function: ease-in-out;
 
   @media (--not-narrow-vp) {
@@ -37,7 +38,7 @@
     left: 50%;
     background: var(--color__black);
     transform: translate(-50%, -50%);
-    transition: 0.5s;
+    transition: 0.3s;
     transition-timing-function: ease-in-out;
   }
 
