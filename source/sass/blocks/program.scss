@@ -181,7 +181,8 @@
 .program__link {
   position: relative;
   padding: 10px 5px 10px 0;
-  display: block;
+  display: flex;
+  align-items: center;
   margin-top: auto;
   box-sizing: border-box;
   width: 45%;
@@ -193,5 +194,24 @@
 
   @media (--not-narrow-vp) {
     padding: 10px 0 12px 33px;
+  }
+
+  &:hover::after {
+    mask-position: center;
+  }
+
+  &::after {
+    position: relative;
+    display: block;
+    margin-left: 25px;
+    width: 32px;
+    height: 10px;
+    mask-image: url("../../icons/sprite.svg#arrow");
+    mask-repeat: no-repeat;
+    mask-position: -10px center;
+    mask-size: cover;
+    background: currentColor;
+    content: "";
+    transition: 0.3s;
   }
 }
