@@ -30,8 +30,7 @@
           <ul class="social__list">
             {% for link in links %}
               <li class="social__item">
-                <a class="social__link" href="{{ link.source }}" target="_blank">
-                  <span class="social__icon social__icon--{{ link.id }}"></span>
+                <a class="social__link social__link--has-icon social__link--icon_{{ link.id }}" href="{{ link.source }}" target="_blank">
                   <span class="page__hidden">{{ link.name }}</span>
                 </a>
               </li>
