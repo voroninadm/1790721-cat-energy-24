@@ -47,7 +47,7 @@
     background-color: #d9d9d9;
     content: "";
 
-    @media (--middle-vp) {
+    @media (--not-narrow-vp) {
       display: none;
     }
   }
