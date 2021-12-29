@@ -1,12 +1,11 @@
 .control {
   display: flex;
-  //width: 65.5%;
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
 
   @media (--not-narrow-vp) {
-    padding: 20px 0;
+    // padding: 20px 0;
     width: 592px;
   }
 }
@@ -66,13 +65,12 @@
   border-radius: 6px;
   background-color: var(--color__green);
   cursor: pointer;
-  transition-duration: 0.3s;
+  transition-duration: 0.1s;
   transition-property: outline, transform;
 
   &--move {
     @media (--narrow-vp) {
       transform: translateX(100%);
-      transition: 0.3s;
     }
   }
 
