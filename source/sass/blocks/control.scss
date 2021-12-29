@@ -1,6 +1,6 @@
 .control {
   display: flex;
-  // width: 65.5%;
+  //width: 65.5%;
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
@@ -70,7 +70,6 @@
   transition-property: outline, transform;
 
   &--move {
-    // left: 5%;
     transform: translateX(100%);
     transition: 0.3s;
   }
@@ -92,7 +91,7 @@
   @media (--not-narrow-vp) {
     position: relative;
     top: -13px;
-    left: 50%;
+    left: calc(100% - (100% * var(--current-value)));
     width: 34px;
     height: 34px;
     margin: 0 auto;
