@@ -5,7 +5,7 @@
   box-sizing: border-box;
 
   @media (--not-narrow-vp) {
-    // padding: 20px 0;
+    //padding: 20px 0;
     width: 592px;
   }
 }
@@ -55,10 +55,11 @@
 }
 
 .control__range {
+  --toggle-size: 35px;
   position: relative;
   top: -12px;
   left: 7px;
-  width: 36px;
+  width: var(--toggle-size);
   height: 6px;
   border: none;
   outline: none;
@@ -91,7 +92,7 @@
   @media (--not-narrow-vp) {
     position: relative;
     top: -13px;
-    left: calc(100% - (100% * var(--current-value)) - 20px);
+    left: calc(100% - (100% * var(--current-value)) - var(--toggle-size));
     width: 34px;
     height: 34px;
     margin: 0 auto;
