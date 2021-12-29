@@ -70,8 +70,10 @@
   transition-property: outline, transform;
 
   &--move {
-    transform: translateX(100%);
-    transition: 0.3s;
+    @media (--narrow-vp) {
+      transform: translateX(100%);
+      transition: 0.3s;
+    }
   }
 
   &:hover {
@@ -91,7 +93,7 @@
   @media (--not-narrow-vp) {
     position: relative;
     top: -13px;
-    left: calc(100% - (100% * var(--current-value)));
+    left: calc(100% - (100% * var(--current-value)) - 20px);
     width: 34px;
     height: 34px;
     margin: 0 auto;
