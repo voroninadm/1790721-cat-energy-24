@@ -4,7 +4,7 @@ let sliderToggle = document.querySelector('.control__range');
 let sliderCanvas = document.querySelector('.slider');
 let scale = document.querySelector('.control__scale');
 
-
+//slider buttons
 sliderButtonBefore.onclick = function () {
   sliderToggle.classList.remove('control__range--move');
   sliderCanvas.style.setProperty('--current-value', '1');
@@ -19,8 +19,6 @@ sliderButtonAfter.onclick = function () {
 //slider-function
 sliderToggle.onmousedown = function (event) {
   if (document.documentElement.clientWidth > 768) {
-
-
 
     let shiftX = event.clientX - (sliderToggle.getBoundingClientRect().left - 83);
 

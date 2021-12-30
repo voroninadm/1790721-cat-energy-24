@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   padding-top: 10px;
-  padding-bottom: 17px;
+  padding-bottom: 2px;
   justify-content: space-between;
   align-items: center;
   background-color: var(--color__white);
@@ -14,6 +14,17 @@
   &--noJS {
     @media (--narrow-vp) {
       display: block;
+
+      .menu-toggle {
+        display: none;
+      }
+
+      .header-nav {
+        display: block;
+        position: static;
+        width: 100%;
+        opacity: 1;
+      }
     }
   }
 }
