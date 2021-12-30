@@ -55,7 +55,7 @@
 }
 
 .control__range {
-  --toggle-size: 35px;
+  --toggle-size: 36px;
   position: relative;
   top: -12px;
   left: 7px;
@@ -96,7 +96,7 @@
   @media (--not-narrow-vp) {
     position: relative;
     top: -13px;
-    left: calc(100% - (100% * var(--current-value)) - var(--toggle-size));
+    left: calc(0% + (100% * var(--current-value)) - var(--toggle-size));
     width: 34px;
     height: 34px;
     margin: 0 auto;

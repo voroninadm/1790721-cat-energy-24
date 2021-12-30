@@ -20,7 +20,7 @@ sliderButtonAfter.onclick = function () {
 sliderToggle.onmousedown = function (event) {
   if (document.documentElement.clientWidth > 768) {
 
-    let shiftX = event.clientX - (sliderToggle.getBoundingClientRect().left - 83);
+    let shiftX = event.clientX - (sliderToggle.getBoundingClientRect().left - 84);
 
     document.addEventListener('mousemove', onMouseMove);
     document.addEventListener('mouseup', onMouseUp);
@@ -40,7 +40,7 @@ sliderToggle.onmousedown = function (event) {
 
       sliderToggle.style.left = newLeft + 'px';
       let toggleCurrent = sliderToggle.style.left = ((newLeft) / 392);
-      sliderCanvas.style.setProperty('--current-value', toggleCurrent);
+      sliderCanvas.style.setProperty('--current-value', 1 - toggleCurrent);
 
     }
 
