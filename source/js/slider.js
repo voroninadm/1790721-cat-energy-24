@@ -33,7 +33,7 @@ sliderToggle.onmousedown = function (event) {
       if (newLeft < 0) {
         newLeft = 0;
       }
-      let rightEdge = scale.offsetWidth - sliderToggle.offsetWidth;
+      let rightEdge = scale.offsetWidth - sliderToggle.offsetWidth - 2;
       if (newLeft > rightEdge) {
         newLeft = rightEdge;
       }
