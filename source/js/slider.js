@@ -17,36 +17,39 @@ sliderButtonAfter.onclick = function () {
 
 
 //slider-function
-sliderToggle.onmousedown = function(event) {
+sliderToggle.onmousedown = function (event) {
+  if (document.documentElement.clientWidth > 768) {
 
-  let shiftX = event.clientX - (sliderToggle.getBoundingClientRect().left - 83);
 
-  document.addEventListener('mousemove', onMouseMove);
-  document.addEventListener('mouseup', onMouseUp);
 
-  function onMouseMove(event) {
+    let shiftX = event.clientX - (sliderToggle.getBoundingClientRect().left - 83);
 
-    let newLeft = event.clientX - shiftX - slider.getBoundingClientRect().left;
+    document.addEventListener('mousemove', onMouseMove);
+    document.addEventListener('mouseup', onMouseUp);
 
-    // toggle only in scale
-    if (newLeft < 0) {
-      newLeft = 0;
+    function onMouseMove(event) {
+
+      let newLeft = event.clientX - shiftX - slider.getBoundingClientRect().left;
+
+      // toggle only in scale
+      if (newLeft < 0) {
+        newLeft = 0;
+      }
+      let rightEdge = scale.offsetWidth - sliderToggle.offsetWidth;
+      if (newLeft > rightEdge) {
+        newLeft = rightEdge;
+      }
+
+      sliderToggle.style.left = newLeft + 'px';
+      let toggleCurrent = sliderToggle.style.left = ((newLeft) / 392);
+      sliderCanvas.style.setProperty('--current-value', toggleCurrent);
+
     }
-    let rightEdge = scale.offsetWidth - sliderToggle.offsetWidth;
-    if (newLeft > rightEdge) {
-      newLeft = rightEdge;
+
+    function onMouseUp() {
+      document.removeEventListener('mouseup', onMouseUp);
+      document.removeEventListener('mousemove', onMouseMove);
     }
 
-    sliderToggle.style.left = newLeft + 'px';
-    let toggleCurrent = sliderToggle.style.left = ((newLeft) / 392);
-    sliderCanvas.style.setProperty('--current-value', toggleCurrent);
-
-  }
-
-  function onMouseUp() {
-    document.removeEventListener('mouseup', onMouseUp);
-    document.removeEventListener('mousemove', onMouseMove);
-  }
-
-};
-
+  };
+}
