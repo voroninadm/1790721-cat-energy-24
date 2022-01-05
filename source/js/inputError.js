@@ -11,4 +11,3 @@ btnSubmit.onclick = function() {
     }
   }
 };
-я

@@ -12,13 +12,13 @@
   <link rel="icon" href="./favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./favicons/favicon-180.png">
   <link rel="manifest" href="./manifest.webmanifest">
-  <link rel="stylesheet" href="./css/style.min.css">
   <link rel="preload" href="./css/style.min.css" as="style">
+  <link rel="stylesheet" href="./css/style.min.css">
   <link rel="preload" href="./fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="./fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <script src="./js/headerMenu.min.js" defer></script>
   <script src="./js/slider.min.js" defer></script>
-  {# <script src="./js/inputError.min.js" defer></script> #}
+  {% if permalink == "form.html" %} <script src="./js/inputError.min.js" defer></script> {% endif %}
 
 </head>
 
