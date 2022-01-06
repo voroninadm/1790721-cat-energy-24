@@ -3,7 +3,7 @@
 {% extends "./templates/layout.twig" %}
 
 {% block page__main %}
-  <!--
+<!--
     <style>
       html {
         background-repeat: no-repeat;
@@ -34,215 +34,82 @@
     <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
     <script src="../node_modules/pixel-glass/script.js"></script>
   -->
-  <h1 class="page__hidden">Каталог здорового питания Кэт-энерджи</h1>
+<h1 class="page__hidden">Каталог здорового питания Кэт-энерджи</h1>
 
-  <section class="catalog page__centerer">
-    <h2 class="catalog__title">Каталог продукции</h2>
-    <ul class="catalog__products">
-      {% for item in items %}
-      <li class="product-block">
-        {{ macros.picture( {{ item.class }}, {{ item.name }}, {{ item.format }}, {{ item.path }}, {{ item.alt}}, {{ item.width }}, {{ item.height }}) }}
-        <div class="product">
-          <h3 class="product__title">Cat Energy {{item.title}} {{item.mass }}&nbsp;г</h3>
-          <ul class="product__list">
-            <li class="product__item">
-              <span class="product__category">Масса</span>
-              <b class="product__value">{{ item.mass }} г</b>
-            </li>
-            <li class="product__item">
-              <span class="product__category">Вкус</span>
-              <b class="product__value">{{ item.taste }}</b>
-            </li>
-            <li class="product__item">
-              <span class="product__category">Цена</span>
-              <b class="product__value">{{ item.price }} Р.</b>
-            </li>
-          </ul>
-        </div>
-        <a class="product-block__button main-link" href="#">Заказать</a>
-      </li>
-      {% else %}
-              <li>Все товары раскупили 😕</li>
-            {% endfor %}
-<!--
-      <li class="product-block">
-        {{ macros.picture("product-block__image product-block__image--big", "chicken_xl", "png", "./img/catalog/", "Cat Energy Pro 1000г с курицей", "84", "100") }}
-        <div class="product">
-          <h3 class="product__title">Cat Energy Pro 1000&nbsp;г</h3>
-          <ul class="product__list">
-            <li class="product__item">
-              <span class="product__category">Масса</span>
-              <b class="product__value">1000 г</b>
-            </li>
-            <li class="product__item">
-              <span class="product__category">Вкус</span>
-              <b class="product__value">Курица</b>
-            </li>
-            <li class="product__item">
-              <span class="product__category">Цена</span>
-              <b class="product__value">1000 Р.</b>
-            </li>
-          </ul>
-        </div>
-        <a class="product-block__button main-link" href="#">Заказать</a>
+<section class="catalog page__centerer">
+  <h2 class="catalog__title">Каталог продукции</h2>
+  <ul class="catalog__products">
+    {% for item in items %}
+    <li class="product-block">
+      {{ macros.picture( item.class, item.name, item.format, item.path, item.alt, item.width, item.height ) }}
+      <div class="product">
+        <h3 class="product__title">Cat Energy {{item.title}} {{item.mass }}&nbsp;г</h3>
+        <ul class="product__list">
+          <li class="product__item">
+            <span class="product__category">Масса</span>
+            <b class="product__value">{{ item.mass }} г</b>
+          </li>
+          <li class="product__item">
+            <span class="product__category">Вкус</span>
+            <b class="product__value">{{ item.taste }}</b>
+          </li>
+          <li class="product__item">
+            <span class="product__category">Цена</span>
+            <b class="product__value">{{ item.price }} Р.</b>
+          </li>
+        </ul>
+      </div>
+      <a class="product-block__button main-link" href="#">Заказать</a>
+    </li>
+    {% else %}
+    <li>Все товары раскупили 😕</li>
+    {% endfor %}
+    <li class="product-block product-block--more">
+      <h3 class="product-block__title product-block__title&#45;&#45;more">Показать еще 100500 товаров</h3>
+      <p class="product-block__description">На самом деле вкусов гораздо больше!</p>
+      <a class="product-block__button main-link main-link&#45;&#45;discreet" href="#">Показать все</a>
+    </li>
+  </ul>
+</section>
+
+<section class="addons page__centerer">
+  <h2 class="addons__title">Дополнительные товары</h2>
+  <div class="addons-container">
+    <ul class="extra">
+      <li class="extra__item">
+        <h3 class="extra__title">Сахарозаменитель</h3>
+        <span class="extra__amount">1 упаковка (100 г)</span>
+        <b class="extra__count">200 Р.</b>
+        <a class="main-link extra__link" href="#">Заказать</a>
       </li>
 
-      <li class="product-block">
-        {{ macros.picture("product-block__image product-block__image--small", "fish_s", "png", "./img/catalog/", "Cat Energy Pro 500г с рыбой", "68", "78") }}
-        <div class="product">
-          <h3 class="product__title">Cat Energy Pro 500&nbsp;г</h3>
-          <ul class="product__list">
-            <li class="product__item">
-              <span class="product__category">Масса</span>
-              <b class="product__value">500 г</b>
-            </li>
-            <li class="product__item">
-              <span class="product__category">Вкус</span>
-              <b class="product__value">Рыба</b>
-            </li>
-            <li class="product__item">
-              <span class="product__category">Цена</span>
-              <b class="product__value">700 Р.</b>
-            </li>
-          </ul>
-        </div>
-        <a class="product-block__button main-link" href="#">Заказать</a>
+      <li class="extra__item">
+        <h3 class="extra__title">Питьевая вода</h3>
+        <span class="extra__amount">5 литров</span>
+        <b class="extra__count">50 Р.</b>
+        <a class="main-link extra__link" href="#">Заказать</a>
       </li>
 
-      <li class="product-block">
-        {{ macros.picture("product-block__image product-block__image--big", "fish_xl", "png", "./img/catalog/", "Cat Energy Pro 1000г с рыбой", "84", "100") }}
-        <div class="product">
-          <h3 class="product__title">Cat Energy Pro 1000&nbsp;г</h3>
-          <ul class="product__list">
-            <li class="product__item">
-              <span class="product__category">Масса</span>
-              <b class="product__value">1000 г</b>
-            </li>
-            <li class="product__item">
-              <span class="product__category">Вкус</span>
-              <b class="product__value">Рыба</b>
-            </li>
-            <li class="product__item">
-              <span class="product__category">Цена</span>
-              <b class="product__value">1000 Р.</b>
-            </li>
-          </ul>
-        </div>
-        <a class="product-block__button main-link" href="#">Заказать</a>
+      <li class="extra__item">
+        <h3 class="extra__title">Молоко</h3>
+        <span class="extra__amount">1 литр</span>
+        <b class="extra__count">100 Р.</b>
+        <a class="main-link extra__link" href="#">Заказать</a>
+
       </li>
-
-      <li class="product-block">
-        {{ macros.picture("product-block__image product-block__image--small", "buckwheat_s", "png", "./img/catalog/", "Cat Energy Pro 500г с гречкой", "68", "78") }}
-        <div class="product">
-          <h3 class="product__title">Cat Energy Slim 500&nbsp;г</h3>
-          <ul class="product__list">
-            <li class="product__item">
-              <span class="product__category">Масса</span>
-              <b class="product__value">500 г</b>
-            </li>
-            <li class="product__item">
-              <span class="product__category">Вкус</span>
-              <b class="product__value">Гречка</b>
-            </li>
-            <li class="product__item">
-              <span class="product__category">Цена</span>
-              <b class="product__value">400 Р.</b>
-            </li>
-          </ul>
-        </div>
-        <a class="product-block__button main-link" href="#">Заказать</a>
-      </li>
-
-      <li class="product-block">
-        {{ macros.picture("product-block__image product-block__image--big", "buckwheat_xl", "png", "./img/catalog/", "Cat Energy Pro 1000г с гречкой", "84", "100") }}
-        <div class="product">
-          <h3 class="product__title">Cat Energy Slim 1000&nbsp;г</h3>
-          <ul class="product__list">
-            <li class="product__item">
-              <span class="product__category">Масса</span>
-              <b class="product__value">1000 г</b>
-            </li>
-            <li class="product__item">
-              <span class="product__category">Вкус</span>
-              <b class="product__value">Гречка</b>
-            </li>
-            <li class="product__item">
-              <span class="product__category">Цена</span>
-              <b class="product__value">700 Р.</b>
-            </li>
-          </ul>
-        </div>
-        <a class="product-block__button main-link" href="#">Заказать</a>
-      </li>
-
-      <li class="product-block">
-        {{ macros.picture("product-block__image product-block__image--small", "rice_s", "png", "./img/catalog/", "Cat Energy Pro 500г с рисом", "68", "78") }}
-        <div class="product">
-          <h3 class="product__title">Cat Energy Slim 500&nbsp;г</h3>
-          <ul class="product__list">
-            <li class="product__item">
-              <span class="product__category">Масса</span>
-              <b class="product__value">500 г</b>
-            </li>
-            <li class="product__item">
-              <span class="product__category">Вкус</span>
-              <b class="product__value">Рис</b>
-            </li>
-            <li class="product__item">
-              <span class="product__category">Цена</span>
-              <b class="product__value">500 Р.</b>
-            </li>
-          </ul>
-        </div>
-        <a class="product-block__button main-link" href="#">Заказать</a>
-      </li> -->
-
-      <li class="product-block product-block--more">
-        <h3 class="product-block__title product-block__title&#45;&#45;more">Показать еще 100500 товаров</h3>
-        <p class="product-block__description">На самом деле вкусов гораздо больше!</p>
-        <a class="product-block__button main-link main-link&#45;&#45;discreet" href="#">Показать все</a>
+      <li class="extra__item">
+        <h3 class="extra__title">Витамины</h3>
+        <span class="extra__amount">1 упаковка (30 г)</span>
+        <b class="extra__count">300 Р.</b>
+        <a class="main-link extra__link" href="#">Заказать</a>
       </li>
     </ul>
-  </section>
 
-  <section class="addons page__centerer">
-    <h2 class="addons__title">Дополнительные товары</h2>
-    <div class="addons-container">
-      <ul class="extra">
-        <li class="extra__item">
-          <h3 class="extra__title">Сахарозаменитель</h3>
-          <span class="extra__amount">1 упаковка (100 г)</span>
-          <b class="extra__count">200 Р.</b>
-          <a class="main-link extra__link" href="#">Заказать</a>
-        </li>
+    <aside class="stock">
+      <h2 class="page__hidden">Акция от магазина Кэт-энерджи</h2>
+      <p class="stock__description">Закажите все <br> и получите чехол для кота в подарок!</p>
+    </aside>
+  </div>
 
-        <li class="extra__item">
-          <h3 class="extra__title">Питьевая вода</h3>
-          <span class="extra__amount">5 литров</span>
-          <b class="extra__count">50 Р.</b>
-          <a class="main-link extra__link" href="#">Заказать</a>
-        </li>
-
-        <li class="extra__item">
-          <h3 class="extra__title">Молоко</h3>
-          <span class="extra__amount">1 литр</span>
-          <b class="extra__count">100 Р.</b>
-          <a class="main-link extra__link" href="#">Заказать</a>
-
-        </li>
-        <li class="extra__item">
-          <h3 class="extra__title">Витамины</h3>
-          <span class="extra__amount">1 упаковка (30 г)</span>
-          <b class="extra__count">300 Р.</b>
-          <a class="main-link extra__link" href="#">Заказать</a>
-        </li>
-      </ul>
-
-      <aside class="stock">
-        <h2 class="page__hidden">Акция от магазина Кэт-энерджи</h2>
-        <p class="stock__description">Закажите все <br> и получите чехол для кота в подарок!</p>
-      </aside>
-    </div>
-
-  </section>
+</section>
 {% endblock %}
