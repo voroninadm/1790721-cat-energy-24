@@ -39,28 +39,32 @@
   <section class="catalog page__centerer">
     <h2 class="catalog__title">Каталог продукции</h2>
     <ul class="catalog__products">
+      {% for item in items %}
       <li class="product-block">
-        {{ macros.picture("product-block__image product-block__image--small", "chicken_s", "png", "./img/catalog/", "Cat Energy Pro 500г с курицей", "68", "78") }}
+        {{ macros.picture( {{ item.class }}, {{ item.name }}, {{ item.format }}, {{ item.path }}, {{ item.alt}}, {{ item.width }}, {{ item.height }}) }}
         <div class="product">
-          <h3 class="product__title">Cat Energy Pro 500&nbsp;г</h3>
+          <h3 class="product__title">Cat Energy {{item.title}} {{item.mass }}&nbsp;г</h3>
           <ul class="product__list">
             <li class="product__item">
               <span class="product__category">Масса</span>
-              <b class="product__value">500 г</b>
+              <b class="product__value">{{ item.mass }} г</b>
             </li>
             <li class="product__item">
               <span class="product__category">Вкус</span>
-              <b class="product__value">Курица</b>
+              <b class="product__value">{{ item.taste }}</b>
             </li>
             <li class="product__item">
               <span class="product__category">Цена</span>
-              <b class="product__value">700 Р.</b>
+              <b class="product__value">{{ item.price }} Р.</b>
             </li>
           </ul>
         </div>
         <a class="product-block__button main-link" href="#">Заказать</a>
       </li>
-
+      {% else %}
+              <li>Все товары раскупили 😕</li>
+            {% endfor %}
+<!--
       <li class="product-block">
         {{ macros.picture("product-block__image product-block__image--big", "chicken_xl", "png", "./img/catalog/", "Cat Energy Pro 1000г с курицей", "84", "100") }}
         <div class="product">
@@ -191,7 +195,7 @@
           </ul>
         </div>
         <a class="product-block__button main-link" href="#">Заказать</a>
-      </li>
+      </li> -->
 
       <li class="product-block product-block--more">
         <h3 class="product-block__title product-block__title&#45;&#45;more">Показать еще 100500 товаров</h3>
