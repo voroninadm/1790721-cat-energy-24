@@ -41,7 +41,7 @@
   <ul class="catalog__products">
     {% for item in items %}
     <li class="product-block">
-      {{ macros.picture( item.class, item.name, item.format, item.path, item.alt, item.width, item.height ) }}
+      {{ macros.picture( item.class, item.name, item.ext, item.path, item.alt, item.width, item.height ) }}
       <div class="product">
         <h3 class="product__title">Cat Energy {{item.title}} {{item.mass }}&nbsp;г</h3>
         <ul class="product__list">
@@ -76,33 +76,16 @@
   <h2 class="addons__title">Дополнительные товары</h2>
   <div class="addons-container">
     <ul class="extra">
+      {% for addon in addons %}
       <li class="extra__item">
-        <h3 class="extra__title">Сахарозаменитель</h3>
-        <span class="extra__amount">1 упаковка (100 г)</span>
-        <b class="extra__count">200 Р.</b>
+        <h3 class="extra__title">{{ addon.title }}</h3>
+        <span class="extra__amount">{{ addon.amount }}</span>
+        <b class="extra__count">{{ addon.count }} Р.</b>
         <a class="main-link extra__link" href="#">Заказать</a>
       </li>
-
-      <li class="extra__item">
-        <h3 class="extra__title">Питьевая вода</h3>
-        <span class="extra__amount">5 литров</span>
-        <b class="extra__count">50 Р.</b>
-        <a class="main-link extra__link" href="#">Заказать</a>
-      </li>
-
-      <li class="extra__item">
-        <h3 class="extra__title">Молоко</h3>
-        <span class="extra__amount">1 литр</span>
-        <b class="extra__count">100 Р.</b>
-        <a class="main-link extra__link" href="#">Заказать</a>
-
-      </li>
-      <li class="extra__item">
-        <h3 class="extra__title">Витамины</h3>
-        <span class="extra__amount">1 упаковка (30 г)</span>
-        <b class="extra__count">300 Р.</b>
-        <a class="main-link extra__link" href="#">Заказать</a>
-      </li>
+      {% else %}
+      <li>Все дополнительные товары раскупили 😕</li>
+      {% endfor %}
     </ul>
 
     <aside class="stock">
