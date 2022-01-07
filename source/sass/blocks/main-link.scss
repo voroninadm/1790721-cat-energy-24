@@ -5,9 +5,10 @@
   align-items: center;
   background-color: var(--color__green);
   text-transform: uppercase;
+  text-align: center;
   border: none;
-  padding-top: 11px;
-  padding-bottom: 11px;
+  box-sizing: border-box;
+  padding: 11px 20px;
   font-family: var(--accent-font);
   font-weight: 400;
   transition: 0.3s;

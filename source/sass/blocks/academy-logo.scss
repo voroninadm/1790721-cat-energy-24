@@ -11,6 +11,10 @@
   fill: #666666;
   transition: 0.3s;
 
+  @media (--narrow-vp) {
+    column-gap: 20px;
+  }
+
   &::after {
     position: relative;
     top: 0;

@@ -181,6 +181,7 @@
   @media (--narrow-vp) {
     display: flex;
     align-items: center;
+    column-gap: 2%;
     padding: 28px 10px 15px 10px;
     justify-content: center;
   }
