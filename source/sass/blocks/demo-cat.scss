@@ -70,6 +70,7 @@
   flex-wrap: wrap;
   justify-content: center;
   column-gap: 10%;
+  row-gap: 40px;
   padding: 0 0 16px 0;
 
   @include reset-list();
@@ -127,7 +128,7 @@
 
 .demo-cat__description {
   position: absolute;
-  top: 44px;
+  top: 92%;
   width: 65%;
   z-index: 2;
   padding: 0 10px;
@@ -140,14 +141,10 @@
   @include font-size(12,14);
 
   @media (--middle-vp) {
-    top: 64px;
-    width: 78%;
     background-color: var(--color__white);
   }
 
   @media (--wide-vp) {
-    top: 60px;
-    width: 78%;
     background-color: var(--color__grey);
   }
 }
@@ -182,7 +179,7 @@
     display: flex;
     align-items: center;
     column-gap: 2%;
-    padding: 28px 10px 15px 10px;
+    padding: 8% 10px 15px 10px;
     justify-content: center;
   }
 

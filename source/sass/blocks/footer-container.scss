@@ -6,8 +6,10 @@
 
   @media (--not-narrow-vp) {
     display: flex;
-    height: 148px;
+    flex-wrap: wrap;
+    min-height: 148px;
     align-items: center;
     justify-content: space-between;
+    column-gap: 15px;
   }
 }

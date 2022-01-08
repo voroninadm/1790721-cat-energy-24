@@ -23,7 +23,7 @@
   }
 
   @media (--wide-vp) {
-    width: 37%;
+    width: 40%;
     z-index: 2;
   }
 
@@ -48,8 +48,10 @@
   @media (--not-narrow-vp) {
     position: static;
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
     column-gap: 7.7%;
+    row-gap: 15px;
     opacity: 1;
   }
 
@@ -96,7 +98,6 @@
   position: relative;
   display: block;
   width: max-content;
-  max-width: 171px;
   color: var(--changed-color, --color__black);
   text-transform: uppercase;
   text-decoration: none;
@@ -116,10 +117,13 @@
   }
 
   @media (--not-narrow-vp) {
+    max-width: 171px;
+
     &--current::before {
       position: absolute;
-      top: 40px;
+      top: 120%;
       right: 0;
+      z-index: 3;
       content: "";
       display: block;
       width: 100%;

@@ -1,6 +1,9 @@
 .footer-logo {
-  display: flex;
+  display: grid;
   justify-content: center;
+  box-sizing: border-box;
+  padding: 15px 0;
+  row-gap: 10px;
   transition: 0.3s;
 
   @media (--narrow-vp) {
