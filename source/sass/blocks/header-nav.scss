@@ -19,6 +19,7 @@
 
   @media (--not-narrow-vp) {
     width: 62%;
+    max-width: 490px;
   }
 
   @media (--wide-vp) {
@@ -95,6 +96,7 @@
   position: relative;
   display: block;
   width: max-content;
+  max-width: 171px;
   color: var(--changed-color, --color__black);
   text-transform: uppercase;
   text-decoration: none;

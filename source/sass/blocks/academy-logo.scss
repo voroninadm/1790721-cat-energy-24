@@ -1,8 +1,10 @@
 .academy-logo {
   display: flex;
   padding-top: 22px;
+  box-sizing: border-box;
   align-items: center;
   justify-content: space-between;
+  column-gap: 10px;
   text-decoration: none;
   color: var(--color__dark-grey);
   font-family: var(--main-font);
@@ -11,10 +13,6 @@
   fill: #666666;
   transition: 0.3s;
 
-  @media (--narrow-vp) {
-    column-gap: 20px;
-  }
-
   &::after {
     position: relative;
     top: 0;
@@ -22,6 +20,8 @@
     display: block;
     width: 30px;
     height: 30px;
+    padding-left: 16px;
+    box-sizing: border-box;
     content: "";
     mask-repeat: no-repeat;
     mask-position: center;
