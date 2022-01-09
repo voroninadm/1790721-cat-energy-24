@@ -35,7 +35,6 @@
   }
 
   @media (--wide-vp) {
-    position: relative;
     background-image: none;
     background-color: var(--color__white);
   }
@@ -44,10 +43,10 @@
     @media (--wide-vp) {
       content: "";
       position: absolute;
-      top: -101px;
+      top: 0;
       right: 0;
       width: 50%;
-      height: 695px;
+      min-height: 695px;
       background-image:
         linear-gradient(
           rgba(104, 183, 56, 0.85),

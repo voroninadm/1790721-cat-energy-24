@@ -17,8 +17,8 @@
 }
 
 .product__item {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   align-items: center;
   font-family: var(--main-font);
   font-weight: 400;
@@ -46,6 +46,7 @@
 }
 
 .product__value {
+  justify-self: end;
   font-weight: 400;
 }
 

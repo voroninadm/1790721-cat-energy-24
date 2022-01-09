@@ -1,12 +1,14 @@
 .footer-container {
   @media (--narrow-vp) {
+    display: flex;
+    flex-direction: column;
     padding-top: 39px;
     padding-bottom: 22px;
   }
 
   @media (--not-narrow-vp) {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     min-height: 148px;
     align-items: center;
     justify-content: space-between;

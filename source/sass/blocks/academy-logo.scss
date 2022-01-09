@@ -13,6 +13,11 @@
   fill: #666666;
   transition: 0.3s;
 
+  @media (--not-narrow-vp) {
+    justify-content: flex-end;
+    padding-top: 0;
+  }
+
   &::after {
     position: relative;
     top: 0;

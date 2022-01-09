@@ -75,6 +75,7 @@
   }
 
   @media (--wide-vp) {
+    padding-right: 15px;
     grid-column: 3 / 4;
     text-align: left;
   }
@@ -82,6 +83,7 @@
 
 .extra__count {
   grid-column: 2 / 3;
+  padding-left: 15px;
   text-align: right;
   font-family: var(--main-font);
   font-weight: 400;
@@ -94,6 +96,8 @@
   }
 
   @media (--wide-vp) {
+    padding-left: 0;
+    margin-right: 11px;
     grid-column: 4 / 5;
     text-align: left;
   }

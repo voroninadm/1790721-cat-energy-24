@@ -27,11 +27,16 @@
     text-align: center;
     background: none;
     align-self: flex-end;
-    min-height: 260px;
+
 
     @media (--not-narrow-vp) {
       padding-top: 85px;
       border: 2px solid var(--color__grey);
+      min-height: 260px;
+    }
+
+    @media (--middle-vp) {
+      padding-top: 105px;
     }
   }
 
@@ -52,7 +57,7 @@
     @media (--narrow-vp) {
       content: "";
       position: absolute;
-      top: 208px;
+      top: 100%;
       display: block;
       width: 100vw;
       right: -20px;
