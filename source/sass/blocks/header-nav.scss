@@ -47,20 +47,21 @@
 
   @media (--not-narrow-vp) {
     position: static;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: flex-end;
     column-gap: 7.7%;
     row-gap: 15px;
-    opacity: 1;
-  }
-
-  @media (--wide-vp) {
-    position: static;
-    display: flex;
     background-color: transparent;
     opacity: 1;
   }
+
+  // @media (--wide-vp) {
+  //   position: static;
+  //   display: flex;
+  //   background-color: transparent;
+  //   opacity: 1;
+  // }
 }
 
 .header-nav__item {
@@ -83,7 +84,7 @@
 
     &::after {
       position: absolute;
-      top: 68px;
+      top: 100%;
       left: 0;
       display: block;
       width: 100%;
@@ -91,6 +92,10 @@
       background-color: #eaeaea;
       content: "";
     }
+  }
+
+  @media (--not-narrow-vp) {
+    justify-self: end;
   }
 }
 
@@ -118,6 +123,7 @@
 
   @media (--not-narrow-vp) {
     max-width: 171px;
+    text-align: center;
 
     &--current::before {
       position: absolute;

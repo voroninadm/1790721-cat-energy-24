@@ -83,13 +83,13 @@
 .promo__link {
   box-sizing: border-box;
   width: 100%;
-  z-index: 3;
 
   @media (--not-narrow-vp) {
     box-sizing: border-box;
     padding-top: 10px;
     padding-bottom: 7px;
     width: 38%;
+    z-index: 3;
   }
 
   @media (--wide-vp) {
