@@ -3,7 +3,17 @@
 let menuButton = document.querySelector('.menu-toggle');
 let headerNav = document.querySelector('.header-nav');
 
-menuButton.onclick = function () {
-  menuButton.classList.toggle('menu-toggle--active');
-  headerNav.classList.toggle('header-nav--active');
-}
+  menuButton.classList.remove('menu-toggle--noJS');
+  headerNav.classList.remove('header-nav--noJS');
+
+
+  menuButton.addEventListener("click", function () {
+    if (headerNav.classList.contains("header-nav--closed")) {
+      headerNav.classList.remove("header-nav--closed");
+      headerNav.classList.add("header-nav--open");
+    }
+    else {
+      headerNav.classList.remove("header-nav--open");
+      headerNav.classList.add("header-nav--closed")
+    }
+  });

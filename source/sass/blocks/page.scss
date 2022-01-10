@@ -15,6 +15,26 @@
   }
 }
 
+.page__header {
+  @media (--narrow-vp) {
+    padding-top: 10px;
+  }
+
+  @media (--middle-vp) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 24px;
+  }
+
+  @media (--wide-vp) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 53px;
+  }
+}
+
 .page__main {
   flex: 1;
 }
