@@ -1,10 +1,10 @@
 //burger-button
 
-let menuButton = document.querySelector('.menu-toggle');
-let headerNav = document.querySelector('.header-nav');
+let menuButton = document.querySelector(".menu-toggle");
+let headerNav = document.querySelector(".header-nav");
 
-  menuButton.classList.remove('menu-toggle--noJS');
-  headerNav.classList.remove('header-nav--noJS');
+  menuButton.classList.remove("menu-toggle--noJS");
+  headerNav.classList.remove("header-nav--noJS");
 
 
   menuButton.addEventListener("click", function () {

@@ -1,18 +1,18 @@
-let sliderButtonBefore = document.querySelector('.control__button--before');
-let sliderButtonAfter = document.querySelector('.control__button--after');
-let sliderToggle = document.querySelector('.control__range');
-let sliderCanvas = document.querySelector('.slider');
-let scale = document.querySelector('.control__scale');
+let sliderButtonBefore = document.querySelector(".control__button--before");
+let sliderButtonAfter = document.querySelector(".control__button--after");
+let sliderToggle = document.querySelector(".control__range");
+let sliderCanvas = document.querySelector(".slider");
+let scale = document.querySelector(".control__scale");
 
 //slider buttons
 sliderButtonBefore.onclick = function () {
-  sliderToggle.classList.remove('control__range--move');
-  sliderCanvas.style.setProperty('--current-value', '1');
+  sliderToggle.classList.remove("control__range--move");
+  sliderCanvas.style.setProperty("--current-value", "1");
 }
 
 sliderButtonAfter.onclick = function () {
-  sliderToggle.classList.add('control__range--move');
-  sliderCanvas.style.setProperty('--current-value', '0');
+  sliderToggle.classList.add("control__range--move");
+  sliderCanvas.style.setProperty("--current-value", "0");
 }
 
 
@@ -22,8 +22,8 @@ sliderToggle.onmousedown = function (event) {
 
     let shiftX = event.clientX - (sliderToggle.getBoundingClientRect().left - 84);
 
-    document.addEventListener('mousemove', onMouseMove);
-    document.addEventListener('mouseup', onMouseUp);
+    document.addEventListener("mousemove", onMouseMove);
+    document.addEventListener("mouseup", onMouseUp);
 
     function onMouseMove(event) {
 
@@ -38,15 +38,15 @@ sliderToggle.onmousedown = function (event) {
         newLeft = rightEdge;
       }
 
-      sliderToggle.style.left = newLeft + 'px';
+      sliderToggle.style.left = newLeft + "px";
       let toggleCurrent = sliderToggle.style.left = ((newLeft) / 392);
-      sliderCanvas.style.setProperty('--current-value', 1 - toggleCurrent);
+      sliderCanvas.style.setProperty("--current-value", 1 - toggleCurrent);
 
     }
 
     function onMouseUp() {
-      document.removeEventListener('mouseup', onMouseUp);
-      document.removeEventListener('mousemove', onMouseMove);
+      document.removeEventListener("mouseup", onMouseUp);
+      document.removeEventListener("mousemove", onMouseMove);
     }
 
   };
