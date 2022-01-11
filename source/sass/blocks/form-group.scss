@@ -345,9 +345,20 @@
   display: block;
 }
 
+.form-group__checkbox:disabled + label::after,
+.form-group__checkbox:disabled + label {
+  opacity: 0.3;
+}
+
 .form-group__radio:checked + label::after {
   display: block;
 }
+
+.form-group__radio:disabled + label::after,
+.form-group__radio:disabled + label {
+  opacity: 0.3;
+}
+
 
 .form-group__input {
   justify-content: flex-end;
