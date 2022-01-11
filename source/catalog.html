@@ -11,9 +11,13 @@
   <ul class="catalog__products">
     {% for item in items %}
     <li class="product-block">
-      {{ macros.picture( item.class, item.name, item.ext, item.path, item.alt, item.width, item.height ) }}
+      <a class="product-block__link" href="{{ item.name }}{{ item.mass }}.html">
+        {{ macros.picture( item.class, item.name, item.ext, item.path, item.alt, item.width, item.height ) }}
+      </a>
       <div class="product">
-        <h3 class="product__title">Cat Energy {{item.title}} {{item.mass }}&nbsp;г</h3>
+        <h3 class="product__title">
+          <a class="product__link" href="{{ item.name }}{{ item.mass }}.html">Cat Energy {{item.title}} {{item.mass }}&nbsp;г</a>
+        </h3>
         <ul class="product__list">
           <li class="product__item">
             <span class="product__category">Масса</span>
@@ -35,9 +39,9 @@
     <li>Все товары раскупили 😕</li>
     {% endfor %}
     <li class="product-block product-block--more">
-      <h3 class="product-block__title product-block__title&#45;&#45;more">Показать еще 100500 товаров</h3>
+      <h3 class="product-block__title product-block__title--more">Показать еще 100500 товаров</h3>
       <p class="product-block__description">На самом деле вкусов гораздо больше!</p>
-      <a class="product-block__button main-link main-link&#45;&#45;discreet" href="#">Показать все</a>
+      <a class="product-block__button main-link main-link--discreet" href="showmore.html">Показать все</a>
     </li>
   </ul>
 </section>
