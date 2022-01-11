@@ -138,6 +138,11 @@
   line-height: calc(24 / 18);
   transition: 0.3s;
 
+  &:focus-visible {
+    outline: 2px solid var(--color__outline);
+    outline-offset: 1px;
+  }
+
   @media (--narrow-vp) {
     box-sizing: border-box;
     padding: 22px 24px;

@@ -193,6 +193,11 @@
   @include line-height(16,16,20,29.6);
   @include link(var(--color__black));
 
+  &:focus-visible {
+    outline: 2px solid var(--color__outline);
+    outline-offset: 1px;
+  }
+
   @media (--not-narrow-vp) {
     padding: 10px 0 12px 33px;
   }

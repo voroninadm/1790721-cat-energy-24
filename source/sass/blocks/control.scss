@@ -5,7 +5,6 @@
   box-sizing: border-box;
 
   @media (--not-narrow-vp) {
-    //padding: 20px 0;
     width: 592px;
   }
 }
@@ -44,6 +43,11 @@
 
   @include line-height(16, 20, 20, 29.64);
   @include font-size(16,20);
+
+  &:focus-visible {
+    outline: 2px solid var(--color__outline);
+    outline-offset: 1px;
+  }
 
   &:hover {
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);

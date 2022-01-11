@@ -18,6 +18,11 @@
   @include line-height(16,20,20,20);
   @include link(white);
 
+  &:focus-visible {
+    outline: 2px solid var(--color__outline);
+    outline-offset: 1px;
+  }
+
   &:hover {
     background-color: #5eaa2f;
   }
