@@ -16,16 +16,6 @@
   }
 }
 
-.form input,
-.form textarea {
-  padding-left: 14px;
-  text-transform: uppercase;
-  font-family: var(--accent-font);
-
-  @include line-height(16,18,20,29.64);
-  @include font-size(16,18);
-}
-
 .form__submit {
   display: flex;
   flex-direction: column;
@@ -53,4 +43,8 @@
     justify-content: flex-start;
     padding-left: 50px;
   }
+}
+
+.form__button {
+  margin-bottom: 15px;
 }

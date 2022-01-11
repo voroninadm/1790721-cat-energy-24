@@ -353,9 +353,15 @@
   justify-content: flex-end;
   flex: 1 1 auto;
   min-height: 39px;
+  padding-left: 14px;
+  text-transform: uppercase;
+  font-family: var(--accent-font);
   border: 1px solid #e7e7e7;
   outline: none;
   appearance: textfield;
+
+  @include line-height(16,18,20,29.64);
+  @include font-size(16,18);
 
   &:hover {
     border-color: #cdcdcd;
@@ -374,10 +380,16 @@
   }
 
   &--comment {
+    padding-left: 14px;
+    text-transform: uppercase;
+    font-family: var(--accent-font);
     margin-top: 55px;
     resize: vertical;
     min-height: 145px;
     width: 100%;
+
+    @include line-height(16,18,20,29.64);
+    @include font-size(16,18);
 
     @media (--not-narrow-vp) {
       min-height: 168px;
@@ -392,10 +404,6 @@
   &--error + .form-group__icon {
     background: var(--color__form-input-error);
   }
-}
-
-.form__button {
-  margin-bottom: 15px;
 }
 
 .form-group__icon {
