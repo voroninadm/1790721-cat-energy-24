@@ -31,9 +31,7 @@
   transform: translateY(3px);
 
   @media (--not-narrow-vp) {
-    [id="energy"] {
-      fill: var(--color__dark-grey);
-    }
+    --fill: var(--color__dark-grey);
   }
 
   @media (--wide-vp) {
