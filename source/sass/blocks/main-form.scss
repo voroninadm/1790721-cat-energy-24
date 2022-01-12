@@ -14,6 +14,7 @@
 .main-form__title {
   margin: 28px 0 37px 0;
   font-weight: 400;
+  max-width: 70%;
 
   @include line-height(36,36,60,60);
   @include font-size(36,60);
@@ -41,6 +42,7 @@
 }
 
 .main-form__description {
+  max-width: 70%;
   margin: 0 0 13px 0;
   text-transform: uppercase;
 

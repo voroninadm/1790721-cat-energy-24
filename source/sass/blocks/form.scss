@@ -17,31 +17,35 @@
 }
 
 .form__submit {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   align-items: center;
-  justify-content: center;
 
-  @media (--not-narrow-vp) {
-    flex-direction: row;
+  @media (--middle-vp) {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 13%;
+  }
+
+  @media (--wide-vp) {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 80px;
   }
 }
 
 .form__span {
   font-family: var(--main-font);
+  text-align: center;
 
-  @include line-height(14,16,16,16);
   @include font-size(14,16);
 
   @media (--not-narrow-vp) {
     width: 110%;
     display: flex;
-    justify-content: center;
   }
 
   @media (--wide-vp) {
     justify-content: flex-start;
-    padding-left: 50px;
   }
 }
 
