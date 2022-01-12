@@ -38,8 +38,9 @@
   }
 
   &:focus-visible {
-    color: var(--color__green);
-    outline: none;
+    outline: 2px solid var(--color__outline);
+    outline-offset: 1px;
+    border-radius: 5px;
   }
 
   &:hover::after {

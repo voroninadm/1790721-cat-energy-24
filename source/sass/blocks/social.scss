@@ -99,3 +99,10 @@
     --image-path: url("../../icons/sprite.svg#facebook");
   }
 }
+
+.social__academy {
+  @media (--not-narrow-vp) {
+    display: grid;
+    justify-content: end;
+  }
+}
