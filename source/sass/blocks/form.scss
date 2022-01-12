@@ -9,6 +9,7 @@
 
 .form__section {
   display: grid;
+  align-items: center;
   column-gap: 80px;
 
   @media (--wide-vp) {

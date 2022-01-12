@@ -28,7 +28,7 @@
 
       &::after {
         position: absolute;
-        top: 150px;
+        top: 100%;
         left: -22px;
         right: 0;
         content: "";
@@ -243,12 +243,14 @@
 }
 
 .form-group__label {
+  max-width: 185px;
   text-transform: uppercase;
   margin-right: 11px;
   transition: 0.3s;
 
   @media (--not-narrow-vp) {
     margin-right: 19px;
+    max-width: 235px;
   }
 
   &--radio {

@@ -11,9 +11,11 @@ let headerNav = document.querySelector(".header-nav");
     if (headerNav.classList.contains("header-nav--closed")) {
       headerNav.classList.remove("header-nav--closed");
       headerNav.classList.add("header-nav--open");
+      menuButton.classList.toggle("menu-toggle--active");
     }
     else {
       headerNav.classList.remove("header-nav--open");
       headerNav.classList.add("header-nav--closed")
+      menuButton.classList.toggle("menu-toggle--active");
     }
   });
