@@ -1,8 +1,8 @@
 .footer-logo {
   display: grid;
+  grid-column: 1;
   justify-content: center;
   box-sizing: border-box;
-  padding: 15px 0;
   row-gap: 10px;
   transition: 0.3s;
 
