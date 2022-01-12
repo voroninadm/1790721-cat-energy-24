@@ -41,7 +41,6 @@
   @include font-size(14,16);
 
   @media (--not-narrow-vp) {
-    width: 110%;
     display: flex;
   }
 

@@ -79,6 +79,7 @@
   position: relative;
   padding: 0 20px 0 0;
   background-color: var(--color__white);
+  --air-gap: 1px;
 
   @include line-height(24,26,36,36);
   @include font-size(24,36);
@@ -91,45 +92,45 @@
     padding: 0 40px;
   }
 
-  &::before {
+  &::after {
     @media (--narrow-vp) {
       position: absolute;
       top: 15px;
-      left: 0;
       z-index: -1;
       content: "";
       display: block;
-      width: 95vw;
+      width: calc(100vw - 100% - var(--air-gap));
+      right: calc(100% + var(--air-gap));
       height: 2px;
-      background-color: var(--color__green);
+      box-shadow: calc(100vw + var(--air-gap)) 0 0 0 var(--color__green);
     }
 
     @media (--middle-vp) {
       position: absolute;
       top: 20px;
-      left: -75px;
+      width: calc(100vw - 100% - var(--air-gap));
+      right: calc(100% + var(--air-gap));
       z-index: -1;
       content: "";
       display: block;
-      width: 100vw;
       height: 2px;
-      background-color: var(--color__green);
+      box-shadow: calc(100vw + var(--air-gap)) 0 0 0 var(--color__green);
     }
 
     @media (--wide-vp) {
       position: absolute;
+      width: calc(100vw - 100% - var(--air-gap));
+      right: calc(100% + var(--air-gap));
       top: 20px;
-      left: 0;
       z-index: -1;
       content: "";
       display: block;
-      width: calc((99vw/ 2) + 600px);
       height: 2px;
-      background-color: var(--color__green);
+      box-shadow: calc(100vw + var(--air-gap)) 0 0 0 var(--color__green);
     }
   }
 
-  &::after {
+  &::before {
     @media (--wide-vp) {
       position: absolute;
       top: 20px;

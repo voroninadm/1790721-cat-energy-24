@@ -1,6 +1,7 @@
 .main-form {
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 
   @media (--not-narrow-vp) {
     padding: 0 40px 40px 40px;
