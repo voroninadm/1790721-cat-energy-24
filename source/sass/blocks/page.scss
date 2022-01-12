@@ -1,3 +1,8 @@
+.page img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
 .page__body {
   position: relative;
   display: flex;
