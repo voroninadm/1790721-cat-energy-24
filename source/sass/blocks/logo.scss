@@ -20,7 +20,10 @@
 }
 
 .logo__icon {
-  // margin-right: 57px;
+  @media (--narrow-vp) {
+    width: 33px;
+    height: 37px;
+  }
 
   @media (--middle-vp) {
     width: 60px;
@@ -34,6 +37,8 @@
 }
 
 .logo__text {
+  width: 102px;
+  height: 18px;
   transform: translateY(3px);
 
   @media (--not-narrow-vp) {
@@ -42,6 +47,5 @@
 
   @media (--wide-vp) {
     height: 20px;
-    width: auto;
   }
 }
