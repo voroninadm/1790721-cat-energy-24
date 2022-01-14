@@ -8,8 +8,8 @@
 
   @media (--not-narrow-vp) {
     box-sizing: border-box;
-    padding-top: 30px;
-    padding-left: 90px;
+    padding-top: 27px;
+    padding-left: 87px;
     padding-bottom: 500px;
     align-items: normal;
   }
@@ -35,7 +35,7 @@
   @media (--not-narrow-vp) {
     color: var(--color__black);
     text-align: left;
-    margin: 19px 0 42px 0;
+    margin: 19px 0 41px 0;
     width: 430px;
   }
 }
@@ -65,7 +65,7 @@
 
   @media (--middle-vp) {
     position: absolute;
-    bottom: 0;
+    bottom: -21px;
     right: 0;
     width: 709px;
     height: auto;
@@ -87,9 +87,8 @@
 
   @media (--not-narrow-vp) {
     box-sizing: border-box;
-    padding-top: 10px;
-    padding-bottom: 7px;
-    width: 38%;
+    padding: 9px 0 7px 2px;
+    width: 40%;
     z-index: 3;
   }
 

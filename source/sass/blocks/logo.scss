@@ -6,7 +6,7 @@
 
   &:focus-visible {
     outline: 2px solid var(--color__outline);
-    outline-offset: 1px;
+    outline-offset: 5px;
     border-radius: 20px;
   }
 
@@ -20,6 +20,8 @@
 }
 
 .logo__icon {
+  object-fit: cover;
+
   @media (--narrow-vp) {
     width: 33px;
     height: 37px;
@@ -37,15 +39,19 @@
 }
 
 .logo__text {
-  width: 102px;
-  height: 18px;
-  transform: translateY(3px);
+  width: 105px;
+  height: 19px;
+  padding-left: 55px;
+  transform: translateY(1px);
 
-  @media (--not-narrow-vp) {
+  @media (--middle-vp) {
+    padding-left: 10px;
     --fill: var(--color__dark-grey);
   }
 
   @media (--wide-vp) {
     height: 20px;
+    --fill: var(--color__dark-grey);
+
   }
 }

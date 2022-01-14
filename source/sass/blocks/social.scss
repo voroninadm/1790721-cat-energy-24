@@ -5,8 +5,7 @@
 
   @media (--narrow-vp) {
     box-sizing: border-box;
-    padding-bottom: 20px;
-    padding-top: 15px;
+    padding: 21px 0;
 
     &::before {
       position: absolute;
@@ -33,7 +32,7 @@
 .social__list {
   display: grid;
   row-gap: 10px;
-  width: 130px;
+  width: 160px;
   grid-template-columns: repeat(3, 1fr);
   align-items: baseline;
   justify-content: center;
@@ -59,8 +58,8 @@
       left: 0;
       display: block;
       content: "";
-      width: 33px;
-      height: 33px;
+      width: 25px;
+      height: 23px;
       mask-repeat: no-repeat;
       mask-position: center;
       mask-size: cover;

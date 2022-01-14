@@ -1,6 +1,7 @@
 .demo {
   background-color: var(--color__grey);
   width: 100%;
+  padding-bottom: 29px;
 
   @media (--not-narrow-vp) {
     background-image:

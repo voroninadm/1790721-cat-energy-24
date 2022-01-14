@@ -54,7 +54,7 @@
   }
 
   @media (--not-narrow-vp) {
-    width: 62%;
+    width: 57%;
     // max-width: 490px;
   }
 
@@ -85,8 +85,9 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: flex-end;
-    column-gap: 7.7%;
+    column-gap: 9%;
     row-gap: 15px;
+    transform: translateY(-5px);
     background-color: transparent;
     opacity: 1;
   }
@@ -161,7 +162,7 @@
 
     &--current::before {
       position: absolute;
-      top: 120%;
+      top: 135%;
       right: 0;
       z-index: 3;
       content: "";

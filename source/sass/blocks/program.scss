@@ -4,7 +4,7 @@
   flex-direction: column;
   box-sizing: border-box;
   background-color: var(--color__grey);
-  min-height: 266px;
+  min-height: 265px;
 
   @media (--middle-vp) {
     padding-right: 350px;
@@ -17,7 +17,7 @@
   }
 
   &--slim {
-    padding: 30px 33px 12px 19px;
+    padding: 27px 33px 12px 19px;
 
     @media (--not-narrow-vp) {
       padding: 74px 33px 12px 19px;
@@ -29,7 +29,7 @@
   }
 
   &--fat {
-    padding: 25px 33px 12px 19px;
+    padding: 30px 33px 12px 19px;
 
     @media (--not-narrow-vp) {
       padding: 78px 30px 12px 19px;
@@ -40,8 +40,7 @@
 .program__title {
   position: relative;
   display: flex;
-  padding-left: 72px;
-  padding-right: 5%;
+  padding: 0 5% 15px 72px;
   box-sizing: border-box;
 
   margin: 0;
@@ -63,16 +62,16 @@
 
   &--slim {
     &::after {
-      top: 0;
-      left: 0;
+      top: -16px;
+      left: -6px;
       width: 70px;
       height: 70px;
       background-image: url("../../icons/sprite.svg#cat-slim");
       background-size: auto;
 
       @media (--middle-vp) {
-        top: 5px;
-        left: 60%;
+        top: -23px;
+        left: 60.3%;
         width: 270px;
         height: 270px;
       }
@@ -89,8 +88,8 @@
 
   &--fat {
     &::after {
-      top: 5px;
-      left: -6px;
+      top: -16px;
+      left: -8px;
       width: 70px;
       height: 70px;
       background-image: url("../../icons/sprite.svg#cat-pro");
@@ -132,7 +131,7 @@
     @media (--middle-vp) {
       width: 200px;
       height: 200px;
-      top: 15px;
+      top: 17px;
       left: 65%;
     }
 
@@ -146,7 +145,7 @@
 }
 
 .program__description {
-  padding: 29px 3px 32px 0;
+  padding: 15px 3px 23px 0;
   margin: 0;
   color: var(--color__dark-grey);
   font-family: var(--main-font);
@@ -209,8 +208,8 @@
   &::after {
     position: relative;
     display: block;
-    margin-left: 25px;
-    width: 32px;
+    margin-left: 16px;
+    width: 34px;
     height: 10px;
     mask-image: url("../../icons/sprite.svg#arrow");
     mask-repeat: no-repeat;

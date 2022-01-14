@@ -1,30 +1,28 @@
 .promo-container {
+
+  --green-gradient: linear-gradient(
+    rgba(104, 183, 56, 0.85),
+    rgba(104, 183, 56, 0.85)
+  );
+  --white-gradient: linear-gradient(
+    to top,
+    #ffffff 199px,
+    transparent 199px
+  );
+
   padding-bottom: 20px;
   background-image:
-    linear-gradient(
-      to top,
-      #ffffff 198px,
-      transparent 198px
-    ),
-    linear-gradient(
-      rgba(104, 183, 56, 0.85),
-      rgba(104, 183, 56, 0.85)
-    ),
+    var(--white-gradient),
+    var(--green-gradient),
     url("../../img/happy-cat-s@1x.jpg");
   background-repeat: no-repeat;
   background-color: #29530f;
   background-position: 50% 0;
 
   @media (--x2-resolution) {
-    background-image: linear-gradient(
-      to top,
-      #ffffff 198px,
-      transparent 198px
-    ),
-      linear-gradient(
-      rgba(104, 183, 56, 0.85),
-      rgba(104, 183, 56, 0.85)
-    ),
+    background-image:
+      var(--white-gradient),
+      var(--green-gradient),
       url("../../img/happy-cat-s@2x.jpg");
     background-size: auto, auto, 320px auto;
   }
@@ -48,10 +46,7 @@
       width: 50%;
       min-height: 695px;
       background-image:
-        linear-gradient(
-          rgba(104, 183, 56, 0.85),
-          rgba(104, 183, 56, 0.85)
-        ),
+        var(--green-gradient),
         url("../../img/happy-cat-l@1x.jpg");
       background-color: #2e5c12;
       background-position: right top;
@@ -60,10 +55,7 @@
 
     @media (--x2-resolution) {
       background-image:
-        linear-gradient(
-          rgba(104, 183, 56, 0.85),
-          rgba(104, 183, 56, 0.85)
-        ),
+        var(--green-gradient),
         url("../../img/happy-cat-l@2x.jpg");
       background-size: auto, 720px auto;
     }
