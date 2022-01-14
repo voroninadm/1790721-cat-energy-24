@@ -356,10 +356,9 @@
   }
 }
 
-.form-group__checkbox:focus-visible + label {
+.form-group__checkbox:focus-visible + label::before {
   outline: 2px solid var(--color__outline);
   outline-offset: 2px;
-  border-radius: 5px;
 }
 
 .form-group__checkbox:checked + label::after {
@@ -371,10 +370,9 @@
   opacity: 0.3;
 }
 
-.form-group__radio:focus-visible + label {
+.form-group__radio:focus-visible + label::before {
   outline: 2px solid var(--color__outline);
   outline-offset: 2px;
-  border-radius: 5px;
 }
 
 .form-group__radio:checked + label::after {
