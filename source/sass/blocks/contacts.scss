@@ -8,13 +8,13 @@
   padding-top: 26px;
 
   @media (--not-narrow-vp) {
-    padding: 62px 70px 63px 70px;
+    padding: 57px 40px 61px 40px;
   }
 
   @media (--wide-vp) {
     width: 565px;
     box-sizing: border-box;
-    padding: 57px 76px 60px 80px;
+    padding: 40px 76px 60px 80px;
     background: var(--color__white);
   }
 }
@@ -31,6 +31,7 @@
 
   @media (--not-narrow-vp) {
     width: 37%;
+    padding-top: 3px;
   }
 
   @media (--wide-vp) {

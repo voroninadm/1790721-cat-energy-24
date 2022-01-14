@@ -1,15 +1,19 @@
 .control {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  // justify-content: space-between;
   box-sizing: border-box;
 
   @media (--narrow-vp) {
     transform: translateY(-15px);
   }
 
-  @media (--not-narrow-vp) {
+  @media (--middle-vp) {
     width: 592px;
+  }
+
+  @media (--wide-vp) {
+    width: 570px;
   }
 }
 
@@ -48,6 +52,14 @@
 
   @include line-height(16, 20, 20, 29.64);
   @include font-size(16,20);
+
+  &--before {
+    margin-right: 26px;
+  }
+
+  &--after {
+    margin-left: 22px;
+  }
 
   &:focus-visible {
     outline: 2px solid var(--color__outline);
@@ -104,8 +116,8 @@
 
   @media (--not-narrow-vp) {
     position: relative;
-    top: -13px;
-    left: calc(0% + (100% * var(--current-value)) - var(--toggle-size));
+    top: -16px;
+    left: calc(4% + (100% * var(--current-value)) - var(--toggle-size));
     width: 34px;
     height: 34px;
     margin: 0 auto;

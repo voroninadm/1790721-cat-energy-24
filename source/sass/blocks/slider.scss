@@ -2,12 +2,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  // values from 0 to 1
+  //values from 0 to 1
   --current-value: 1;
   --current-position: calc(100% * var(--current-value));
 
   @media (--not-narrow-vp) {
     --current-value: 0.5;
+  }
+
+  @media (--middle-vp) {
+    padding-top: 63px;
+    transform: translateX(10px);
+  }
+
+  @media (--wide-vp) {
+    transform: translateY(-38px);
   }
 }
 
@@ -24,6 +33,7 @@
   @media (--not-narrow-vp) {
     width: 592px;
     height: 511px;
+    padding-bottom: 29px;
   }
 }
 

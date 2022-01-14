@@ -38,6 +38,16 @@
   justify-content: center;
 
   @include reset-list();
+
+  @media (--not-narrow-vp) {
+    width: 150px;
+    transform: translateX(-3px);
+  }
+
+  @media (--wide-vp) {
+    width: 150px;
+    transform: translate(-2px, -2px);
+  }
 }
 
 .social__item {
@@ -65,6 +75,11 @@
       mask-size: cover;
       background: #666666;
       mask-image: var(--image-path);
+
+      @media (--not-narrow-vp) {
+        width: 32px;
+        height: 29px;
+      }
     }
 
     &:focus-visible {

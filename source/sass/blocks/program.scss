@@ -13,18 +13,14 @@
 
   @media (--wide-vp) {
     width: 570px;
-    min-height: 374px;
+    min-height: 372px;
   }
 
   &--slim {
     padding: 27px 33px 12px 19px;
 
     @media (--not-narrow-vp) {
-      padding: 74px 33px 12px 19px;
-    }
-
-    @media (--wide-vp) {
-      padding: 77px 33px 12px 19px;
+      padding: 77px 33px 45px 19px;
     }
   }
 
@@ -32,7 +28,7 @@
     padding: 30px 33px 12px 19px;
 
     @media (--not-narrow-vp) {
-      padding: 78px 30px 12px 19px;
+      padding: 78px 30px 45px 19px;
     }
   }
 }
@@ -70,17 +66,17 @@
       background-size: auto;
 
       @media (--middle-vp) {
-        top: -23px;
+        top: -26px;
         left: 60.3%;
         width: 270px;
         height: 270px;
       }
 
       @media (--wide-vp) {
-        top: -40px;
-        left: 5%;
-        width: 120px;
-        height: 136px;
+        top: -50px;
+        left: 4%;
+        width: 132px;
+        height: 143px;
       }
     }
   }
@@ -96,17 +92,17 @@
       background-size: auto;
 
       @media (--middle-vp) {
-        top: 5px;
-        left: 60%;
+        top: -25px;
+        left: 59.7%;
         width: 270px;
         height: 270px;
       }
 
       @media (--wide-vp) {
-        top: -40px;
+        top: -55px;
         left: 2%;
-        width: 134px;
-        height: 130px;
+        width: 145px;
+        height: 140px;
       }
     }
   }
@@ -131,14 +127,14 @@
     @media (--middle-vp) {
       width: 200px;
       height: 200px;
-      top: 17px;
+      top: 14px;
       left: 65%;
     }
 
     @media (--wide-vp) {
       width: 100px;
       height: 100px;
-      top: -29px;
+      top: -31px;
       left: 33px;
     }
   }
@@ -154,11 +150,11 @@
   @include line-height(14,18,16,24);
 
   @media (--not-narrow-vp) {
-    padding: 27px 43% 40px 33px;
+    padding: 9px 43% 40px 33px;
   }
 
   @media (--wide-vp) {
-    padding: 75px 20px 15px 33px;
+    padding: 58px 20px 15px 33px;
   }
 
   &::after {
@@ -218,6 +214,10 @@
     background: currentColor;
     content: "";
     transition: 0.3s;
+
+    @media (--not-narrow-vp) {
+      margin-left: 25px;
+    }
   }
 
   &:active {

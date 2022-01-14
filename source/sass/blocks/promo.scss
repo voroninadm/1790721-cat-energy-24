@@ -17,9 +17,9 @@
   @media (--wide-vp) {
     align-items: flex-start;
     box-sizing: border-box;
-    padding-top: 85px;
+    padding-top: 75px;
     padding-bottom: 240px;
-    padding-left: 120px;
+    padding-left: 79px;
   }
 }
 
@@ -54,6 +54,7 @@
   @media (--not-narrow-vp) {
     color: var(--color__black);
     margin-bottom: 40px;
+    padding-left: 2px;
     text-align: left;
     max-width: 300px;
   }
@@ -73,8 +74,8 @@
 
   @media (--wide-vp) {
     position: absolute;
-    top: 25px;
-    left: 37%;
+    top: 10px;
+    left: 36.6%;
     width: 552px;
     height: auto;
     z-index: 3;
@@ -96,6 +97,6 @@
     box-sizing: border-box;
     padding-top: 10px;
     padding-bottom: 7px;
-    width: 20.5%;
+    width: 21.5%;
   }
 }

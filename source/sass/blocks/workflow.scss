@@ -3,9 +3,9 @@
   padding-top: 6px;
   padding-bottom: 50px;
 
-  @media (--not-narrow-vp) {
-    padding-top: 35px;
-    padding-bottom: 25px;
+  @media (--middle-vp) {
+    padding-top: 33px;
+    padding-bottom: 8px;
   }
 
   @media (--wide-vp) {
@@ -68,6 +68,10 @@
     flex-direction: column;
     min-height: 156px;
     padding: 113px 0 10px 0;
+    width: 80%;
+  }
+
+  @media (--wide-vp) {
     width: 100%;
   }
 

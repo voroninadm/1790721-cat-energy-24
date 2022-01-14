@@ -10,6 +10,10 @@
     padding-bottom: 26px;
   }
 
+  @media (--not-narrow-vp) {
+    justify-content: start;
+  }
+
   &:hover {
     opacity: 0.8;
   }
@@ -19,12 +23,18 @@
   }
 }
 
-.footer-logo__link:focus-visible {
-  outline: 2px solid var(--color__outline);
-  outline-offset: 1px;
-  border-radius: 5px;
-}
+.footer-logo__link {
+  @media (--middle-vp) {
+    padding-top: 7px;
+  }
 
-.footer-logo__image {
-  object-fit: cover;
+  &:focus-visible {
+    outline: 2px solid var(--color__outline);
+    outline-offset: 1px;
+    border-radius: 5px;
+  }
+
+  .footer-logo__image {
+    object-fit: cover;
+  }
 }

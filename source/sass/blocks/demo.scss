@@ -3,7 +3,10 @@
   width: 100%;
   padding-bottom: 29px;
 
-  @media (--not-narrow-vp) {
+  @media (--middle-vp) {
+    border-top: 1px solid #e6e6e6;
+    padding-top: 15px;
+    padding-bottom: 60px;
     background-image:
       linear-gradient(
         #ffffff 600px,
@@ -17,5 +20,6 @@
         #ffffff 140px,
         transparent 140px
       );
+    padding-bottom: 35px;
   }
 }

@@ -5,6 +5,10 @@
   flex-wrap: wrap;
   padding-bottom: 13px;
 
+  @media (--not-narrow-vp) {
+    row-gap: 29px;
+  }
+
   @media (--wide-vp) {
     flex-direction: row;
     justify-content: space-between;
