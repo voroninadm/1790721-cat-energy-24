@@ -1,6 +1,7 @@
 
+
 .product__title {
-  margin: 0 0 13px 0;
+  margin: 0 0 15px 0;
   text-transform: uppercase;
   font-weight: 400;
   width: 53%;
@@ -10,9 +11,14 @@
 
   @media (--not-narrow-vp) {
     width: 60%;
-    padding: 40px 35px 0 50px;
+    padding: 12px 35px 0 50px;
     text-align: center;
     min-height: 45px;
+  }
+
+  @media (--wide-vp) {
+    padding: 10px 35px 0 3px;
+    width: 100%;
   }
 }
 
@@ -41,7 +47,7 @@
 
   @media (--not-narrow-vp) {
     margin-top: 20px;
-    margin-bottom: 16px;
+    margin-bottom: 6px;
   }
 }
 

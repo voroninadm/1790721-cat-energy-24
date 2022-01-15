@@ -2,6 +2,14 @@
   position: relative;
   padding-bottom: 35px;
 
+  @media (--middle-vp) {
+    padding-bottom: 75px;
+  }
+
+  @media (--wide-vp) {
+    padding-bottom: 73px;
+  }
+
   &::before {
     position: absolute;
     top: 15px;
@@ -22,7 +30,7 @@
 
     @media (--wide-vp) {
       top: 23px;
-      right: 0;
+      // right: 0;
       width: calc((99.5vw / 2) + 614px);
     }
   }
@@ -31,11 +39,10 @@
     @media (--wide-vp) {
       position: absolute;
       top: 23px;
-      right: 0;
-      z-index: -1;
+      left: -125px;
       display: block;
       padding: 0;
-      width: calc(100vw - 20px);
+      width: 85px;
       height: 2px;
       content: "";
       background-color: var(--color__green);
@@ -45,7 +52,7 @@
 
 .addons__title {
   padding: 0 20px 0 0;
-  margin-bottom: 35px;
+  margin-bottom: 10px;
   background-color: var(--color__white);
   font-weight: 400;
   width: 230px;
@@ -54,15 +61,16 @@
   @include font-size(24,36);
 
   @media (--middle-vp) {
-    padding: 0 35px;
-    margin: 0 0 80px 40px;
+    padding: 0 33px 0 37px;
+    margin: 0 0 80px 0;
     background-color: var(--color__white);
     width: 340px;
   }
 
-  @media (--not-narrow-vp) {
-    padding: 0 70px;
-    margin-bottom: 80px;
+  @media (--wide-vp) {
+    margin-top: 10px;
+    padding: 0 35px 0 0;
+    margin-bottom: 64px;
     background-color: var(--color__white);
     width: 340px;
   }

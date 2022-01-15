@@ -1,8 +1,8 @@
 .catalog {
-  padding-bottom: 22px;
+  padding-bottom: 7px;
 
   @media (--not-narrow-vp) {
-    padding-bottom: 60px;
+    padding-bottom: 68px;
   }
 }
 
@@ -10,7 +10,7 @@
   position: relative;
   grid-column: 1 / -1;
   padding-top: 28px;
-  padding-bottom: 39px;
+  padding-bottom: 40px;
   font-weight: 400;
   margin: 0;
 
@@ -32,13 +32,13 @@
 
   @media (--not-narrow-vp) {
     margin-top: 22px;
-    margin-bottom: 123px;
+    margin-bottom: 50px;
     border: none;
   }
 
   @media (--wide-vp) {
-    margin-top: 43px;
-    margin-bottom: 126px;
+    margin-top: 30px;
+    margin-bottom: 55px;
     border: none;
   }
 }
@@ -49,13 +49,13 @@
   @media (--not-narrow-vp) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 8%;
-    row-gap: 139px;
+    column-gap: 8.5%;
+    row-gap: 71px;
   }
 
   @media (--wide-vp) {
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 6%;
-    row-gap: 140px;
+    column-gap: 80px;
+    row-gap: 75px;
   }
 }
