@@ -3,8 +3,8 @@
   flex-direction: column;
   box-sizing: border-box;
 
-  @media (--not-narrow-vp) {
-    padding: 0 40px 40px 40px;
+  @media (--middle-vp) {
+    padding: 0 40px 21px 40px;
   }
 
   @media (--wide-vp) {
@@ -15,7 +15,7 @@
 .main-form__title {
   margin: 28px 0 37px 0;
   font-weight: 400;
-  max-width: 70%;
+  max-width: 95%;
 
   @include line-height(36,36,60,60);
   @include font-size(36,60);
@@ -33,8 +33,8 @@
     }
   }
 
-  @media (--not-narrow-vp) {
-    margin: 51px 0 55px 0;
+  @media (--middle-vp) {
+    margin: 47px 0 55px 0;
   }
 
   @media (--wide-vp) {
@@ -43,7 +43,7 @@
 }
 
 .main-form__description {
-  max-width: 70%;
+  max-width: 85%;
   margin: 0 0 13px 0;
   text-transform: uppercase;
 

@@ -1,7 +1,7 @@
 .form {
   display: flex;
   flex-direction: column;
-  padding-bottom: 20px;
+  padding-bottom: 31px;
 
   @include line-height(16,18,20,29.64);
   @include font-size(16,20);
@@ -11,6 +11,11 @@
   display: grid;
   align-items: center;
   column-gap: 80px;
+  padding-bottom: 27px;
+
+  @media (--middle-vp) {
+    padding-bottom: 75px;
+  }
 
   @media (--wide-vp) {
     grid-template-columns: repeat(2, 1fr);
@@ -24,7 +29,7 @@
   @media (--middle-vp) {
     grid-template-columns: 1fr 1fr;
     row-gap: 10px;
-    column-gap: 13%;
+    column-gap: 10%;
   }
 
   @media (--wide-vp) {
@@ -40,15 +45,22 @@
 
   @include font-size(14,16);
 
-  @media (--not-narrow-vp) {
+  @media (--middle-vp) {
     display: flex;
+    transform: translateY(-14px);
   }
 
   @media (--wide-vp) {
+    display: flex;
     justify-content: flex-start;
   }
 }
 
 .form__button {
-  margin-bottom: 15px;
+  margin-bottom: 21px;
+
+  @media (--middle-vp) {
+    min-height: 49px;
+    min-width: 283px;
+  }
 }
