@@ -11,12 +11,12 @@
   <ul class="catalog__products">
     {% for item in items %}
     <li class="product-block">
-      <a class="product-block__link" href="javascript:undefined">
+      <a class="product-block__link" href="#">
         {{ macros.picture( item.class, item.name, item.ext, item.path, item.alt, item.width, item.height ) }}
       </a>
       <div class="product">
         <h3 class="product__title">
-          <a class="product__link" href="javascript:undefined">Cat Energy {{item.title}} {{item.mass }}&nbsp;г</a>
+          <a class="product__link" href="#">Cat Energy {{item.title}} {{item.mass }}&nbsp;г</a>
         </h3>
         <ul class="product__list">
           <li class="product__item">
@@ -33,7 +33,7 @@
           </li>
         </ul>
       </div>
-      <a class="product-block__button main-link" href="javascript:undefined">Заказать</a>
+      <a class="product-block__button main-link" href="#">Заказать</a>
     </li>
     {% else %}
     <li>Все товары раскупили 😕</li>
@@ -41,7 +41,7 @@
     <li class="product-block product-block--more">
       <h3 class="product-block__title product-block__title--more">Показать еще 100500 товаров</h3>
       <p class="product-block__description">На самом деле вкусов гораздо больше!</p>
-      <a class="product-block__button main-link main-link--discreet" href="javascript:undefined">Показать все</a>
+      <a class="product-block__button main-link main-link--discreet" href="#">Показать все</a>
     </li>
   </ul>
 </section>
@@ -55,7 +55,7 @@
         <h3 class="extra__title">{{ addon.title }}</h3>
         <span class="extra__amount">{{ addon.amount }}</span>
         <b class="extra__count">{{ addon.count }} Р.</b>
-        <a class="main-link extra__link" href="javascript:undefined">Заказать</a>
+        <a class="main-link extra__link" href="#">Заказать</a>
       </li>
       {% else %}
       <li>Все дополнительные товары раскупили 😕</li>
