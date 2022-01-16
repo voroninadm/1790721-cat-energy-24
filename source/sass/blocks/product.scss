@@ -28,6 +28,7 @@
   align-items: center;
   font-family: var(--main-font);
   font-weight: 400;
+  color: var(--color__dark-grey);
 
   @include line-height(12,16,16,16);
   @include font-size(12,16);
@@ -67,7 +68,7 @@
   display: block;
   margin: 0;
   padding: 0;
-  color: inherit;
+  color: var(--light-text);
   text-decoration: none;
   transition: 0.2s;
 

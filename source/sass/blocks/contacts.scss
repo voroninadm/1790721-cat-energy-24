@@ -14,7 +14,7 @@
   @media (--wide-vp) {
     width: 565px;
     box-sizing: border-box;
-    padding: 40px 76px 60px 80px;
+    padding: 58px 76px 60px 80px;
     background: var(--color__white);
   }
 }
@@ -43,6 +43,7 @@
   width: 50%;
   font-family: var(--main-font);
   margin: 0;
+  color: var(--color__dark-grey);
 
   @include line-height(14,20,16,20);
   @include font-size(14,16);

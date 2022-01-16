@@ -1,4 +1,9 @@
 .stock {
+  --green-gradient: linear-gradient(
+    rgba(104, 183, 56, 0.85),
+    rgba(104, 183, 56, 0.85)
+  );
+
   position: relative;
   display: flex;
   flex-direction: column;
@@ -8,10 +13,8 @@
   padding-bottom: 43px;
   min-height: 117px;
   color: var(--color__white);
-  background-image: linear-gradient(
-    rgba(104, 183, 56, 0.85),
-    rgba(104, 183, 56, 0.85)
-  ),
+  background-image:
+    var(--green-gradient),
     url("../../img/cat-bag@1x.jpg");
   background-color: var(--color__white);
   background-repeat: no-repeat;
@@ -20,10 +23,8 @@
   text-align: center;
 
   @media (--x2-resolution) {
-    background-image: linear-gradient(
-      rgba(104, 183, 56, 0.85),
-      rgba(104, 183, 56, 0.85)
-    ),
+    background-image:
+      var(--green-gradient),
       url("../../img/cat-bag@2x.jpg");
   }
 
@@ -31,10 +32,8 @@
     min-height: 86px;
     padding-top: 72px;
     justify-content: flex-start;
-    background-image: linear-gradient(
-      rgba(104, 183, 56, 0.85),
-      rgba(104, 183, 56, 0.85)
-    ),
+    background-image:
+      var(--green-gradient),
       url("../../img/cat-bag_l@1x.jpg");
     background-color: var(--color__white);
     background-position: center center;
@@ -44,10 +43,8 @@
     text-align: left;
 
     @media (--x2-resolution) {
-      background-image:linear-gradient(
-        rgba(104, 183, 56, 0.85),
-        rgba(104, 183, 56, 0.85)
-      ),
+      background-image:
+        var(--green-gradient),
         url("../../img/cat-bag_l@2x.jpg");
     }
   }
@@ -57,10 +54,8 @@
     min-height: 175px;
     padding-right: 40px;
     justify-self: center;
-    background-image:linear-gradient(
-      rgba(104, 183, 56, 0.85),
-      rgba(104, 183, 56, 0.85)
-    ),
+    background-image:
+      var(--green-gradient),
       url("../../img/cat-bag@1x.jpg");
     background-position: 50% 50%;
     background-size: cover;
@@ -68,10 +63,8 @@
     background-color: var(--color__white);
 
     @media (--x2-resolution) {
-      background-image:linear-gradient(
-        rgba(104, 183, 56, 0.85),
-        rgba(104, 183, 56, 0.85)
-      ),
+      background-image:
+        var(--green-gradient),
         url("../../img/cat-bag@2x.jpg");
     }
   }
@@ -111,7 +104,6 @@
   font-size: 1rem;
 
   @media (--middle-vp) {
-    // align-self: flex-end;
     padding-left: 43%;
   }
 

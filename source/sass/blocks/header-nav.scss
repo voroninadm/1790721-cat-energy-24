@@ -11,10 +11,12 @@
 @keyframes hiding {
   from {
     opacity: 1;
+    visibility: visible;
   }
 
   to {
     opacity: 0;
+    visibility: hidden;
   }
 }
 
@@ -38,11 +40,10 @@
     }
 
     &--closed {
-      // animation-name: hiding;
-      // animation-duration: 0.4s;
-      // animation-fill-mode: forwards;
-      // animation-timing-function: ease;
-      display: none;
+      animation-name: hiding;
+      animation-duration: 0.4s;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease;
     }
 
     &--noJS {

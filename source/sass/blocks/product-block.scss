@@ -123,6 +123,7 @@
     position: relative;
     margin: 0 0 0 0;
     text-transform: uppercase;
+    color: #111111;
 
     @media (--not-narrow-vp) {
       width: 70%;
@@ -173,6 +174,7 @@
 .product-block__description {
   margin: 0 0 11px 0;
   font-family: var(--main-font);
+  color: var(--light-text);
 
   @include line-height(12,16,16,18);
   @include font-size(12,16);

@@ -1,7 +1,6 @@
 .control {
   display: flex;
   align-items: center;
-  // justify-content: space-between;
   box-sizing: border-box;
 
   @media (--narrow-vp) {
@@ -54,11 +53,15 @@
   @include font-size(16,20);
 
   &--before {
-    margin-right: 26px;
+    @media (--not-narrow-vp) {
+      margin-right: 26px;
+    }
   }
 
   &--after {
-    margin-left: 22px;
+    @media (--not-narrow-vp) {
+      margin-left: 22px;
+    }
   }
 
   &:focus-visible {

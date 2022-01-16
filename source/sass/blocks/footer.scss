@@ -8,11 +8,11 @@
   @media (--wide-vp) {
     width: 565px;
     margin-left: calc((100vw - 1220px) / 2);
-    align-self: center;
     grid-column: 1 / 2;
     grid-row: 1 / -1;
     padding: 20px 0;
     box-sizing: border-box;
+    transform: translateY(72px);
     z-index: 2;
     background-color: transparent;
   }

@@ -264,6 +264,7 @@
   text-transform: uppercase;
   margin-right: 11px;
   transition: 0.3s;
+  color: var(--color__dark-grey);
 
   @media (--not-narrow-vp) {
     margin-right: 19px;
@@ -273,6 +274,7 @@
   &--radio {
     position: relative;
     cursor: pointer;
+    color: var(--color__black);
 
     &::before {
       position: absolute;
@@ -333,6 +335,7 @@
     position: relative;
     padding-left: 7px;
     cursor: pointer;
+    color: var(--color__black);
 
     @media (--wide-vp) {
       padding-left: 22px;
@@ -438,6 +441,7 @@
   font-family: var(--accent-font);
   border: 1px solid #e7e7e7;
   outline: none;
+  color: var(--color__dark-grey);
   appearance: textfield;
 
   @include line-height(16,18,20,29.64);
