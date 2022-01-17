@@ -30,7 +30,6 @@
 
     @media (--wide-vp) {
       top: 23px;
-      // right: 0;
       width: calc((99.5vw / 2) + 614px);
     }
   }
@@ -52,7 +51,7 @@
 
 .addons__title {
   padding: 0 20px 0 0;
-  margin-bottom: 10px;
+  margin-bottom: 34px;
   background-color: var(--color__white);
   font-weight: 400;
   width: 230px;
