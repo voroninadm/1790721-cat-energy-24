@@ -190,7 +190,7 @@ export default series(
     processScripts,
     createSprite,
     createWebp,
-    // createAvif
+    createAvif
   ),
   series(
     startServer,
