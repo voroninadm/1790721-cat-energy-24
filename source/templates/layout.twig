@@ -16,7 +16,7 @@
   <link rel="preload" href="./fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="./fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <script src="./js/headerMenu.min.js" defer></script>
-  <script src="./js/slider.min.js" defer></script>
+  {% if permalink == "index.html" %} <script src="./js/slider.min.js" defer></script> {% endif %}
   {% if permalink == "form.html" %} <script src="./js/inputError.min.js" defer></script> {% endif %}
 
 </head>

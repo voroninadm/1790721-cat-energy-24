@@ -4,6 +4,7 @@ let sliderToggle = document.querySelector(".control__range");
 let sliderCanvas = document.querySelector(".slider");
 let scale = document.querySelector(".control__scale");
 
+//slider buttons
 sliderButtonBefore.addEventListener("click", function (event) {
   sliderToggle.classList.remove("control__range--move");
   sliderCanvas.style.setProperty("--current-value", "1");

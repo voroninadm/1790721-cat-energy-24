@@ -1,3 +1,10 @@
+.academy {
+  @media (--not-narrow-vp) {
+    display: grid;
+    justify-content: end;
+  }
+}
+
 .academy-logo {
   grid-column: 3;
   display: flex;
