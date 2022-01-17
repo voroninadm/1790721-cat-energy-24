@@ -4,17 +4,25 @@ let sliderToggle = document.querySelector(".control__range");
 let sliderCanvas = document.querySelector(".slider");
 let scale = document.querySelector(".control__scale");
 
-//slider buttons
-sliderButtonBefore.onclick = function () {
+sliderButtonBefore.addEventListener("click", function (event) {
   sliderToggle.classList.remove("control__range--move");
   sliderCanvas.style.setProperty("--current-value", "1");
-}
+  if (document.documentElement.clientWidth > 768) {
+    sliderToggle.style.setProperty("left", "0px");
+  } else {
+    sliderToggle.style.setProperty("left", "7px");
+  }
+});
 
-sliderButtonAfter.onclick = function () {
+sliderButtonAfter.addEventListener("click", function (event) {
   sliderToggle.classList.add("control__range--move");
   sliderCanvas.style.setProperty("--current-value", "0");
-}
-
+  if (document.documentElement.clientWidth > 768) {
+    sliderToggle.style.setProperty("left", "390px");
+  } else {
+    sliderToggle.style.setProperty("left", "10px");
+  }
+});
 
 //slider-function
 sliderToggle.onmousedown = function (event) {
@@ -48,6 +56,5 @@ sliderToggle.onmousedown = function (event) {
       document.removeEventListener("mouseup", onMouseUp);
       document.removeEventListener("mousemove", onMouseMove);
     }
-
   };
 }
